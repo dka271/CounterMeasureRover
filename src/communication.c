@@ -261,6 +261,62 @@ void testingSendPathOverWifly(unsigned char path[MAXIMUM_NUMBER_OF_IN_SIGHT_NODE
     }
 }
 
+void sendTapeSignalToSensor() {
+    unsigned char testString[208];
+    unsigned char source;
+    unsigned char jsonFieldItemEnd[8];
+    if (IDENTITY_OF_THIS_ROVER == 1) {
+        source = 'f';
+    } else if (IDENTITY_OF_THIS_ROVER == 3) {
+        source = 't';
+    } else {
+        source = 'c';
+    }
+    
+    unsigned char dest = 's';
+    unsigned char messageType = 't';
+    sprintf(testString, "*{\"S\":\"%c\",\"T\":\"%c\",\"M\":\"%c\",\"C\":", source, dest, messageType);
+    
+    int checkSum = calculateJsonStringCheckSum(testString);
+    
+    sprintf(jsonFieldItemEnd, "%d}~", checkSum);
+    strcat(testString, jsonFieldItemEnd);
+    
+    unsigned char i;
+    for (i = 0; i < strlen(testString); i++) {
+        xQueueSendToBack(sendQueue, &testString[i], portMAX_DELAY);
+        PLIB_INT_SourceEnable(INT_ID_0, INT_SOURCE_USART_1_TRANSMIT);
+    }
+}
+
+void respondToFlagRoverRegionQuery(unsigned char from) {
+    unsigned char msg[208];
+    unsigned char dest;
+    unsigned char jsonFieldItemEnd[8];
+    if (from == 's') {
+        dest = 's';
+    } else if (from == 'c') {
+        dest = 'c';
+    } else if (from == 't') {
+        dest = 't';
+    }
+    unsigned char source = 'f';
+    
+    unsigned char messageType = 'e';
+    sprintf(msg, "*{\"S\":\"%c\",\"T\":\"%c\",\"M\":\"%c\",\"C\":", source, dest, messageType);
+    
+    int checkSum = calculateJsonStringCheckSum(msg);
+    
+    sprintf(jsonFieldItemEnd, "%d}~", checkSum);
+    strcat(msg, jsonFieldItemEnd);
+    
+    unsigned char i;
+    for (i = 0; i < strlen(msg); i++) {
+        xQueueSendToBack(sendQueue, &msg[i], portMAX_DELAY);
+        PLIB_INT_SourceEnable(INT_ID_0, INT_SOURCE_USART_1_TRANSMIT);
+    }
+}
+
 unsigned char msgDefNotGlobal[PATH_QUEUE_BUFFER_SIZE];
 
 /******************************************************************************
@@ -278,6 +334,8 @@ void COMMUNICATION_Tasks(void) {
     //            unsigned char receiveFromWifiBuffer[RECEIVE_BUFFER_SIZE];
     //            unsigned int receiveFromWifiBufferIdx = 0;
     int PreviousSequenceNumber = 0;
+    
+    CURRENT_FLAG_ROVER_REGION = 0;
 
     dbgOutputLoc(DBG_LOC_COMM_BEFORE_WHILE);
     dbgOutputLoc(DBG_LOC_COMM_BEFORE_WHILE_NEW_VAL);
@@ -409,6 +467,27 @@ void COMMUNICATION_Tasks(void) {
                                 msgDefNotGlobal[PATH_CHECKSUM_IDX] = pathCalculateChecksum(msgDefNotGlobal);
 
                                 pathSendMsg(msgDefNotGlobal);
+                            }
+                        }
+                    } else if (Source == 'v') {
+                        if (jsonGetMessageType(receivemsg, MessageType)) {
+                        //error
+                        dbgOutputLoc(DBG_LOC_BAD_ERROR - 3);
+                        } else if (MessageType[0] == 'z') {
+                            sendStartMessageToNavigationThread();
+                        }
+                    } else if (Source == 'f') {
+                        if (jsonGetMessageType(receivemsg, MessageType)) {
+                        //error
+                        dbgOutputLoc(DBG_LOC_BAD_ERROR - 3);
+                        } else if (MessageType[0] == 'e') {
+                            unsigned char regionIdentity = 'R';
+                            unsigned char flagRoverRegion;
+                            if (jsonGetPassedInCharacter(receivemsg, &flagRoverRegion, regionIdentity)) {
+                                //error
+                                dbgOutputLoc(DBG_LOC_BAD_ERROR - 3);
+                            } else {
+                                CURRENT_FLAG_ROVER_REGION = flagRoverRegion;
                             }
                         }
                     }

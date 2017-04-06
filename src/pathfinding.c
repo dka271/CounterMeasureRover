@@ -191,12 +191,42 @@ unsigned char pathCalculateChecksum(unsigned char msg[PATH_QUEUE_BUFFER_SIZE]) {
 }
 
 crossSquare convertFieldItemToCrossSquare(fieldItem tempFieldItem) {
-    unsigned char lowX = tempFieldItem.centerX - (tempFieldItem.width / 2);
-    unsigned char highX = tempFieldItem.centerX + (tempFieldItem.width / 2);
-    unsigned char lowY = tempFieldItem.centerY - (tempFieldItem.length / 2);
-    unsigned char highY = tempFieldItem.centerY + (tempFieldItem.length / 2);
-    point topLeft = convertXAndYToPoint(lowX, highY);
-    point bottomRight = convertXAndYToPoint(highX, lowY);
+    short SlowX = tempFieldItem.centerX - (tempFieldItem.width / 2)-2;
+    short ShighX = tempFieldItem.centerX + (tempFieldItem.width / 2)+2;
+    short SlowY = tempFieldItem.centerY - (tempFieldItem.length / 2)-2;
+    short ShighY = tempFieldItem.centerY + (tempFieldItem.length / 2)+2;
+    
+    unsigned short lowX; 
+    unsigned short highX; 
+    unsigned short lowY; 
+    unsigned short highY;
+    
+    if (SlowX <= 0) {
+        lowX = 0;
+    } else {
+        lowX = SlowX;
+    }
+    
+    if (ShighX <= 0) {
+        highX = 0;
+    } else {
+        highX = ShighX;
+    }
+    
+    if (SlowY <= 0) {
+        lowY = 0;
+    } else {
+        lowY = SlowY;
+    }
+    
+    if (ShighY <= 0) {
+        highY = 0;
+    } else {
+        highY = ShighY;
+    }
+    
+    point topLeft = convertXAndYToPoint(highX, highY);
+    point bottomRight = convertXAndYToPoint(lowX, lowY);
     return convertPointsToCrossSquare(topLeft, bottomRight);
 }
 
@@ -240,7 +270,8 @@ void storeInFieldItemStack(fieldItem tempFieldItem) {
         if (tempFieldItem.objectType == uniqueIDMapper(IDENTITY_OF_FRIENDLY_FLAG)) {
             //do nothing so nothing is added to crossSquare stack
         } else if (tempFieldItem.objectType == uniqueIDMapper(IDENTITY_OF_FRIENDLY_FLAG_ROVER)) {
-            sendLocToNavigationThread(tempFieldItem.centerX, tempFieldItem.centerY);
+            Nop();
+            sendLocToNavigationThread(tempFieldItem.centerX, tempFieldItem.centerY, (tempFieldItem.orientation >> 1));
         } else {
             crossSquareStack[crossSquareStackTop] = convertFieldItemToCrossSquare(tempFieldItem);
             crossSquareStackTop++;
@@ -250,7 +281,8 @@ void storeInFieldItemStack(fieldItem tempFieldItem) {
         if (tempFieldItem.objectType == uniqueIDMapper(IDENTITY_OF_FRIENDLY_FLAG)) {
             //do nothing so nothing is updated in the crossSquare stack
         } else if (tempFieldItem.objectType == uniqueIDMapper(IDENTITY_OF_FRIENDLY_FLAG_ROVER)) {
-            sendLocToNavigationThread(tempFieldItem.centerX, tempFieldItem.centerY);
+            Nop();
+            sendLocToNavigationThread(tempFieldItem.centerX, tempFieldItem.centerY, (tempFieldItem.orientation >> 1));
         } else {
             crossSquareStack[updateLoc] = convertFieldItemToCrossSquare(tempFieldItem);
         }
@@ -269,11 +301,85 @@ void calculateOffsetNodes(fieldItem tempFieldItem) {
         singleNode.x = tempFieldItem.centerX;
         singleNode.y = tempFieldItem.centerY;
         halfHeartedAdjacencyList.nodes[0] = singleNode;
+        
+                //Calculate the four cross points offset from the rover itself
+//        if (tempFieldItem.centerX >= ((tempFieldItem.width / 2) + (offset*2))) {
+//            topLeftPoint.x = tempFieldItem.centerX - (tempFieldItem.width / 2) - (offset*2);
+//            topLeftPoint.y = tempFieldItem.centerY;
+//            if (checkIfNodeValid(topLeftPoint)) {
+//                halfHeartedAdjacencyList.nodes[currentNumberOfNodes] = topLeftPoint;
+//                currentNumberOfNodes++;
+//            }
+//        }
+////        if (tempFieldItem.centerX <= (255 - (tempFieldItem.width / 2) + (offset*2))) {
+////            topRightPoint.x = tempFieldItem.centerX + (tempFieldItem.width / 2) + (offset*2);
+////            topRightPoint.y = tempFieldItem.centerY;
+////            if (checkIfNodeValid(topRightPoint)) {
+////                halfHeartedAdjacencyList.nodes[currentNumberOfNodes] = topRightPoint;
+////                currentNumberOfNodes++;
+////            }
+////        }
+//
+//        if (tempFieldItem.centerY >= ((tempFieldItem.length / 2) + (offset*2))) {
+//            bottomLeftPoint.x = tempFieldItem.centerX - (tempFieldItem.width / 2) - (offset*2);
+//            bottomLeftPoint.y = tempFieldItem.centerY - (tempFieldItem.length / 2) - (offset*2);
+//            if (checkIfNodeValid(bottomLeftPoint)) {
+//                halfHeartedAdjacencyList.nodes[currentNumberOfNodes] = bottomLeftPoint;
+//                currentNumberOfNodes++;
+//            }
+//        }
+//
+//        if (tempFieldItem.centerY >= ((tempFieldItem.length / 2) + (offset*2))) {
+//            bottomRightPoint.x = tempFieldItem.centerX + (tempFieldItem.width / 2) + (offset*2);
+//            bottomRightPoint.y = tempFieldItem.centerY - (tempFieldItem.length / 2) - (offset*2);
+//            if (checkIfNodeValid(bottomRightPoint)) {
+//                halfHeartedAdjacencyList.nodes[currentNumberOfNodes] = bottomRightPoint;
+//                currentNumberOfNodes++;
+//            }
+//        }
+        
     } else if (tempFieldItem.objectType == uniqueIDMapper(IDENTITY_OF_FRIENDLY_FLAG)) { 
         point singleNode;
         singleNode.x = tempFieldItem.centerX;
         singleNode.y = tempFieldItem.centerY;
         halfHeartedAdjacencyList.nodes[1] = singleNode;
+        
+//        //Calculate the four cross points offset from the rover itself
+//        if (tempFieldItem.centerX >= ((tempFieldItem.width / 2) + (offset*2))) {
+//            topLeftPoint.x = tempFieldItem.centerX - (tempFieldItem.width / 2) - (offset*2);
+//            topLeftPoint.y = tempFieldItem.centerY;
+//            if (checkIfNodeValid(topLeftPoint)) {
+//                halfHeartedAdjacencyList.nodes[currentNumberOfNodes] = topLeftPoint;
+//                currentNumberOfNodes++;
+//            }
+//        }
+//        if (tempFieldItem.centerX <= (255 - (tempFieldItem.width / 2) + (offset*2))) {
+//            topRightPoint.x = tempFieldItem.centerX + (tempFieldItem.width / 2) + (offset*2);
+//            topRightPoint.y = tempFieldItem.centerY;
+//            if (checkIfNodeValid(topRightPoint)) {
+//                halfHeartedAdjacencyList.nodes[currentNumberOfNodes] = topRightPoint;
+//                currentNumberOfNodes++;
+//            }
+//        }
+//
+        if (tempFieldItem.centerY >= ((tempFieldItem.length / 2) + offset)) {
+            bottomLeftPoint.x = tempFieldItem.centerX - (tempFieldItem.width / 2) - (offset/2);
+            bottomLeftPoint.y = tempFieldItem.centerY - (tempFieldItem.length / 2) - (offset/2);
+            if (checkIfNodeValid(bottomLeftPoint)) {
+                halfHeartedAdjacencyList.nodes[currentNumberOfNodes] = bottomLeftPoint;
+                currentNumberOfNodes++;
+            }
+        }
+        
+        if (tempFieldItem.centerX <= (255 - (tempFieldItem.width / 2) - offset) && tempFieldItem.centerY >= ((tempFieldItem.length / 2) + offset)) {
+            bottomRightPoint.x = tempFieldItem.centerX + (tempFieldItem.width / 2) + (offset/2);
+            bottomRightPoint.y = tempFieldItem.centerY - (tempFieldItem.length / 2) - (offset/2);
+            if (checkIfNodeValid(bottomRightPoint)) {
+                halfHeartedAdjacencyList.nodes[currentNumberOfNodes] = bottomRightPoint;
+                currentNumberOfNodes++;
+            }
+        }
+        
     }else {
     
         if (tempFieldItem.objectType >= 2 && tempFieldItem.objectType < 8) {
@@ -332,6 +438,9 @@ void fillAdjacencyNodes() {
 bool checkIfNodeValid(point tempPoint) {
     //Check for intersections or within bounds of objects
     int i;
+    if (tempPoint.x > MAX_WIDTH_OF_FIELD || tempPoint.y > MAX_LENGTH_OF_FIELD) {
+        return false;
+    }
     for (i = 0; i < fieldItemStackTop; i++) {
         if (checkIfPointWithinFieldItem(tempPoint, fieldItemStack[i])) {
             return false;
@@ -756,19 +865,19 @@ void sendPathToNavigationThread(unsigned char path[MAXIMUM_NUMBER_OF_IN_SIGHT_NO
     }
     Nop();
     unsigned char i;
-    testingSendEdgeOverWifly(numNodesInPath, numNodesInPath);
+//    testingSendEdgeOverWifly(numNodesInPath, numNodesInPath);
 //    for (i=(numNodesInPath-1); i > 1; i--) {
     for (i=(numNodesInPath-1); i >= 2; i--) {
         Nop();
         sendEdgeToNavigationThread(numNodesInPath-i-1, halfHeartedAdjacencyList.nodes[path[i]].x, halfHeartedAdjacencyList.nodes[path[i]].y, halfHeartedAdjacencyList.nodes[path[i-1]].x, halfHeartedAdjacencyList.nodes[path[i-1]].y);
 //        sendEdgeToNavigationThread(numNodesInPath-i-1, halfHeartedAdjacencyList.nodes[path[numNodesInPath-i]].x, halfHeartedAdjacencyList.nodes[path[numNodesInPath-i]].y, halfHeartedAdjacencyList.nodes[path[numNodesInPath-i-1]].x, halfHeartedAdjacencyList.nodes[path[numNodesInPath-i-1]].y);
-        testingSendEdgeOverWifly(halfHeartedAdjacencyList.nodes[path[i]].x, halfHeartedAdjacencyList.nodes[path[i]].y);
-        testingSendEdgeOverWifly(halfHeartedAdjacencyList.nodes[path[i-1]].x, halfHeartedAdjacencyList.nodes[path[i-1]].y);
+//        testingSendEdgeOverWifly(halfHeartedAdjacencyList.nodes[path[i]].x, halfHeartedAdjacencyList.nodes[path[i]].y);
+//        testingSendEdgeOverWifly(halfHeartedAdjacencyList.nodes[path[i-1]].x, halfHeartedAdjacencyList.nodes[path[i-1]].y);
     }
     sendEdgeToNavigationThread(END_OF_PATH_NUM, halfHeartedAdjacencyList.nodes[path[1]].x, halfHeartedAdjacencyList.nodes[path[1]].y, halfHeartedAdjacencyList.nodes[path[0]].x, halfHeartedAdjacencyList.nodes[path[0]].y);
 //    sendEdgeToNavigationThread(END_OF_PATH_NUM, halfHeartedAdjacencyList.nodes[path[numNodesInPath-i]].x, halfHeartedAdjacencyList.nodes[path[numNodesInPath-i]].y, halfHeartedAdjacencyList.nodes[path[numNodesInPath-i-1]].x, halfHeartedAdjacencyList.nodes[path[numNodesInPath-i-1]].y);
-    testingSendEdgeOverWifly(halfHeartedAdjacencyList.nodes[path[1]].x, halfHeartedAdjacencyList.nodes[path[1]].y);
-    testingSendEdgeOverWifly(halfHeartedAdjacencyList.nodes[path[0]].x, halfHeartedAdjacencyList.nodes[path[0]].y);
+//    testingSendEdgeOverWifly(halfHeartedAdjacencyList.nodes[path[1]].x, halfHeartedAdjacencyList.nodes[path[1]].y);
+//    testingSendEdgeOverWifly(halfHeartedAdjacencyList.nodes[path[0]].x, halfHeartedAdjacencyList.nodes[path[0]].y);
 }
 
 
@@ -797,6 +906,7 @@ void PATHFINDING_Tasks(void) {
             if (appInitialized) {
 
                 pathfindingData.state = PATHFINDING_STATE_SERVICE_TASKS;
+                
             }
             break;
         }
@@ -806,6 +916,8 @@ void PATHFINDING_Tasks(void) {
             unsigned char receivemsg[PATH_QUEUE_BUFFER_SIZE];
 
             dbgOutputLoc(DBG_LOC_PATH_BEFORE_WHILE);
+            MAX_LENGTH_OF_FIELD = 61;//110;
+            MAX_WIDTH_OF_FIELD = 26;//64;
             while (1) {
                 //Block until a message is received
                 dbgOutputLoc(DBG_LOC_PATH_BEFORE_RECEIVE);
@@ -849,6 +961,13 @@ void PATHFINDING_Tasks(void) {
                                 tempRegion.length = receivemsg[5];
                                 regionList[receivemsg[1]] = tempRegion;
                                 
+//                                if (receivemsg[1] == CLOSE_DEFENSE_ZONE || receivemsg[1] == CENTRAL_ZONE || receivemsg[1] == FAR_DEFENSE_ZONE) {
+//                                    MAX_WIDTH_OF_FIELD = tempRegion.width;
+//                                }
+//                                if (receivemsg[1] == CLOSE_SENSOR_ZONE) {
+//                                    MAX_LENGTH_OF_FIELD = tempRegion.length;
+//                                }
+                                
                             } else {
                                 fieldItem tempFieldItem;
                                 constructFieldItem(&tempFieldItem, receivemsg[0], receivemsg[6], receivemsg[4], receivemsg[3], receivemsg[1], receivemsg[2], receivemsg[5]);
@@ -878,7 +997,7 @@ void PATHFINDING_Tasks(void) {
                         newFieldRoverPosition.length = 11;
                         newFieldRoverPosition.width = 10;
                         newFieldRoverPosition.objectType = uniqueIDMapper(IDENTITY_OF_FRIENDLY_FLAG_ROVER); //Change this for other types of field rovers
-                        newFieldRoverPosition.orientation = 200; //This is not used
+                        newFieldRoverPosition.orientation = receivemsg[2]; //This is not used
                         newFieldRoverPosition.versionNumber = 1; //This is not used
                         
 //                        storeInFieldItemStack(newFieldRoverPosition);

@@ -22,6 +22,7 @@
 #include "communication_public.h"
 #include "navigation_public.h"
 #include "linesensing.h"
+#include "LED.h"
 
 #define COLOR_SENSOR_SERVER_TESTING 1
 

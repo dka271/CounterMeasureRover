@@ -79,7 +79,7 @@ typedef struct {
 #define IDENTITY_OF_ENEMY_COUNTER_ROVER 8
 
 //Identity of this rover (1 = flag, 3 = tagger, 4 = counter (DON'T USE OTHER NUMBERS))
-#define IDENTITY_OF_THIS_ROVER 1
+#define IDENTITY_OF_THIS_ROVER 4
 
 //Unique identifiers for regions
 #define CLOSE_SENSOR_ZONE 0
@@ -89,6 +89,10 @@ typedef struct {
 #define FAR_SENSOR_ZONE 4
 #define FAR_FLAG_ZONE 5
 #define FAR_DEFENSE_ZONE 6
+
+//Maximum node locations
+unsigned char MAX_LENGTH_OF_FIELD; //110 start
+unsigned char MAX_WIDTH_OF_FIELD; //64 start
 
 //End of path identifier
 #define END_OF_PATH_NUM 125

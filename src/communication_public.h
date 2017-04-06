@@ -53,7 +53,10 @@ extern "C" {
 #define MAXIMUM_NUMBER_OF_OBSTACLES 30
 #define MAXIMUM_NUMBER_OF_NODES 120
 #define MAXIMUM_NUMBER_OF_IN_SIGHT_NODES 80
-#define NODE_OFFSET 8
+#define NODE_OFFSET 6
+    
+//The region that the flag rover is currently in
+unsigned char CURRENT_FLAG_ROVER_REGION;
     
 typedef struct {
     unsigned char objectType;
@@ -79,7 +82,7 @@ void uartReceiveFromSendQueueInISR(unsigned char msg[SEND_QUEUE_BUFFER_SIZE]);
 void constructFieldItem(fieldItem *object, unsigned char objectType, unsigned char versionNum, unsigned char length, unsigned char width, unsigned char centerX, unsigned char centerY, unsigned char orientation);
 void testingSendEdgeOverWifly(unsigned char i, unsigned char j);
 void testingSendPathOverWifly(unsigned char path[MAXIMUM_NUMBER_OF_IN_SIGHT_NODES]);
-
+void sendTapeSignalToSensor();
 
     /* Provide C++ Compatibility */
 #ifdef __cplusplus

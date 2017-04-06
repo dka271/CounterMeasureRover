@@ -52,6 +52,8 @@ extern "C" {
 /* Section: Constants                                                         */
 /* ************************************************************************** */
 /* ************************************************************************** */
+#define INVERTED_X_AXIS 1
+    
 #define MOTOR_2_FORWARDS 0
 #define MOTOR_2_BACKWARDS 1
 #define MOTOR_1_FORWARDS 0
@@ -64,7 +66,7 @@ extern "C" {
 #define MOTOR_ANGLE_ID 0xe7//231
     
 //Constants used in testing code
-#define TEST_SPEED_SERVER_ID ((unsigned char) 'v')
+#define TEST_SPEED_SERVER_ID ((unsigned char) 'q')
 #define TEST_ANGLE_DISTANCE_SERVER_ID ((unsigned char) 'x')
 #define TEST_COMM_ID_IDX 2
 #define TEST_COMM_SPEED_IDX 0
@@ -74,7 +76,6 @@ extern "C" {
     
 //Useful constants
 #define ROVER_DIRECTION_LEFT 0x0003
-    
 #define ROVER_DIRECTION_RIGHT 0x000c
 #define ROVER_DIRECTION_FORWARDS 0x0030
 #define ROVER_DIRECTION_BACKWARDS 0x00c0
@@ -82,6 +83,7 @@ extern "C" {
 #define ROVER_SPEED_TURNING 38
 #define ROVER_SPEED_MEDIUM 40
 #define ROVER_SPEED_SLOW 15
+#define ROVER_SPEED_SLOW_TURNING 10
 #define ROVER_SPEED_STOPPED 0
 #define ROVER_TICKS_REMAINING_MAX 0x7fffffff
 #define ROVER_TICKS_REMAINING_SLOW 400

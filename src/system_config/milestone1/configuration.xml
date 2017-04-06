@@ -372,7 +372,7 @@
         <Name>system_interrupt.c</Name>
         <Path>Source Files/app/system_config/milestone1</Path>
         <Checksum>06DCD141AB8DC29889C3853A6FF9F5FB</Checksum>
-        <ProjectFileChecksum>FB0B5FC54763A66DEA6980B6DF310FC0</ProjectFileChecksum>
+        <ProjectFileChecksum>7FBB0E57ACD94D1E171FA93B5B4FEFFC</ProjectFileChecksum>
       </Template>
       <Template>
         <Name>system_interrupt_a.S</Name>
@@ -414,24 +414,24 @@
     </Templates>
     <CompilerItems>
       <C32-AS>
-        <Include value="../../../../../../../microchip/harmony/v1_09/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MX"/>
-        <Include value="../../../../../../../microchip/harmony/v1_09/third_party/rtos/FreeRTOS/Source/include"/>
+        <Include value="../../../../../../../../microchip/harmony/v1_09/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MX"/>
+        <Include value="../../../../../../../../microchip/harmony/v1_09/third_party/rtos/FreeRTOS/Source/include"/>
         <Include value="../src/system_config/milestone1"/>
       </C32-AS>
       <C32>
-        <Include value="C:/Users/Zea mays/Desktop/EmbeddedRepo/FlagRoverRepo/firmware/src"/>
-        <Include value="C:/Users/Zea mays/Desktop/EmbeddedRepo/FlagRoverRepo/firmware/src/system_config/milestone1"/>
-        <Include value="C:/Users/Zea mays/Desktop/EmbeddedRepo/FlagRoverRepo/firmware/src/milestone1"/>
-        <Include value="C:/microchip/harmony/v1_09/framework"/>
-        <Include value="C:/Users/Zea mays/Desktop/EmbeddedRepo/FlagRoverRepo/firmware/src/system_config/milestone1/framework"/>
-        <Include value="../../../../../../../microchip/harmony/v1_09/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MX"/>
-        <Include value="../../../../../../../microchip/harmony/v1_09/third_party/rtos/FreeRTOS/Source/include"/>
+        <Include value="C:\Users\Zea mays\Desktop\EmbeddedRepo\CounterMeasureRoverRepo\CounterMeasureRover\firmware\src"/>
+        <Include value="C:\Users\Zea mays\Desktop\EmbeddedRepo\CounterMeasureRoverRepo\CounterMeasureRover\firmware\src\system_config\milestone1"/>
+        <Include value="C:\Users\Zea mays\Desktop\EmbeddedRepo\CounterMeasureRoverRepo\CounterMeasureRover\firmware\src\milestone1"/>
+        <Include value="C:\microchip\harmony\v1_09\framework"/>
+        <Include value="C:\Users\Zea mays\Desktop\EmbeddedRepo\CounterMeasureRoverRepo\CounterMeasureRover\firmware\src\system_config\milestone1\framework"/>
+        <Include value="../../../../../../../../microchip/harmony/v1_09/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MX"/>
+        <Include value="../../../../../../../../microchip/harmony/v1_09/third_party/rtos/FreeRTOS/Source/include"/>
         <Include value="../src/system_config/milestone1"/>
         <Define value="__XC"/>
       </C32>
     </CompilerItems>
     <Libraries>
-      <Library value="../../../../../../../microchip/harmony/v1_09/bin/framework/peripheral/PIC32MX795F512L_peripherals.a"/>
+      <Library value="../../../../../../../../microchip/harmony/v1_09/bin/framework/peripheral/PIC32MX795F512L_peripherals.a"/>
     </Libraries>
   </Manifest>
 </configuration>
