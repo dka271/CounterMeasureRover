@@ -558,7 +558,8 @@ void NAVIGATION_Tasks ( void )
     LedSetOff();
     //I2C Initialization Stuff
     //Open the I2C
-    int i2cCount = -100;//Set this low so the color sensors are guaranteed to receive power by the time we start initializing them
+    int i2cCount = -1000;//Set this low so the color sensors are guaranteed to receive power by the time we start initializing them
+    //I2C 1
     while (DRV_I2C_Status(sysObj.drvI2C0) != SYS_STATUS_READY){
         //Wait for the I2C to be ready to be opened
         //FOR TESTING
@@ -569,6 +570,7 @@ void NAVIGATION_Tasks ( void )
         //END FOR TESTING
     }
     DRV_HANDLE i2c1_handle = DRV_I2C_Open(DRV_I2C_INDEX_0, DRV_IO_INTENT_READWRITE);
+    //I2C 2
     while (DRV_I2C_Status(sysObj.drvI2C1) != SYS_STATUS_READY){
         //Wait for the I2C to be ready to be opened
         //FOR TESTING
@@ -579,6 +581,17 @@ void NAVIGATION_Tasks ( void )
         //END FOR TESTING
     }
     DRV_HANDLE i2c2_handle = DRV_I2C_Open(DRV_I2C_INDEX_1, DRV_IO_INTENT_READWRITE);
+    //I2C 3
+//    while (DRV_I2C_Status(sysObj.drvI2C2) != SYS_STATUS_READY){
+//        //Wait for the I2C to be ready to be opened
+//        //FOR TESTING
+//        if (COLOR_SENSOR_SERVER_TESTING){
+//            sprintf(testMsg, "Waiting for I2C 3...");
+//            commSendMsgToWifiQueue(testMsg);
+//        }
+//        //END FOR TESTING
+//    }
+//    DRV_HANDLE i2c3_handle = DRV_I2C_Open(DRV_I2C_INDEX_2, DRV_IO_INTENT_READWRITE);
     //Init the I2C state machine
     DRV_TCS_HandleColorSensor(NULL, COLOR_SENSOR_RESET_STATE_MACHINE);
     
@@ -1012,6 +1025,7 @@ void NAVIGATION_Tasks ( void )
                         //Start pathfinding call loop
                         pathfindingIsReady = true;
                         movementState = STATE_MOVING_TO_TAPE;
+//                        movementState = STATE_ORIENTATION_FOUND;
                         //Choose a direction and go until we hit a line
                         //This is the first movement, so we can just go straight
                         GoToRandomLine(false);
@@ -1086,8 +1100,11 @@ void NAVIGATION_Tasks ( void )
                     int currentState2 = DRV_TCS_HandleColorSensor(i2c1_handle, COLOR_SENSOR_ID_2);
                     i2cCount = 0;
                     Nop();
-                }else if (i2cCount == 25){
+                }else if (i2cCount == 30){
                     int currentState1 = DRV_TCS_HandleColorSensor(i2c2_handle, COLOR_SENSOR_ID_1);
+                }else if (i2cCount == 10){
+//                    Nop();
+//                    int currentState3 = DRV_TCS_HandleColorSensor(i2c3_handle, COLOR_SENSOR_ID_3);
                 }
             }else if (msgId == NAV_OTHER_ID){
                 //Handle a message from another source

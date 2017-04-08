@@ -170,8 +170,8 @@ extern "C" {
 /* I2C Driver Configuration Options
 */
 #define DRV_I2C_INTERRUPT_MODE                    		true
-#define DRV_I2C_CLIENTS_NUMBER                    		2
-#define DRV_I2C_INSTANCES_NUMBER                  		2
+#define DRV_I2C_CLIENTS_NUMBER                    		3
+#define DRV_I2C_INSTANCES_NUMBER                  		3
 
 #define DRV_I2C_PERIPHERAL_ID_IDX0                		I2C_ID_1
 #define DRV_I2C_OPERATION_MODE_IDX0               		DRV_I2C_MODE_MASTER

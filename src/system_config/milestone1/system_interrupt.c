@@ -187,6 +187,12 @@ void IntHandlerDrvI2CInstance1(void)
 }
 
 
+//void IntHandlerDrvI2CInstance2(void) 
+//{
+//    DRV_I2C_Tasks(sysObj.drvI2C2);
+// 
+//}
+  
 /*******************************************************************************
  End of File
  */

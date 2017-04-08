@@ -216,7 +216,7 @@ void APP_Tasks ( void )
                
                 dbgOutputLoc(DBG_LOC_APP1_BEFORE_WHILE);
                 
-                automatedTesting();
+//                automatedTesting();
                 
                 while(1){
                     //Nop();

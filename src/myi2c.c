@@ -142,6 +142,8 @@ unsigned char ColorData1[COLOR_DATA_LENGTH];
 unsigned char ColorData2[COLOR_DATA_LENGTH];
 unsigned char ColorData3[COLOR_DATA_LENGTH];
 DRV_I2C_BUFFER_HANDLE BufferHandle[3];
+unsigned char navMsg[NAV_QUEUE_BUFFER_SIZE];
+//unsigned char testServerMsg[SEND_QUEUE_BUFFER_SIZE];
 int DRV_TCS_HandleColorSensor(DRV_HANDLE i2c_handle, int ColorSensorNumber){
     //FOR TESTING
 //    if (COLOR_SENSOR_SERVER_TESTING){
@@ -391,7 +393,6 @@ int DRV_TCS_HandleColorSensor(DRV_HANDLE i2c_handle, int ColorSensorNumber){
                     b = ColorData3[6] | (ColorData3[7] << 8);
                 }
                 //Send information to Navigation
-                unsigned char navMsg[NAV_QUEUE_BUFFER_SIZE];
                 if (ColorSensorNumber == COLOR_SENSOR_ID_1){
                     //Front Left Color Sensor
                     if (ColorIsBlue(r,g,b,c)){
@@ -462,7 +463,7 @@ int DRV_TCS_HandleColorSensor(DRV_HANDLE i2c_handle, int ColorSensorNumber){
                         if (OnBlueTape[2] == 0){
                             navMsg[0] = COLOR_IS_BLUE;
                             navMsg[1] = COLOR_DATA_ID;
-                            navMsg[NAV_SOURCE_ID_IDX] = NAV_COLOR_SENSOR_2_ID << NAV_SOURCE_ID_OFFSET;
+                            navMsg[NAV_SOURCE_ID_IDX] = NAV_COLOR_SENSOR_3_ID << NAV_SOURCE_ID_OFFSET;
                             navMsg[NAV_CHECKSUM_IDX] = navCalculateChecksum(navMsg);
                             navSendMsg(navMsg);
                             OnBlueTape[2] = 1;
@@ -471,7 +472,7 @@ int DRV_TCS_HandleColorSensor(DRV_HANDLE i2c_handle, int ColorSensorNumber){
                         if (OnBlueTape[2] == 1){
                             navMsg[0] = 0;
                             navMsg[1] = COLOR_DATA_ID;
-                            navMsg[NAV_SOURCE_ID_IDX] = NAV_COLOR_SENSOR_2_ID << NAV_SOURCE_ID_OFFSET;
+                            navMsg[NAV_SOURCE_ID_IDX] = NAV_COLOR_SENSOR_3_ID << NAV_SOURCE_ID_OFFSET;
                             navMsg[NAV_CHECKSUM_IDX] = navCalculateChecksum(navMsg);
                             navSendMsg(navMsg);
                             OnBlueTape[2] = 0;

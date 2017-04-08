@@ -120,7 +120,212 @@ unsigned char cameFrom[MAXIMUM_NUMBER_OF_NODES];
 // Section: Application Initialization and State Machine Functions
 // *****************************************************************************
 // *****************************************************************************
+//Places a region in the form of a fieldItem on the stack, and calculates the respective crossSquare and also places that on a stack//RIGHTHERE
+void storeFieldRegionInStack(fieldItem tempFieldItem) {
+    int updateLoc = checkIfObjectInStack(tempFieldItem.objectType);
+    
+    //-1 means it was not in the stack
+    if (updateLoc == -1) {
+        fieldItemStack[fieldItemStackTop] = tempFieldItem;
+        fieldItemStackTop++;
+        if (tempFieldItem.objectType == uniqueIDMapper(IDENTITY_OF_FRIENDLY_FLAG)) {
+            //do nothing so nothing is added to crossSquare stack
+        } else if (tempFieldItem.objectType == uniqueIDMapper(IDENTITY_OF_FRIENDLY_FLAG_ROVER)) {
+            Nop();
+            sendLocToNavigationThread(tempFieldItem.centerX, tempFieldItem.centerY, (tempFieldItem.orientation >> 1));
+        } else {
+            crossSquareStack[crossSquareStackTop] = convertFieldRegionToCrossSquare(tempFieldItem);
+            crossSquareStackTop++;
+        }
+    } else {
+        fieldItemStack[updateLoc] = tempFieldItem;
+        if (tempFieldItem.objectType == uniqueIDMapper(IDENTITY_OF_FRIENDLY_FLAG)) {
+            //do nothing so nothing is updated in the crossSquare stack
+        } else if (tempFieldItem.objectType == uniqueIDMapper(IDENTITY_OF_FRIENDLY_FLAG_ROVER)) {
+            Nop();
+            sendLocToNavigationThread(tempFieldItem.centerX, tempFieldItem.centerY, (tempFieldItem.orientation >> 1));
+        } else {
+            crossSquareStack[updateLoc] = convertFieldRegionToCrossSquare(tempFieldItem);
+        }
+    }
+}
 
+crossSquare convertFieldRegionToCrossSquare(fieldItem tempFieldItem) {
+    short SlowX = tempFieldItem.centerX - (tempFieldItem.width / 2)+2;
+    short ShighX = tempFieldItem.centerX + (tempFieldItem.width / 2)-2;
+    short SlowY = tempFieldItem.centerY - (tempFieldItem.length / 2)+2;
+    short ShighY = tempFieldItem.centerY + (tempFieldItem.length / 2)-2;
+    
+    unsigned short lowX; 
+    unsigned short highX; 
+    unsigned short lowY; 
+    unsigned short highY;
+    
+    if (SlowX <= 0) {
+        lowX = 0;
+    } else {
+        lowX = SlowX;
+    }
+    
+    if (ShighX <= 0) {
+        highX = 0;
+    } else {
+        if (abs(ShighX - MAX_WIDTH_OF_FIELD) <= 5) {
+            highX = MAX_WIDTH_OF_FIELD-5;
+        } else {
+            highX = ShighX;
+        }
+        
+    }
+    
+    if (SlowY <= 0) {
+        lowY = 0;
+    } else {
+        lowY = SlowY;
+    }
+    
+    if (ShighY <= 0) {
+        highY = 0;
+    } else {
+        highY = ShighY;
+    }
+    
+    point topLeft = convertXAndYToPoint(highX, highY);
+    point bottomRight = convertXAndYToPoint(lowX, lowY);
+    return convertPointsToCrossSquare(topLeft, bottomRight);
+}
+
+void initializeRegions() {
+    region genericRegion;
+    genericRegion.x = 12;
+    genericRegion.y = 3;
+    genericRegion.width = 10;
+    genericRegion.length = 6;
+    regionList[CLOSE_FLAG_ZONE] = genericRegion;
+    
+    genericRegion.x = 12;
+    genericRegion.y = 12;
+    genericRegion.width = 24;
+    genericRegion.length = 24;
+    regionList[CLOSE_DEFENSE_ZONE] = genericRegion;
+    
+    genericRegion.x = 12;
+    genericRegion.y = 27;
+    genericRegion.width = 24;
+    genericRegion.length = 6;
+    regionList[CENTRAL_ZONE] = genericRegion;
+    
+    genericRegion.x = 12;
+    genericRegion.y = 42;
+    genericRegion.width = 24;
+    genericRegion.length = 24;
+    regionList[FAR_DEFENSE_ZONE] = genericRegion;
+    
+    genericRegion.x = 12;
+    genericRegion.y = 51;
+    genericRegion.width = 10;
+    genericRegion.length = 6;
+    regionList[FAR_FLAG_ZONE] = genericRegion;
+    
+    MAX_LENGTH_OF_FIELD = 60;//110;
+    MAX_WIDTH_OF_FIELD = 26;//64;
+    
+    fieldItem tempFieldItem;
+    unsigned char objectType = 100;
+    unsigned char tempLength = regionList[CENTRAL_ZONE].length;
+    unsigned char tempWidth = regionList[CENTRAL_ZONE].width;
+    constructFieldItem(&tempFieldItem, objectType, 1, tempLength, tempWidth, (tempWidth/2), (tempLength/2), 90);
+    storeInFieldItemStack(tempFieldItem);
+    
+    objectType = 101;
+    tempLength = regionList[FAR_FLAG_ZONE].length;
+    tempWidth = regionList[FAR_FLAG_ZONE].width;
+    constructFieldItem(&tempFieldItem, objectType, 1, tempLength, tempWidth, (MAX_WIDTH_OF_FIELD-(tempWidth/2)), (MAX_LENGTH_OF_FIELD-(tempLength/2)), 90);
+    storeInFieldItemStack(tempFieldItem);
+    
+}
+
+void updateRegion(region tempRegion, unsigned char regionId) {
+    
+    unsigned char widthDiff;
+    unsigned char lengthDiff;
+    if (regionId == CLOSE_FLAG_ZONE) {
+        //Change far_flag_zone
+        widthDiff = abs(tempRegion.width - regionList[CLOSE_FLAG_ZONE].width);
+        lengthDiff = abs(tempRegion.length - regionList[CLOSE_FLAG_ZONE].length);
+        regionList[CLOSE_FLAG_ZONE].width = tempRegion.width;
+        regionList[CLOSE_FLAG_ZONE].length = tempRegion.length;
+        regionList[CLOSE_FLAG_ZONE].x = regionList[CLOSE_FLAG_ZONE].x + (widthDiff/2);
+        regionList[CLOSE_FLAG_ZONE].y = regionList[CLOSE_FLAG_ZONE].y + (lengthDiff/2);
+        
+//        //Assuming that flag zones are symmetric
+//        regionList[FAR_FLAG_ZONE].width = tempRegion.width;
+//        regionList[FAR_FLAG_ZONE].length = tempRegion.length;
+//        regionList[FAR_FLAG_ZONE].x = regionList[FAR_FLAG_ZONE].x + (widthDiff/2);
+//        regionList[FAR_FLAG_ZONE].y = regionList[FAR_FLAG_ZONE].y + (lengthDiff/2);
+        
+    } else if (regionId == CLOSE_DEFENSE_ZONE) {
+        
+        widthDiff = abs(tempRegion.width - regionList[CLOSE_DEFENSE_ZONE].width);
+        lengthDiff = abs(tempRegion.length - regionList[CLOSE_DEFENSE_ZONE].length);
+        regionList[CLOSE_DEFENSE_ZONE].width = tempRegion.width;
+        regionList[CLOSE_DEFENSE_ZONE].length = tempRegion.length;
+        regionList[CLOSE_DEFENSE_ZONE].x = regionList[CLOSE_DEFENSE_ZONE].x + (widthDiff/2);
+        regionList[CLOSE_DEFENSE_ZONE].y = regionList[CLOSE_DEFENSE_ZONE].y + (lengthDiff/2);
+        
+        regionList[CENTRAL_ZONE].x = regionList[CENTRAL_ZONE].x + widthDiff;
+        regionList[CENTRAL_ZONE].y = regionList[CENTRAL_ZONE].y + lengthDiff;
+        
+        regionList[FAR_DEFENSE_ZONE].x = regionList[FAR_DEFENSE_ZONE].x + widthDiff;
+        regionList[FAR_DEFENSE_ZONE].y = regionList[FAR_DEFENSE_ZONE].y + lengthDiff;
+        
+        regionList[FAR_FLAG_ZONE].x = regionList[FAR_FLAG_ZONE].x + widthDiff;
+        regionList[FAR_FLAG_ZONE].y = regionList[FAR_FLAG_ZONE].y + lengthDiff;
+        
+        MAX_LENGTH_OF_FIELD += lengthDiff;
+        MAX_WIDTH_OF_FIELD += widthDiff;
+        
+    } else if (regionId == CENTRAL_ZONE) {
+        widthDiff = abs(tempRegion.width - regionList[CENTRAL_ZONE].width);
+        lengthDiff = abs(tempRegion.length - regionList[CENTRAL_ZONE].length);
+        regionList[CENTRAL_ZONE].width = tempRegion.width;
+        regionList[CENTRAL_ZONE].length = tempRegion.length;
+        regionList[CENTRAL_ZONE].x = regionList[CENTRAL_ZONE].x + (widthDiff/2);
+        regionList[CENTRAL_ZONE].y = regionList[CENTRAL_ZONE].y + (lengthDiff/2);
+        
+        regionList[FAR_DEFENSE_ZONE].x = regionList[FAR_DEFENSE_ZONE].x + widthDiff;
+        regionList[FAR_DEFENSE_ZONE].y = regionList[FAR_DEFENSE_ZONE].y + lengthDiff;
+        
+        regionList[FAR_FLAG_ZONE].x = regionList[FAR_FLAG_ZONE].x + widthDiff;
+        regionList[FAR_FLAG_ZONE].y = regionList[FAR_FLAG_ZONE].y + lengthDiff;
+        
+        MAX_LENGTH_OF_FIELD += lengthDiff;
+        MAX_WIDTH_OF_FIELD += widthDiff;
+
+    } else if (regionId == FAR_FLAG_ZONE) {
+        
+        widthDiff = abs(tempRegion.width - regionList[FAR_FLAG_ZONE].width);
+        lengthDiff = abs(tempRegion.length - regionList[FAR_FLAG_ZONE].length);
+        regionList[FAR_FLAG_ZONE].width = tempRegion.width;
+        regionList[FAR_FLAG_ZONE].length = tempRegion.length;
+        regionList[FAR_FLAG_ZONE].x = regionList[FAR_FLAG_ZONE].x - (widthDiff/2);
+        regionList[FAR_FLAG_ZONE].y = regionList[FAR_FLAG_ZONE].y - (lengthDiff/2);
+        
+    } else if (regionId == FAR_DEFENSE_ZONE) {
+        widthDiff = abs(tempRegion.width - regionList[FAR_DEFENSE_ZONE].width);
+        lengthDiff = abs(tempRegion.length - regionList[FAR_DEFENSE_ZONE].length);
+        regionList[FAR_DEFENSE_ZONE].width = tempRegion.width;
+        regionList[FAR_DEFENSE_ZONE].length = tempRegion.length;
+        regionList[FAR_DEFENSE_ZONE].x = regionList[FAR_DEFENSE_ZONE].x + (widthDiff/2);
+        regionList[FAR_DEFENSE_ZONE].y = regionList[FAR_DEFENSE_ZONE].y + (lengthDiff/2);
+        
+        regionList[FAR_FLAG_ZONE].x = regionList[FAR_FLAG_ZONE].x + widthDiff;
+        regionList[FAR_FLAG_ZONE].y = regionList[FAR_FLAG_ZONE].y + lengthDiff;
+        
+        MAX_LENGTH_OF_FIELD += lengthDiff;
+        MAX_WIDTH_OF_FIELD += widthDiff;
+    }
+}
 /*******************************************************************************
   Function:
     void PATHFINDING_Initialize ( void )
@@ -913,6 +1118,7 @@ void PATHFINDING_Tasks(void) {
 
         case PATHFINDING_STATE_SERVICE_TASKS:
         {
+            initializeRegions();
             unsigned char receivemsg[PATH_QUEUE_BUFFER_SIZE];
 
             dbgOutputLoc(DBG_LOC_PATH_BEFORE_WHILE);
@@ -960,7 +1166,23 @@ void PATHFINDING_Tasks(void) {
                                 tempRegion.width = receivemsg[4];
                                 tempRegion.length = receivemsg[5];
                                 regionList[receivemsg[1]] = tempRegion;
+                                updateRegion(tempRegion, receivemsg[1]);
                                 
+                                if (receivemsg[1] == CLOSE_DEFENSE_ZONE || receivemsg[1] == CENTRAL_ZONE) {
+                                    fieldItem tempFieldItem;
+                                    unsigned char objectType = 100;
+                                    unsigned char tempLength = regionList[CENTRAL_ZONE].y + (regionList[CENTRAL_ZONE].length/2);
+                                    unsigned char tempWidth = regionList[CENTRAL_ZONE].x + (regionList[CENTRAL_ZONE].width/2);
+                                    constructFieldItem(&tempFieldItem, objectType, 1, tempLength, tempWidth, (tempWidth/2), (tempLength/2), 90);
+                                    storeFieldRegionInStack(tempFieldItem);
+                                } else if (receivemsg[1] == FAR_FLAG_ZONE) {
+                                    fieldItem tempFieldItem;
+                                    unsigned char objectType = 101;
+                                    unsigned char tempLength = regionList[FAR_FLAG_ZONE].length;
+                                    unsigned char tempWidth = regionList[FAR_FLAG_ZONE].width;
+                                    constructFieldItem(&tempFieldItem, objectType, 1, tempLength, tempWidth, (MAX_WIDTH_OF_FIELD-(tempWidth/2)), (MAX_LENGTH_OF_FIELD-(tempLength/2)), 90);
+                                    storeFieldRegionInStack(tempFieldItem);
+                                }
 //                                if (receivemsg[1] == CLOSE_DEFENSE_ZONE || receivemsg[1] == CENTRAL_ZONE || receivemsg[1] == FAR_DEFENSE_ZONE) {
 //                                    MAX_WIDTH_OF_FIELD = tempRegion.width;
 //                                }
