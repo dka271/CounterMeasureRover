@@ -555,9 +555,7 @@ void HandleMovementQueue(){
         roverStopped = 0;
     }else if (roverStopped > 10 && moveCurrentIdx == moveGoalIdx){
         //Destination has been reached, reset the command queue
-        moveCurrentIdx = 0;
-        moveLastIdx = 0;
-        moveGoalIdx = 0xff;
+        ResetMovementQueue();
         isCounterMeasuring = 1;
 
         //FOR TESTING, REMOVE LATER
