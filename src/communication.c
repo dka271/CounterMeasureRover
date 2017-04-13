@@ -336,6 +336,7 @@ void COMMUNICATION_Tasks(void) {
     int PreviousSequenceNumber = 0;
     
     CURRENT_FLAG_ROVER_REGION = 0;
+    gameIsPaused = false;
 
     dbgOutputLoc(DBG_LOC_COMM_BEFORE_WHILE);
     dbgOutputLoc(DBG_LOC_COMM_BEFORE_WHILE_NEW_VAL);
@@ -475,6 +476,8 @@ void COMMUNICATION_Tasks(void) {
                         dbgOutputLoc(DBG_LOC_BAD_ERROR - 3);
                         } else if (MessageType[0] == 'z') {
                             sendStartMessageToNavigationThread();
+                        } else if (MessageType[0] == 'u') {
+                            gameIsPaused = !gameIsPaused;
                         }
                     } else if (Source == 'f') {
                         if (jsonGetMessageType(receivemsg, MessageType)) {

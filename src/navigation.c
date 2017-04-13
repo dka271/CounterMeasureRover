@@ -478,11 +478,18 @@ void SetMovementGoal(){
 
 //This function handles reading from the movement queue and starting movements
 void HandleMovementQueue(){
-    if (speed2 == 0){
-        roverStopped++;
+    if (gameIsPaused){
+        ResetMovementQueue();
+        StopMovement();
+        GoToRandomLine(true);
+        return;
     }else{
-        roverStopped = 0;
-    }
+        if (speed2 == 0){
+            roverStopped++;
+        }else{
+            roverStopped = 0;
+        }
+    } 
     if (roverStopped >= 10 && moveLastIdx > moveCurrentIdx && CURRENT_FLAG_ROVER_REGION != 2){
         //There is a command, and the rover is not moving
         //Interpret the command and control the rover
