@@ -36,6 +36,8 @@
 extern "C" {
 #endif
     
+#define PATHFINDING_TESTING 1
+    
 typedef struct {
 	unsigned char x;
 	unsigned char y;

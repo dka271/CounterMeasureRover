@@ -151,10 +151,10 @@ void storeFieldRegionInStack(fieldItem tempFieldItem) {
 }
 
 crossSquare convertFieldRegionToCrossSquare(fieldItem tempFieldItem) {
-    short SlowX = tempFieldItem.centerX - (tempFieldItem.width / 2)+2;
-    short ShighX = tempFieldItem.centerX + (tempFieldItem.width / 2)-2;
-    short SlowY = tempFieldItem.centerY - (tempFieldItem.length / 2)+2;
-    short ShighY = tempFieldItem.centerY + (tempFieldItem.length / 2)-2;
+    short SlowX = tempFieldItem.centerX - (tempFieldItem.width / 2)+4;
+    short ShighX = tempFieldItem.centerX + (tempFieldItem.width / 2)-4;
+    short SlowY = tempFieldItem.centerY - (tempFieldItem.length / 2)+4;
+    short ShighY = tempFieldItem.centerY + (tempFieldItem.length / 2)-4;
     
     unsigned short lowX; 
     unsigned short highX; 
@@ -1063,6 +1063,12 @@ unsigned char calculatePath() {
     if (monotonicAStar(path, start, goal)) {
 //        testingSendPathOverWifly(path);
         Nop();
+        //send notifier of no path found
+        if (PATHFINDING_TESTING){
+            unsigned char testMsg[SEND_QUEUE_BUFFER_SIZE];
+            sprintf(testMsg, "*No Path Found~");
+            commSendMsgToWifiQueue(testMsg);
+        }
         return 1;
     }
 //    testingSendPathOverWifly(path);
