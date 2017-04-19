@@ -256,7 +256,6 @@ unsigned char flagY = 0xff;
 bool hasFlagLocation = false;
 
 //This function is used to handle color sensor data sent to navigation
-//This function is only for the flag rover
 void HandleColorSensorData(unsigned char ColorSensorID){
     //FOR TESTING, REMOVE LATER
     region CenterZone = regionList[CENTRAL_ZONE];
@@ -428,7 +427,7 @@ void HandleColorSensorData(unsigned char ColorSensorID){
                 }
             }else if (csMeOnTape && !ignoringTape){
                 //Back up
-                AddMovement(cm2tick(2), ROVER_DIRECTION_BACKWARDS);
+                AddMovement(cm2tick(4), ROVER_DIRECTION_BACKWARDS);
                 SetMovementGoal();
                 ignoringTape = 1;
                 ignoreTapeCount = 20;
@@ -477,12 +476,13 @@ void SetMovementGoal(){
 }
 
 //This function handles reading from the movement queue and starting movements
-void HandleMovementQueue(){
+bool HandleMovementQueue(){
+    bool toReturn = false;
     if (gameIsPaused){
         ResetMovementQueue();
         StopMovement();
         GoToRandomLine(true);
-        return;
+        return toReturn;
     }else{
         if (speed2 == 0){
             roverStopped++;
@@ -562,6 +562,7 @@ void HandleMovementQueue(){
         roverStopped = 0;
     }else if (roverStopped > 10 && moveCurrentIdx == moveGoalIdx){
         //Destination has been reached, reset the command queue
+        toReturn = true;
         ResetMovementQueue();
         isCounterMeasuring = 1;
 
@@ -581,6 +582,7 @@ void HandleMovementQueue(){
             GoToRandomLine(true);
         }
     }
+    return toReturn;
 }
 
 /******************************************************************************
@@ -663,7 +665,9 @@ void NAVIGATION_Tasks ( void )
                 previousValue2 = receivemsgint & 0x0000ffff;
                 
                 //Handle path controls
-                HandleMovementQueue();
+                if (HandleMovementQueue()){
+                    //Goal has been reached, handle things
+                }
                 
                 //Handle Countermeasuring
                 if (isCounterMeasuring == 1){
@@ -677,9 +681,7 @@ void NAVIGATION_Tasks ( void )
                 }
                 
                 //Handle remaining distance
-                
                 if (GetMotorDirection() == ROVER_DIRECTION_LEFT){
-                    
                     HandleDistanceRemaining(&desiredSpeed, &ticksRemaining, speed2);
                     
                     //Handle position and orientation

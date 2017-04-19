@@ -87,7 +87,7 @@ extern "C" {
 // *****************************************************************************
 // *****************************************************************************
     
-#define NAV_TESTING 1
+#define NAV_TESTING 0
     
 //Determines if the flag rover should cross the line being sensed
 //Returns false in other rovers   
@@ -115,7 +115,8 @@ void AddMovement(int tickAmount, int direction);
 void SetMovementGoal();
 
 //This function handles reading from the movement queue and starting movements
-void HandleMovementQueue();
+//Returns true if it reached the goal
+bool HandleMovementQueue();
 
 // *****************************************************************************
 /* Application states
