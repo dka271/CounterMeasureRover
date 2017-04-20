@@ -752,6 +752,10 @@ void NAVIGATION_Tasks ( void )
                     commMsg[COMM_CHECKSUM_IDX] = commCalculateChecksum(commMsg);
                     commSendMsg(commMsg);
                     pathfindingCount = 0;
+                    
+                    //Update position
+                    sprintf(commMsg,"*{\"S\":\"c\",\"T\":\"a\",\"M\":\"p\",\"N\":1,\"F\":[4,12,8,8,%d,%d,0],\"C\":1}~", (int) GetLocationX(), (int) GetLocationY());
+                    commSendMsgToWifiQueue(commMsg);
                 }
                 
                 //Ignore tape for x seconds
