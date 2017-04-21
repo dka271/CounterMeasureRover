@@ -856,6 +856,8 @@ void NAVIGATION_Tasks ( void )
                             if (movementState == STATE_WAITING_FOR_SENSOR_FEEDBACK){
                                 region CenterZone = regionList[CENTRAL_ZONE];
                                 region SensorZone = regionList[CLOSE_SENSOR_ZONE];
+                                region OurDefenseZone = regionList[CLOSE_DEFENSE_ZONE];
+                                region TheirDefenseZone = regionList[FAR_DEFENSE_ZONE];
                                 if (IDENTITY_OF_THIS_ROVER == IDENTITY_OF_FRIENDLY_FLAG_ROVER){
                                     if (startX >= 14 && startX <= ((CenterZone.length - 7) << 1) && startY >= ((CenterZone.y - (CenterZone.width + 4)) << 1)){
                                         //On center zone
@@ -901,11 +903,11 @@ void NAVIGATION_Tasks ( void )
                                         orientationReceived = true;
                                     }
                                 }else if (IDENTITY_OF_THIS_ROVER == IDENTITY_OF_FRIENDLY_COUNTER_ROVER){
-                                    if (startX >= 14 && startX <= ((CenterZone.length - 7) << 1) && startY <= ((SensorZone.width << 1) - ((CenterZone.y - (CenterZone.width + 4)) << 1))){
+                                    if (startX >= 14 && startX <= ((CenterZone.length - 7) << 1) && startY <= ((TheirDefenseZone.y << 1))){
                                         //On center zone
                                         SetOrientation(-90);
                                         orientationReceived = true;
-                                    }else if (startX <= 14 && startY <= ((SensorZone.width << 1) - 30) && startY >= ((CenterZone.y + (CenterZone.width + 4)) << 1)){
+                                    }else if (startX <= 14 && startY <= ((TheirDefenseZone.y << 1) + 10) && startY >= ((CenterZone.y + (CenterZone.width + 4)) << 1)){
                                         //On close sensor zone
                                         if (INVERTED_X_AXIS){
                                             SetOrientation(180);
@@ -913,7 +915,7 @@ void NAVIGATION_Tasks ( void )
                                             SetOrientation(0);
                                         }
                                         orientationReceived = true;
-                                    }else if (startX >= ((CenterZone.length - 7) << 1) && startY <= ((SensorZone.width << 1) - 30) && startY >= ((CenterZone.y + (CenterZone.width + 4)) << 1)){
+                                    }else if (startX >= ((CenterZone.length - 7) << 1) && startY <= ((TheirDefenseZone.y << 1) + 10) && startY >= ((CenterZone.y + (CenterZone.width + 4)) << 1)){
                                         //On far sensor zone
                                         if (INVERTED_X_AXIS){
                                             SetOrientation(0);
