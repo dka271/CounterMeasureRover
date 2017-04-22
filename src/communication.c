@@ -486,7 +486,7 @@ void COMMUNICATION_Tasks(void) {
                         } else if (MessageType[0] == 'e') {
                             unsigned char regionIdentity = 'R';
                             unsigned char flagRoverRegion;
-                            if (jsonGetPassedInCharacter(receivemsg, &flagRoverRegion, regionIdentity)) {
+                            if (jsonGetPassedInUInt8(receivemsg, &flagRoverRegion, regionIdentity)) {
                                 //error
                                 dbgOutputLoc(DBG_LOC_BAD_ERROR - 3);
                             } else {

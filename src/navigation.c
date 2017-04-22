@@ -125,6 +125,17 @@ void sendStartMessageToNavigationThread() {
     xQueueSendToBack(navQueue, msg, portMAX_DELAY);
 }
 
+void sendNoPathFoundToNavigationThread() {
+    BaseType_t xHigherPriorityTaskWoken =  pdTRUE;//pdFALSE;
+    char msg[7];
+    unsigned char seqNum = 140;
+    msg[0] = seqNum;
+    msg[5] = NAV_PATHFINDING_ID << NAV_SOURCE_ID_OFFSET;
+    msg[6] = navCalculateChecksum(msg);
+    
+    xQueueSendToBack(navQueue, msg, portMAX_DELAY);
+}
+
 //State checker for line crossing
 unsigned char testMsg[SEND_QUEUE_BUFFER_SIZE];
 bool DoWeCrossLineQuestionMark(){
@@ -254,6 +265,7 @@ int pathfindingCountMax = 60;
 unsigned char flagX = 0xff;
 unsigned char flagY = 0xff;
 bool hasFlagLocation = false;
+unsigned int noPathFoundCount = 0;
 
 //This function is used to handle color sensor data sent to navigation
 void HandleColorSensorData(unsigned char ColorSensorID){
@@ -478,10 +490,12 @@ void SetMovementGoal(){
 //This function handles reading from the movement queue and starting movements
 bool HandleMovementQueue(){
     bool toReturn = false;
-    if (gameIsPaused){
+    if (CURRENT_FLAG_ROVER_REGION == 2){
+        return toReturn;
+    }else if (gameIsPaused){
         ResetMovementQueue();
         StopMovement();
-        GoToRandomLine(true);
+//        GoToRandomLine(true);
         return toReturn;
     }else{
         if (speed2 == 0){
@@ -490,7 +504,7 @@ bool HandleMovementQueue(){
             roverStopped = 0;
         }
     } 
-    if (roverStopped >= 10 && moveLastIdx > moveCurrentIdx && CURRENT_FLAG_ROVER_REGION != 2){
+    if (roverStopped >= 10 && moveLastIdx > moveCurrentIdx){
         //There is a command, and the rover is not moving
         //Interpret the command and control the rover
 
@@ -955,6 +969,18 @@ void NAVIGATION_Tasks ( void )
                         //This is the first movement, so we can just go straight
                         GoToRandomLine(false);
                         addCommand = false;
+                    }else if (seqNum == 140){
+                        addCommand = false;
+                        noPathFoundCount++;
+                        if (noPathFoundCount >= MAX_NO_PATH_FOUND){
+                            ignoringTape = 1;
+                            ignoreTapeCount = 0;
+                            AddMovement(cm2tick(5), ROVER_DIRECTION_BACKWARDS);
+                            AddMovement(deg2tick(150), ROVER_DIRECTION_LEFT);
+                            AddMovement(cm2tick(5), ROVER_DIRECTION_FORWARDS);
+                            SetMovementGoal();
+                            noPathFoundCount = 0;
+                        }
                     }else if (seqNum > 0 && moveLastIdx == 0){
                         //The start of this path was dropped, drop the rest of the path
                         addCommand = false;
