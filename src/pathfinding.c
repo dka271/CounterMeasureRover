@@ -600,8 +600,8 @@ void calculateOffsetNodes(fieldItem tempFieldItem) {
     }else {
     
         if (tempFieldItem.objectType >= 2 && tempFieldItem.objectType < 8) {
-            offset *= 2;
-        } else if (tempFieldItem.objectType >= 8) {
+            offset = 8;
+        } else if (tempFieldItem.objectType > 8) {
             //do nothing, offset is set correctly for this case (NODE_OFFSET)
         }
 
@@ -797,6 +797,87 @@ bool checkIfTwoNodesInSightOfEachOther(point point1, point point2) {
             return false;
         }
     }
+    
+    unsigned char yDiff = abs(point2.y - point1.y);
+    unsigned char xDiff = abs(point2.x - point1.x);
+    
+    short theta = atan2(yDiff, xDiff);
+    
+    point offsetPoint1;
+    point offsetPoint2;
+    point roverOffsetPoint1;
+    point roverOffsetPoint2;
+    
+    unsigned char offset=1;
+    
+    //if statement calculates what inverted quadrant the point is in
+    if (point1.x > point2.x && point1.y >= point2.y) { //upper left inverted quadrant (I standard quad math))
+        offsetPoint1.x = point2.x+offset*cos(theta);
+        offsetPoint1.y = point2.y-offset*sin(theta);
+        
+        offsetPoint2.x = point2.x-offset*cos(theta);
+        offsetPoint2.y = point2.y+offset*sin(theta);
+        
+        roverOffsetPoint1.x = point1.x+offset*cos(theta);
+        roverOffsetPoint1.y = point1.y-offset*sin(theta);
+        
+        roverOffsetPoint2.x = point1.x-offset*cos(theta);
+        roverOffsetPoint2.y = point1.y+offset*sin(theta);
+        
+    } else if (point1.x <= point2.x && point1.y > point2.y) { //upper right inverted quadrant (II standard quad math))
+        offsetPoint1.x = point2.x+offset*cos(theta);
+        offsetPoint1.y = point2.y+offset*sin(theta);
+        
+        offsetPoint2.x = point2.x-offset*cos(theta);
+        offsetPoint2.y = point2.y-offset*sin(theta);
+        
+        roverOffsetPoint1.x = point1.x+offset*cos(theta);
+        roverOffsetPoint1.y = point1.y+offset*sin(theta);
+        
+        roverOffsetPoint2.x = point1.x-offset*cos(theta);
+        roverOffsetPoint2.y = point1.y-offset*sin(theta);
+        
+    } else if (point1.x >= point2.x && point1.y < point2.y) { // bottom left inverted quadrant (IV standard quad math))
+        offsetPoint1.x = point2.x-offset*cos(theta);
+        offsetPoint1.y = point2.y-offset*sin(theta);
+        
+        offsetPoint2.x = point2.x+offset*cos(theta);
+        offsetPoint2.y = point2.y+offset*sin(theta);
+        
+        roverOffsetPoint1.x = point1.x-offset*cos(theta);
+        roverOffsetPoint1.y = point1.y-offset*sin(theta);
+        
+        roverOffsetPoint2.x = point1.x+offset*cos(theta);
+        roverOffsetPoint2.y = point1.y+offset*sin(theta);
+        
+    } else { //bottom right in inverted quadrant (III standard quad math))
+        offsetPoint1.x = point2.x-offset*cos(theta);
+        offsetPoint1.y = point2.y+offset*sin(theta);
+        
+        offsetPoint2.x = point2.x+offset*cos(theta);
+        offsetPoint2.y = point2.y-offset*sin(theta);
+        
+        roverOffsetPoint1.x = point1.x-offset*cos(theta);
+        roverOffsetPoint1.y = point1.y+offset*sin(theta);
+        
+        roverOffsetPoint2.x = point1.x+offset*cos(theta);
+        roverOffsetPoint2.y = point1.y-offset*sin(theta);
+    }
+    
+    for (i = 0; i < crossSquareStackTop; i++) { //subtract 2
+        if (checkIntersectionOfLineAndCrossSquare(roverOffsetPoint1, offsetPoint1, crossSquareStack[i].topLeft, crossSquareStack[i].bottomRight)) {
+            return false;
+        }
+    }
+    
+    for (i = 0; i < crossSquareStackTop; i++) { //subtract 2
+        if (checkIntersectionOfLineAndCrossSquare(roverOffsetPoint2, offsetPoint2, crossSquareStack[i].topLeft, crossSquareStack[i].bottomRight)) {
+            return false;
+        }
+    }
+    //calculate offset points at facing angle
+    
+    
     return true;
 }
 
@@ -1187,21 +1268,21 @@ void PATHFINDING_Tasks(void) {
                                 regionList[receivemsg[1]] = tempRegion;
                                 updateRegion(tempRegion, receivemsg[1]);
                                 
-                                if (receivemsg[1] == CLOSE_DEFENSE_ZONE || receivemsg[1] == CENTRAL_ZONE) {
-                                    fieldItem tempFieldItem;
-                                    unsigned char objectType = 100;
-                                    unsigned char tempLength = regionList[CENTRAL_ZONE].y + (regionList[CENTRAL_ZONE].length/2);
-                                    unsigned char tempWidth = regionList[CENTRAL_ZONE].x + (regionList[CENTRAL_ZONE].width/2);
-                                    constructFieldItem(&tempFieldItem, objectType, 1, tempLength, tempWidth, (tempWidth/2), (tempLength/2), 90);
-                                    storeFieldRegionInStack(tempFieldItem);
-                                } else if (receivemsg[1] == FAR_FLAG_ZONE) {
-                                    fieldItem tempFieldItem;
-                                    unsigned char objectType = 101;
-                                    unsigned char tempLength = regionList[FAR_FLAG_ZONE].length;
-                                    unsigned char tempWidth = regionList[FAR_FLAG_ZONE].width;
-                                    constructFieldItem(&tempFieldItem, objectType, 1, tempLength, tempWidth, (MAX_WIDTH_OF_FIELD-(tempWidth/2)), (MAX_LENGTH_OF_FIELD-(tempLength/2)), 90);
-                                    storeFieldRegionInStack(tempFieldItem);
-                                }
+//                                if (receivemsg[1] == CLOSE_DEFENSE_ZONE || receivemsg[1] == CENTRAL_ZONE) {
+//                                    fieldItem tempFieldItem;
+//                                    unsigned char objectType = 100;
+//                                    unsigned char tempLength = regionList[CENTRAL_ZONE].y + (regionList[CENTRAL_ZONE].length/2);
+//                                    unsigned char tempWidth = regionList[CENTRAL_ZONE].x + (regionList[CENTRAL_ZONE].width/2);
+//                                    constructFieldItem(&tempFieldItem, objectType, 1, tempLength, tempWidth, (tempWidth/2), (tempLength/2), 90);
+//                                    storeFieldRegionInStack(tempFieldItem);
+//                                } else if (receivemsg[1] == FAR_FLAG_ZONE) {
+//                                    fieldItem tempFieldItem;
+//                                    unsigned char objectType = 101;
+//                                    unsigned char tempLength = regionList[FAR_FLAG_ZONE].length;
+//                                    unsigned char tempWidth = regionList[FAR_FLAG_ZONE].width;
+//                                    constructFieldItem(&tempFieldItem, objectType, 1, tempLength, tempWidth, (MAX_WIDTH_OF_FIELD-(tempWidth/2)), (MAX_LENGTH_OF_FIELD-(tempLength/2)), 90);
+//                                    storeFieldRegionInStack(tempFieldItem);
+//                                }
 //                                if (receivemsg[1] == CLOSE_DEFENSE_ZONE || receivemsg[1] == CENTRAL_ZONE || receivemsg[1] == FAR_DEFENSE_ZONE) {
 //                                    MAX_WIDTH_OF_FIELD = tempRegion.width;
 //                                }
