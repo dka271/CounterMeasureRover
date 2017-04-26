@@ -298,258 +298,258 @@ section                    address  length [bytes]      (dec)  Description
 .rodata                 0x9d00bd68          0x1ac         428  Read-only const 
 .text.createAdjacencyEd 0x9d00bf14          0x1ac         428   
 .text.libm              0x9d00c0c0          0x1ac         428   
-.text.storeInFieldItemS 0x9d00c26c          0x19c         412   
-.text.xTaskIncrementTic 0x9d00c408          0x198         408   
-.text.parseFieldItem    0x9d00c5a0          0x190         400   
-.rodata                 0x9d00c730          0x188         392  Read-only const 
-.text.DRV_I2C_Open      0x9d00c8b8          0x17c         380   
-.text.DRV_USART0_Initia 0x9d00ca34          0x174         372   
-.text.motorTestCommRece 0x9d00cba8          0x168         360   
-.text                   0x9d00cd10          0x2d0         720  App's exec code 
-.text.SYS_Initialize    0x9d00cfe0          0x150         336   
-.text.xTaskResumeAll    0x9d00d130          0x148         328   
-.text.fputc             0x9d00d278          0x144         324   
-.text.initializeRegions 0x9d00d3bc          0x140         320   
-.text.sendPathToNavigat 0x9d00d4fc          0x134         308   
-.text.vTaskPriorityInhe 0x9d00d630          0x12c         300   
-.text.dpcmp             0x9d00d75c          0x12c         300   
-.text._flsbuf           0x9d00d888          0x12c         300   
-.rodata                 0x9d00d9b4          0x128         296  Read-only const 
-.text.motorTestNavRecei 0x9d00dadc          0x120         288   
-.text.libm              0x9d00dbfc          0x234         564   
-.text.IntHandlerDrvUsar 0x9d00de30          0x114         276   
-.text.checkIntersection 0x9d00df44          0x10c         268   
-.text.libm              0x9d00e050          0x10c         268   
-.rodata                 0x9d00e15c          0x104         260  Read-only const 
-.text.SYS_Tasks         0x9d00e260          0x100         256   
-.text.AdjustAngleToRota 0x9d00e360          0x100         256   
-.text.dptofp            0x9d00e460          0x100         256   
-.text.prvUnlockQueue    0x9d00e560           0xfc         252   
-.text.libm.fpexsqrt     0x9d00e65c           0xfc         252   
-.text.xTaskPriorityDisi 0x9d00e758           0xf8         248   
-.text.prvCopyDataToQueu 0x9d00e850           0xf4         244   
-.text.APP_Tasks         0x9d00e944           0xf0         240   
-.text.xQueueGenericSend 0x9d00ea34           0xf0         240   
-.text.parseInt          0x9d00eb24           0xec         236   
-.text.prvAddCurrentTask 0x9d00ec10           0xe4         228   
-.text.xQueueReceiveFrom 0x9d00ecf4           0xe0         224   
-.text.vTaskSwitchContex 0x9d00edd4           0xe0         224   
-.text.parseUInt8        0x9d00eeb4           0xe0         224   
-.text.SYS_DEVCON_Perfor 0x9d00ef94           0xdc         220   
-.text.general_exception 0x9d00f070           0xdc         220   
-.text._mon_putc         0x9d00f14c           0xd4         212   
-.rodata                 0x9d00f220           0xd0         208  Read-only const 
-.text.IntHandlerDrvTmrI 0x9d00f2f0           0xcc         204   
-.text.checkIfNodeValid  0x9d00f3bc           0xc8         200   
-.text.calculatePath     0x9d00f484           0xc4         196   
-.text._DRV_I2C_QueuePus 0x9d00f548           0xc4         196   
-.text.calculateEuclidea 0x9d00f60c           0xc0         192   
-.text.pvPortMalloc      0x9d00f6cc           0xc0         192   
-.text.xQueueGenericRese 0x9d00f78c           0xc0         192   
-.text.CalculateDistance 0x9d00f84c           0xc0         192   
-.text.sendTapeSignalToS 0x9d00f90c           0xbc         188   
-.text.xTaskRemoveFromEv 0x9d00f9c8           0xbc         188   
-.text.prvIdleTask       0x9d00fa84           0xb4         180   
-.text.PID1              0x9d00fb38           0xb4         180   
-.text.PID2              0x9d00fbec           0xb4         180   
-.text.readNumInStringFo 0x9d00fca0           0xb4         180   
-.text.fptodp            0x9d00fd54           0xac         172   
-.text.readPublic2       0x9d00fe00           0xa8         168   
-.text.onSegment         0x9d00fea8           0xa8         168   
-.text                   0x9d00ff50           0xa8         168  App's exec code 
-.text.atoi              0x9d00fff8           0xa8         168   
-.text._DRV_I2C_QueuePop 0x9d0100a0           0xa4         164   
-.text.xTaskCheckForTime 0x9d010144           0xa0         160   
-.rodata                 0x9d0101e4           0x9c         156  Read-only const 
-.text.jsonFindElementFr 0x9d010280           0x9c         156   
-.text.fpcmp             0x9d01031c           0x9c         156   
-.text.write             0x9d0103b8           0x9c         156   
-.text.CalculateAngleFro 0x9d010454           0x98         152   
-.text.xQueueGenericCrea 0x9d0104ec           0x94         148   
-.text.parseCheckSum     0x9d010580           0x94         148   
-.text.clearAStarLists   0x9d010614           0x8c         140   
-.text.electromagnetTest 0x9d0106a0           0x8c         140   
-.text.fillAdjacencyNode 0x9d01072c           0x80         128   
-.text.vTaskStartSchedul 0x9d0107ac           0x80         128   
-.text.fptoli            0x9d01082c           0x80         128   
-.text.fptoul            0x9d0108ac           0x7c         124   
-.text.commSendMsgToWifi 0x9d010928           0x78         120   
-.text.convertFieldItemT 0x9d0109a0           0x78         120   
-.text.FLAGCAPTURE_Tasks 0x9d010a18           0x78         120   
-.text.DRV_TMR0_Initiali 0x9d010a90           0x74         116   
-.text.DRV_TMR3_Initiali 0x9d010b04           0x74         116   
-.text.checkIntersection 0x9d010b78           0x74         116   
-.text.calcSimpleChecksu 0x9d010bec           0x70         112   
-.text.checkIfPointWithi 0x9d010c5c           0x70         112   
-.text.isUnsortedOpenSet 0x9d010ccc           0x70         112   
-.text.DRV_TMR1_Initiali 0x9d010d3c           0x6c         108   
-.text.DRV_TMR2_Initiali 0x9d010da8           0x6c         108   
-.text.vApplicationSetup 0x9d010e14           0x6c         108   
-.rodata                 0x9d010e80           0x68         104  Read-only const 
-.text.getNumberOfNeighb 0x9d010ee8           0x68         104   
-.text.vTaskExitCritical 0x9d010f50           0x68         104   
-.text.motorTestCommSend 0x9d010fb8           0x68         104   
-.text.sqrtf             0x9d011020           0x68         104   
-.text._sprintf_cdnopuxX 0x9d011088           0x68         104   
-.text.orientation       0x9d0110f0           0x64         100   
-.text.isClosedSetEmpty  0x9d011154           0x64         100   
-.text.isNodeInOpenSet   0x9d0111b8           0x64         100   
-.text.getLowestFScore   0x9d01121c           0x64         100   
-.text.CalculateTicksToR 0x9d011280           0x64         100   
-.text.removeFromOpenSet 0x9d0112e4           0x60          96   
-.text.HandleDistanceRem 0x9d011344           0x60          96   
-.text.sitofp            0x9d0113a4           0x60          96   
-.text.checkIfObjectInSt 0x9d011404           0x5c          92   
-.text.xPortStartSchedul 0x9d011460           0x5c          92   
-.text.vListInsert       0x9d0114bc           0x5c          92   
-.text.SYS_CLK_Initializ 0x9d011518           0x58          88   
-.text.GoToRandomLine    0x9d011570           0x58          88   
-.text.SYS_DEVCON_System 0x9d0115c8           0x58          88   
-.text.SYS_INT_SourceDis 0x9d011620           0x58          88   
-.text.xQueueCreateMutex 0x9d011678           0x58          88   
-.text.jsonGetSource     0x9d0116d0           0x58          88   
-.text.jsonGetDestinatio 0x9d011728           0x58          88   
-.text.jsonGetMessageTyp 0x9d011780           0x58          88   
-.text.jsonGetChecksum   0x9d0117d8           0x58          88   
-.text.jsonGetChecksumSt 0x9d011830           0x58          88   
-.text.jsonGetPassedInUI 0x9d011888           0x58          88   
-.text.jsonGetSequenceNu 0x9d0118e0           0x58          88   
-.text.jsonGetFieldItem  0x9d011938           0x58          88   
-.text.main_entry        0x9d011990           0x54          84   
-.text.sendEdgeToNavigat 0x9d0119e4           0x54          84   
-.text.COMMUNICATION_Ini 0x9d011a38           0x54          84   
-.text.pxPortInitialiseS 0x9d011a8c           0x54          84   
-.text.vPortIncrementTic 0x9d011ae0           0x54          84   
-.text.sendLocToNavigati 0x9d011b34           0x50          80   
-.text.clearAdjacencyLis 0x9d011b84           0x50          80   
-.text.prvCopyDataFromQu 0x9d011bd4           0x50          80   
-.text.vTaskEnterCritica 0x9d011c24           0x50          80   
-.text.motorTestNavSendS 0x9d011c74           0x50          80   
-.text.parseCharacter    0x9d011cc4           0x50          80   
-.text._DRV_I2C_IsQueueE 0x9d011d14           0x4c          76   
-.rodata                 0x9d011d60           0x4c          76  Read-only const 
-.text                   0x9d011dac           0x4c          76  App's exec code 
-.text.IntHandlerDrvTmrI 0x9d011df8           0x48          72   
-.text.calculateJsonStri 0x9d011e40           0x48          72   
-.text.writePublic       0x9d011e88           0x48          72   
-.text.SYS_DEVCON_System 0x9d011ed0           0x48          72   
-.text.electromagnetTest 0x9d011f18           0x48          72   
-.text._bootstrap_except 0x9d011f60           0x48          72   
-.vector_default         0x9d011fa8           0x48          72   
-.text.sendStartMessageT 0x9d011ff0           0x44          68   
-.text.sendNoPathFoundTo 0x9d012034           0x44          68   
-.text.reconstructPath   0x9d012078           0x44          68   
-.text.ColorIsBlue       0x9d0120bc           0x44          68   
-.text.DRV_TCS_GetColors 0x9d012100           0x44          68   
-.text.OSAL_MUTEX_Lock   0x9d012144           0x44          68   
-.text.uxListRemove      0x9d012188           0x44          68   
-.text                   0x9d0121cc           0x44          68  App's exec code 
-.text.strcat            0x9d012210           0x44          68   
-.text.SYS_PORTS_Initial 0x9d012254           0x40          64   
-.text._general_exceptio 0x9d012294           0x40          64   
-.text.CalculateTicksToT 0x9d0122d4           0x40          64   
-.text.DRV_TMR0_Start    0x9d012314           0x3c          60   
-.text.DRV_TMR1_Start    0x9d012350           0x3c          60   
-.text.DRV_TMR2_Start    0x9d01238c           0x3c          60   
-.text.DRV_TMR3_Start    0x9d0123c8           0x3c          60   
-.text.APP_Initialize    0x9d012404           0x3c          60   
-.text.DRV_TCS_SendByte  0x9d012440           0x3c          60   
-.text.OSAL_MUTEX_Create 0x9d01247c           0x3c          60   
-.text.uxPortSetInterrup 0x9d0124b8           0x3c          60   
-.text.Motor1SetDirectio 0x9d0124f4           0x3c          60   
-.text.Motor2SetDirectio 0x9d012530           0x3c          60   
-.text.GetPWMFromValue   0x9d01256c           0x3c          60   
-.text.NAVIGATION_Initia 0x9d0125a8           0x38          56   
-.text.PATHFINDING_Initi 0x9d0125e0           0x38          56   
-.text.FLAGCAPTURE_Initi 0x9d012618           0x38          56   
-.text.DRV_TCS_SendAddre 0x9d012650           0x38          56   
-.text.prvResetNextTaskU 0x9d012688           0x38          56   
-.text.vTaskPlaceOnEvent 0x9d0126c0           0x38          56   
-.rodata                 0x9d0126f8           0x38          56  Read-only const 
-.text.DRV_USART_Initial 0x9d012730           0x34          52   
-.text.IntHandlerDrvTmrI 0x9d012764           0x34          52   
-.text.IntHandlerDrvTmrI 0x9d012798           0x34          52   
-.text.AddMovement       0x9d0127cc           0x34          52   
-.text.Motor2SetPWM      0x9d012800           0x34          52   
-.text.constructFieldIte 0x9d012834           0x30          48   
-.text._DRV_I2C_Advance_ 0x9d012864           0x30          48   
-.text.OSAL_MUTEX_Unlock 0x9d012894           0x30          48   
-.text.vListInsertEnd    0x9d0128c4           0x30          48   
-.text.dbgOutputLoc      0x9d0128f4           0x30          48   
-.text.Motor1SetPWM      0x9d012924           0x30          48   
-.text.deg2tick          0x9d012954           0x30          48   
-.text.in2tick           0x9d012984           0x30          48   
-.text.cm2tick           0x9d0129b4           0x30          48   
-.text.vApplicationStack 0x9d0129e4           0x2c          44   
-.text.vApplicationMallo 0x9d012a10           0x2c          44   
-.text.navCalculateCheck 0x9d012a3c           0x2c          44   
-.text.commCalculateChec 0x9d012a68           0x2c          44   
-.text.pathCalculateChec 0x9d012a94           0x2c          44   
-.text.calculateAdjacenc 0x9d012ac0           0x2c          44   
-.text.prvTaskExitError  0x9d012aec           0x2c          44   
-.text.SetDirectionClock 0x9d012b18           0x2c          44   
-.text.SetDirectionCount 0x9d012b44           0x2c          44   
-.text.SetDirectionForwa 0x9d012b70           0x2c          44   
-.text.SetDirectionBackw 0x9d012b9c           0x2c          44   
-.text.navSendMsgFromISR 0x9d012bc8           0x28          40   
-.text.navSendMsg        0x9d012bf0           0x28          40   
-.text.commSendMsgFromIS 0x9d012c18           0x28          40   
-.text.commSendMsg       0x9d012c40           0x28          40   
-.text.pathSendMsg       0x9d012c68           0x28          40   
-.text.pvTaskIncrementMu 0x9d012c90           0x28          40   
-.rodata                 0x9d012cb8           0x28          40  Read-only const 
-.text.uartReceiveFromSe 0x9d012ce0           0x24          36   
-.text.LedSetOn          0x9d012d04           0x24          36   
-.text.LedSetOff         0x9d012d28           0x24          36   
-.text.deg2tickF         0x9d012d4c           0x24          36   
-.text.ElectromagnetSetO 0x9d012d70           0x24          36   
-.text.ElectromagnetSetO 0x9d012d94           0x24          36   
-.text.IntHandlerDrvI2CI 0x9d012db8           0x20          32   
-.text.IntHandlerDrvI2CI 0x9d012dd8           0x20          32   
-.text._SYS_Tasks        0x9d012df8           0x20          32   
-.text.main              0x9d012e18           0x20          32   
-.text.checkIfSendQueueI 0x9d012e38           0x20          32   
-.text.addToOpenSet      0x9d012e58           0x20          32   
-.text.vListInitialise   0x9d012e78           0x20          32   
-.text.DRV_I2C_Status    0x9d012e98           0x1c          28   
-.text.SYS_DEVCON_JTAGDi 0x9d012eb4           0x1c          28   
-.text.vPortClearInterru 0x9d012ed0           0x1c          28   
-.text.finitel           0x9d012eec           0x1c          28   
-.text._FLAGCAPTURE_Task 0x9d012f08           0x18          24   
-.text._COMMUNICATION_Ta 0x9d012f20           0x18          24   
-.text._PATHFINDING_Task 0x9d012f38           0x18          24   
-.text._NAVIGATION_Tasks 0x9d012f50           0x18          24   
-.text._APP_Tasks        0x9d012f68           0x18          24   
-.text.SYS_INT_Initializ 0x9d012f80           0x18          24   
-.text.dbgPauseAll       0x9d012f98           0x18          24   
-.text                   0x9d012fb0           0x18          24  App's exec code 
-.text.ResetMovementQueu 0x9d012fc8           0x14          20   
-.text.SYS_DEVCON_Initia 0x9d012fdc           0x14          20   
-.text.vTaskSuspendAll   0x9d012ff0           0x14          20   
-.text.vTaskSetTimeOutSt 0x9d013004           0x14          20   
-.rodata                 0x9d013018           0x10          16  Read-only const 
-.text.vTaskMissedYield  0x9d013028           0x10          16   
-.text.SYS_CLK_SystemFre 0x9d013038            0xc          12   
-.text.SYS_CLK_Periphera 0x9d013044            0xc          12   
-.text.StopMovement      0x9d013050            0xc          12   
-.text.SetMovementGoal   0x9d01305c            0xc          12   
-.text.xQueueIsQueueEmpt 0x9d013068            0xc          12   
-.text.GetMotorDirection 0x9d013074            0xc          12   
-.text.DRV_I2C_TransferS 0x9d013080            0x8           8   
-.text.SYS_DEVCON_Tasks  0x9d013088            0x8           8   
-.text.vPortFree         0x9d013090            0x8           8   
-.text.vListInitialiseIt 0x9d013098            0x8           8   
-.rodata                 0x9d0130a0            0x8           8  Read-only const 
-.text.SetOrientation    0x9d0130a8            0x8           8   
-.text.GetOrientation    0x9d0130b0            0x8           8   
-.text.SetLocationX      0x9d0130b8            0x8           8   
-.text.GetLocationX      0x9d0130c0            0x8           8   
-.text.SetLocationY      0x9d0130c8            0x8           8   
-.text.GetLocationY      0x9d0130d0            0x8           8   
-.text._on_reset         0x9d0130d8            0x8           8   
-.text._on_bootstrap     0x9d0130e0            0x8           8   
-.rodata                 0x9d0130e8            0x4           4  Read-only const 
-      Total kseg0_program_mem used  :     0x130ec       78060  14.9% of 0x80000
+.text.xTaskIncrementTic 0x9d00c26c          0x198         408   
+.text.storeInFieldItemS 0x9d00c404          0x190         400   
+.text.parseFieldItem    0x9d00c594          0x190         400   
+.rodata                 0x9d00c724          0x188         392  Read-only const 
+.text.DRV_I2C_Open      0x9d00c8ac          0x17c         380   
+.text.DRV_USART0_Initia 0x9d00ca28          0x174         372   
+.text.motorTestCommRece 0x9d00cb9c          0x168         360   
+.text                   0x9d00cd04          0x2d0         720  App's exec code 
+.text.SYS_Initialize    0x9d00cfd4          0x150         336   
+.text.xTaskResumeAll    0x9d00d124          0x148         328   
+.text.fputc             0x9d00d26c          0x144         324   
+.text.initializeRegions 0x9d00d3b0          0x140         320   
+.text.sendPathToNavigat 0x9d00d4f0          0x134         308   
+.text.vTaskPriorityInhe 0x9d00d624          0x12c         300   
+.text.dpcmp             0x9d00d750          0x12c         300   
+.text._flsbuf           0x9d00d87c          0x12c         300   
+.rodata                 0x9d00d9a8          0x128         296  Read-only const 
+.text.motorTestNavRecei 0x9d00dad0          0x120         288   
+.text.libm              0x9d00dbf0          0x234         564   
+.text.IntHandlerDrvUsar 0x9d00de24          0x114         276   
+.text.checkIntersection 0x9d00df38          0x10c         268   
+.text.libm              0x9d00e044          0x10c         268   
+.rodata                 0x9d00e150          0x104         260  Read-only const 
+.text.SYS_Tasks         0x9d00e254          0x100         256   
+.text.AdjustAngleToRota 0x9d00e354          0x100         256   
+.text.dptofp            0x9d00e454          0x100         256   
+.text.prvUnlockQueue    0x9d00e554           0xfc         252   
+.text.libm.fpexsqrt     0x9d00e650           0xfc         252   
+.text.xTaskPriorityDisi 0x9d00e74c           0xf8         248   
+.text.prvCopyDataToQueu 0x9d00e844           0xf4         244   
+.text.APP_Tasks         0x9d00e938           0xf0         240   
+.text.xQueueGenericSend 0x9d00ea28           0xf0         240   
+.text.parseInt          0x9d00eb18           0xec         236   
+.text.prvAddCurrentTask 0x9d00ec04           0xe4         228   
+.text.xQueueReceiveFrom 0x9d00ece8           0xe0         224   
+.text.vTaskSwitchContex 0x9d00edc8           0xe0         224   
+.text.parseUInt8        0x9d00eea8           0xe0         224   
+.text.SYS_DEVCON_Perfor 0x9d00ef88           0xdc         220   
+.text.general_exception 0x9d00f064           0xdc         220   
+.text._mon_putc         0x9d00f140           0xd4         212   
+.rodata                 0x9d00f214            0x4           4  Read-only const 
+.rodata                 0x9d00f218           0xd0         208  Read-only const 
+.text.IntHandlerDrvTmrI 0x9d00f2e8           0xcc         204   
+.text.checkIfNodeValid  0x9d00f3b4           0xc8         200   
+.text.calculatePath     0x9d00f47c           0xc4         196   
+.text._DRV_I2C_QueuePus 0x9d00f540           0xc4         196   
+.text.calculateEuclidea 0x9d00f604           0xc0         192   
+.text.pvPortMalloc      0x9d00f6c4           0xc0         192   
+.text.xQueueGenericRese 0x9d00f784           0xc0         192   
+.text.CalculateDistance 0x9d00f844           0xc0         192   
+.text.sendTapeSignalToS 0x9d00f904           0xbc         188   
+.text.xTaskRemoveFromEv 0x9d00f9c0           0xbc         188   
+.text.prvIdleTask       0x9d00fa7c           0xb4         180   
+.text.PID1              0x9d00fb30           0xb4         180   
+.text.PID2              0x9d00fbe4           0xb4         180   
+.text.readNumInStringFo 0x9d00fc98           0xb4         180   
+.text.fptodp            0x9d00fd4c           0xac         172   
+.text.readPublic2       0x9d00fdf8           0xa8         168   
+.text.onSegment         0x9d00fea0           0xa8         168   
+.text                   0x9d00ff48           0xa8         168  App's exec code 
+.text.atoi              0x9d00fff0           0xa8         168   
+.text._DRV_I2C_QueuePop 0x9d010098           0xa4         164   
+.text.xTaskCheckForTime 0x9d01013c           0xa0         160   
+.rodata                 0x9d0101dc           0x9c         156  Read-only const 
+.text.jsonFindElementFr 0x9d010278           0x9c         156   
+.text.fpcmp             0x9d010314           0x9c         156   
+.text.write             0x9d0103b0           0x9c         156   
+.text.CalculateAngleFro 0x9d01044c           0x98         152   
+.text.xQueueGenericCrea 0x9d0104e4           0x94         148   
+.text.parseCheckSum     0x9d010578           0x94         148   
+.text.clearAStarLists   0x9d01060c           0x8c         140   
+.text.electromagnetTest 0x9d010698           0x8c         140   
+.text.fillAdjacencyNode 0x9d010724           0x80         128   
+.text.vTaskStartSchedul 0x9d0107a4           0x80         128   
+.text.fptoli            0x9d010824           0x80         128   
+.text.fptoul            0x9d0108a4           0x7c         124   
+.text.commSendMsgToWifi 0x9d010920           0x78         120   
+.text.convertFieldItemT 0x9d010998           0x78         120   
+.text.FLAGCAPTURE_Tasks 0x9d010a10           0x78         120   
+.text.DRV_TMR0_Initiali 0x9d010a88           0x74         116   
+.text.DRV_TMR3_Initiali 0x9d010afc           0x74         116   
+.text.checkIntersection 0x9d010b70           0x74         116   
+.text.calcSimpleChecksu 0x9d010be4           0x70         112   
+.text.checkIfPointWithi 0x9d010c54           0x70         112   
+.text.isUnsortedOpenSet 0x9d010cc4           0x70         112   
+.text.DRV_TMR1_Initiali 0x9d010d34           0x6c         108   
+.text.DRV_TMR2_Initiali 0x9d010da0           0x6c         108   
+.text.vApplicationSetup 0x9d010e0c           0x6c         108   
+.rodata                 0x9d010e78           0x68         104  Read-only const 
+.text.getNumberOfNeighb 0x9d010ee0           0x68         104   
+.text.vTaskExitCritical 0x9d010f48           0x68         104   
+.text.motorTestCommSend 0x9d010fb0           0x68         104   
+.text.sqrtf             0x9d011018           0x68         104   
+.text._sprintf_cdnopuxX 0x9d011080           0x68         104   
+.text.orientation       0x9d0110e8           0x64         100   
+.text.isClosedSetEmpty  0x9d01114c           0x64         100   
+.text.isNodeInOpenSet   0x9d0111b0           0x64         100   
+.text.getLowestFScore   0x9d011214           0x64         100   
+.text.CalculateTicksToR 0x9d011278           0x64         100   
+.text.removeFromOpenSet 0x9d0112dc           0x60          96   
+.text.HandleDistanceRem 0x9d01133c           0x60          96   
+.text.sitofp            0x9d01139c           0x60          96   
+.text.checkIfObjectInSt 0x9d0113fc           0x5c          92   
+.text.xPortStartSchedul 0x9d011458           0x5c          92   
+.text.vListInsert       0x9d0114b4           0x5c          92   
+.text.SYS_CLK_Initializ 0x9d011510           0x58          88   
+.text.GoToRandomLine    0x9d011568           0x58          88   
+.text.SYS_DEVCON_System 0x9d0115c0           0x58          88   
+.text.SYS_INT_SourceDis 0x9d011618           0x58          88   
+.text.xQueueCreateMutex 0x9d011670           0x58          88   
+.text.jsonGetSource     0x9d0116c8           0x58          88   
+.text.jsonGetDestinatio 0x9d011720           0x58          88   
+.text.jsonGetMessageTyp 0x9d011778           0x58          88   
+.text.jsonGetChecksum   0x9d0117d0           0x58          88   
+.text.jsonGetChecksumSt 0x9d011828           0x58          88   
+.text.jsonGetPassedInUI 0x9d011880           0x58          88   
+.text.jsonGetSequenceNu 0x9d0118d8           0x58          88   
+.text.jsonGetFieldItem  0x9d011930           0x58          88   
+.text.main_entry        0x9d011988           0x54          84   
+.text.sendEdgeToNavigat 0x9d0119dc           0x54          84   
+.text.COMMUNICATION_Ini 0x9d011a30           0x54          84   
+.text.pxPortInitialiseS 0x9d011a84           0x54          84   
+.text.vPortIncrementTic 0x9d011ad8           0x54          84   
+.text.sendLocToNavigati 0x9d011b2c           0x50          80   
+.text.clearAdjacencyLis 0x9d011b7c           0x50          80   
+.text.prvCopyDataFromQu 0x9d011bcc           0x50          80   
+.text.vTaskEnterCritica 0x9d011c1c           0x50          80   
+.text.motorTestNavSendS 0x9d011c6c           0x50          80   
+.text.parseCharacter    0x9d011cbc           0x50          80   
+.text._DRV_I2C_IsQueueE 0x9d011d0c           0x4c          76   
+.rodata                 0x9d011d58           0x4c          76  Read-only const 
+.text                   0x9d011da4           0x4c          76  App's exec code 
+.text.IntHandlerDrvTmrI 0x9d011df0           0x48          72   
+.text.calculateJsonStri 0x9d011e38           0x48          72   
+.text.writePublic       0x9d011e80           0x48          72   
+.text.SYS_DEVCON_System 0x9d011ec8           0x48          72   
+.text.electromagnetTest 0x9d011f10           0x48          72   
+.text._bootstrap_except 0x9d011f58           0x48          72   
+.vector_default         0x9d011fa0           0x48          72   
+.text.sendStartMessageT 0x9d011fe8           0x44          68   
+.text.sendNoPathFoundTo 0x9d01202c           0x44          68   
+.text.reconstructPath   0x9d012070           0x44          68   
+.text.ColorIsBlue       0x9d0120b4           0x44          68   
+.text.DRV_TCS_GetColors 0x9d0120f8           0x44          68   
+.text.OSAL_MUTEX_Lock   0x9d01213c           0x44          68   
+.text.uxListRemove      0x9d012180           0x44          68   
+.text                   0x9d0121c4           0x44          68  App's exec code 
+.text.strcat            0x9d012208           0x44          68   
+.text.SYS_PORTS_Initial 0x9d01224c           0x40          64   
+.text._general_exceptio 0x9d01228c           0x40          64   
+.text.CalculateTicksToT 0x9d0122cc           0x40          64   
+.text.DRV_TMR0_Start    0x9d01230c           0x3c          60   
+.text.DRV_TMR1_Start    0x9d012348           0x3c          60   
+.text.DRV_TMR2_Start    0x9d012384           0x3c          60   
+.text.DRV_TMR3_Start    0x9d0123c0           0x3c          60   
+.text.APP_Initialize    0x9d0123fc           0x3c          60   
+.text.DRV_TCS_SendByte  0x9d012438           0x3c          60   
+.text.OSAL_MUTEX_Create 0x9d012474           0x3c          60   
+.text.uxPortSetInterrup 0x9d0124b0           0x3c          60   
+.text.Motor1SetDirectio 0x9d0124ec           0x3c          60   
+.text.Motor2SetDirectio 0x9d012528           0x3c          60   
+.text.GetPWMFromValue   0x9d012564           0x3c          60   
+.text.NAVIGATION_Initia 0x9d0125a0           0x38          56   
+.text.PATHFINDING_Initi 0x9d0125d8           0x38          56   
+.text.FLAGCAPTURE_Initi 0x9d012610           0x38          56   
+.text.DRV_TCS_SendAddre 0x9d012648           0x38          56   
+.text.prvResetNextTaskU 0x9d012680           0x38          56   
+.text.vTaskPlaceOnEvent 0x9d0126b8           0x38          56   
+.rodata                 0x9d0126f0           0x38          56  Read-only const 
+.text.DRV_USART_Initial 0x9d012728           0x34          52   
+.text.IntHandlerDrvTmrI 0x9d01275c           0x34          52   
+.text.IntHandlerDrvTmrI 0x9d012790           0x34          52   
+.text.AddMovement       0x9d0127c4           0x34          52   
+.text.Motor2SetPWM      0x9d0127f8           0x34          52   
+.text.constructFieldIte 0x9d01282c           0x30          48   
+.text._DRV_I2C_Advance_ 0x9d01285c           0x30          48   
+.text.OSAL_MUTEX_Unlock 0x9d01288c           0x30          48   
+.text.vListInsertEnd    0x9d0128bc           0x30          48   
+.text.dbgOutputLoc      0x9d0128ec           0x30          48   
+.text.Motor1SetPWM      0x9d01291c           0x30          48   
+.text.deg2tick          0x9d01294c           0x30          48   
+.text.in2tick           0x9d01297c           0x30          48   
+.text.cm2tick           0x9d0129ac           0x30          48   
+.text.vApplicationStack 0x9d0129dc           0x2c          44   
+.text.vApplicationMallo 0x9d012a08           0x2c          44   
+.text.navCalculateCheck 0x9d012a34           0x2c          44   
+.text.commCalculateChec 0x9d012a60           0x2c          44   
+.text.pathCalculateChec 0x9d012a8c           0x2c          44   
+.text.calculateAdjacenc 0x9d012ab8           0x2c          44   
+.text.prvTaskExitError  0x9d012ae4           0x2c          44   
+.text.SetDirectionClock 0x9d012b10           0x2c          44   
+.text.SetDirectionCount 0x9d012b3c           0x2c          44   
+.text.SetDirectionForwa 0x9d012b68           0x2c          44   
+.text.SetDirectionBackw 0x9d012b94           0x2c          44   
+.text.navSendMsgFromISR 0x9d012bc0           0x28          40   
+.text.navSendMsg        0x9d012be8           0x28          40   
+.text.commSendMsgFromIS 0x9d012c10           0x28          40   
+.text.commSendMsg       0x9d012c38           0x28          40   
+.text.pathSendMsg       0x9d012c60           0x28          40   
+.text.pvTaskIncrementMu 0x9d012c88           0x28          40   
+.rodata                 0x9d012cb0           0x28          40  Read-only const 
+.text.uartReceiveFromSe 0x9d012cd8           0x24          36   
+.text.LedSetOn          0x9d012cfc           0x24          36   
+.text.LedSetOff         0x9d012d20           0x24          36   
+.text.deg2tickF         0x9d012d44           0x24          36   
+.text.ElectromagnetSetO 0x9d012d68           0x24          36   
+.text.ElectromagnetSetO 0x9d012d8c           0x24          36   
+.text.IntHandlerDrvI2CI 0x9d012db0           0x20          32   
+.text.IntHandlerDrvI2CI 0x9d012dd0           0x20          32   
+.text._SYS_Tasks        0x9d012df0           0x20          32   
+.text.main              0x9d012e10           0x20          32   
+.text.checkIfSendQueueI 0x9d012e30           0x20          32   
+.text.addToOpenSet      0x9d012e50           0x20          32   
+.text.vListInitialise   0x9d012e70           0x20          32   
+.text.DRV_I2C_Status    0x9d012e90           0x1c          28   
+.text.SYS_DEVCON_JTAGDi 0x9d012eac           0x1c          28   
+.text.vPortClearInterru 0x9d012ec8           0x1c          28   
+.text.finitel           0x9d012ee4           0x1c          28   
+.text._FLAGCAPTURE_Task 0x9d012f00           0x18          24   
+.text._COMMUNICATION_Ta 0x9d012f18           0x18          24   
+.text._PATHFINDING_Task 0x9d012f30           0x18          24   
+.text._NAVIGATION_Tasks 0x9d012f48           0x18          24   
+.text._APP_Tasks        0x9d012f60           0x18          24   
+.text.SYS_INT_Initializ 0x9d012f78           0x18          24   
+.text.dbgPauseAll       0x9d012f90           0x18          24   
+.text                   0x9d012fa8           0x18          24  App's exec code 
+.text.ResetMovementQueu 0x9d012fc0           0x14          20   
+.text.SYS_DEVCON_Initia 0x9d012fd4           0x14          20   
+.text.vTaskSuspendAll   0x9d012fe8           0x14          20   
+.text.vTaskSetTimeOutSt 0x9d012ffc           0x14          20   
+.rodata                 0x9d013010           0x10          16  Read-only const 
+.text.vTaskMissedYield  0x9d013020           0x10          16   
+.text.SYS_CLK_SystemFre 0x9d013030            0xc          12   
+.text.SYS_CLK_Periphera 0x9d01303c            0xc          12   
+.text.StopMovement      0x9d013048            0xc          12   
+.text.SetMovementGoal   0x9d013054            0xc          12   
+.text.xQueueIsQueueEmpt 0x9d013060            0xc          12   
+.text.GetMotorDirection 0x9d01306c            0xc          12   
+.text.DRV_I2C_TransferS 0x9d013078            0x8           8   
+.text.SYS_DEVCON_Tasks  0x9d013080            0x8           8   
+.text.vPortFree         0x9d013088            0x8           8   
+.text.vListInitialiseIt 0x9d013090            0x8           8   
+.rodata                 0x9d013098            0x8           8  Read-only const 
+.text.SetOrientation    0x9d0130a0            0x8           8   
+.text.GetOrientation    0x9d0130a8            0x8           8   
+.text.SetLocationX      0x9d0130b0            0x8           8   
+.text.GetLocationX      0x9d0130b8            0x8           8   
+.text.SetLocationY      0x9d0130c0            0x8           8   
+.text.GetLocationY      0x9d0130c8            0x8           8   
+.text._on_reset         0x9d0130d0            0x8           8   
+.text._on_bootstrap     0x9d0130d8            0x8           8   
+      Total kseg0_program_mem used  :     0x130e0       78048  14.9% of 0x80000
 
 kseg0 Boot-Memory Usage
 section                    address  length [bytes]      (dec)  Description
@@ -621,7 +621,7 @@ section                    address  length [bytes]      (dec)  Description
 .bev_excpt              0xbfc00380           0x10          16  BEV-Exception 
          Total kseg1_boot_mem used  :       0x218         536  45.9% of 0x490
         --------------------------------------------------------------------------
-         Total Program Memory used  :     0x134ec       79084  14.9% of 0x81e00
+         Total Program Memory used  :     0x134e0       79072  14.9% of 0x81e00
         --------------------------------------------------------------------------
 
 
@@ -1062,7 +1062,7 @@ Discarded input sections
  .text.convertPointsToCrossSquare
                 0x00000000       0x28 build/milestone1/production/_ext/1360937237/pathfinding.o
  .text.storeFieldRegionInStack
-                0x00000000      0x19c build/milestone1/production/_ext/1360937237/pathfinding.o
+                0x00000000      0x190 build/milestone1/production/_ext/1360937237/pathfinding.o
  .text.getMax   0x00000000       0x20 build/milestone1/production/_ext/1360937237/pathfinding.o
  .text.getMin   0x00000000       0x20 build/milestone1/production/_ext/1360937237/pathfinding.o
  .text.testingSendOutEdgesOverWifly
@@ -2943,68 +2943,68 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000    0x814b4
+.debug_info     0x00000000    0x81196
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000     0x5554 build/milestone1/production/_ext/1864120335/drv_tmr_static.o
- .debug_info    0x00005554     0x1718 build/milestone1/production/_ext/1864120335/drv_tmr_mapping.o
- .debug_info    0x00006c6c     0x41d5 build/milestone1/production/_ext/192191419/drv_usart_mapping.o
- .debug_info    0x0000ae41     0x62d0 build/milestone1/production/_ext/192191419/drv_usart_static.o
- .debug_info    0x00011111     0x46c1 build/milestone1/production/_ext/192191419/drv_usart_static_byte_model.o
- .debug_info    0x000157d2     0x3ffa build/milestone1/production/_ext/383799649/sys_clk_static.o
- .debug_info    0x000197cc     0x3af1 build/milestone1/production/_ext/956857457/sys_ports_static.o
- .debug_info    0x0001d2bd     0x5629 build/milestone1/production/_ext/1555642536/system_init.o
- .debug_info    0x000228e6     0x4846 build/milestone1/production/_ext/1555642536/system_interrupt.o
- .debug_info    0x0002712c     0x3365 build/milestone1/production/_ext/1555642536/system_exceptions.o
- .debug_info    0x0002a491     0x37ba build/milestone1/production/_ext/1555642536/system_tasks.o
- .debug_info    0x0002dc4b       0xb8 build/milestone1/production/_ext/1555642536/system_interrupt_a.o
- .debug_info    0x0002dd03      0x26e build/milestone1/production/_ext/1555642536/rtos_hooks.o
- .debug_info    0x0002df71     0x37c7 build/milestone1/production/_ext/1360937237/app.o
- .debug_info    0x00031738      0x1c3 build/milestone1/production/_ext/1360937237/main.o
- .debug_info    0x000318fb     0x61da build/milestone1/production/_ext/1360937237/navigation.o
- .debug_info    0x00037ad5     0x645a build/milestone1/production/_ext/1360937237/communication.o
- .debug_info    0x0003df2f     0x3867 build/milestone1/production/_ext/1360937237/ms2test.o
- .debug_info    0x00041796     0x5457 build/milestone1/production/_ext/1360937237/pathfinding.o
- .debug_info    0x00046bed     0x3783 build/milestone1/production/_ext/1360937237/flagcapture.o
- .debug_info    0x0004a370     0x33a2 build/milestone1/production/_ext/1360937237/mapping.o
- .debug_info    0x0004d712     0x3315 build/milestone1/production/_ext/1360937237/LED.o
- .debug_info    0x00050a27     0x3347 build/milestone1/production/_ext/1360937237/linesensing.o
- .debug_info    0x00053d6e     0x6438 build/milestone1/production/_ext/1360937237/myi2c.o
- .debug_info    0x0005a1a6     0xb360 build/milestone1/production/_ext/393803906/drv_i2c.o
- .debug_info    0x00065506      0xac8 build/milestone1/production/_ext/1423261102/osal_freertos.o
- .debug_info    0x00065fce     0x1188 build/milestone1/production/_ext/2019779704/sys_devcon.o
- .debug_info    0x00067156      0xd79 build/milestone1/production/_ext/2019779704/sys_devcon_pic32mx.o
- .debug_info    0x00067ecf     0x15e0 build/milestone1/production/_ext/1620769490/sys_int_pic32.o
- .debug_info    0x000694af      0x3af build/milestone1/production/_ext/1366647692/heap_1.o
- .debug_info    0x0006985e     0x11d8 build/milestone1/production/_ext/1475386849/port.o
- .debug_info    0x0006aa36       0xf7 build/milestone1/production/_ext/1475386849/port_asm.o
- .debug_info    0x0006ab2d      0x1a9 build/milestone1/production/_ext/1241959881/croutine.o
- .debug_info    0x0006acd6      0x4a5 build/milestone1/production/_ext/1241959881/list.o
- .debug_info    0x0006b17b     0x1958 build/milestone1/production/_ext/1241959881/queue.o
- .debug_info    0x0006cad3     0x2947 build/milestone1/production/_ext/1241959881/tasks.o
- .debug_info    0x0006f41a      0x1a7 build/milestone1/production/_ext/1241959881/timers.o
- .debug_info    0x0006f5c1      0xd7c build/milestone1/production/_ext/1241959881/event_groups.o
- .debug_info    0x0007033d     0x3628 build/milestone1/production/_ext/1360937237/debug.o
- .debug_info    0x00073965     0x49e9 build/milestone1/production/_ext/1360937237/motor.o
- .debug_info    0x0007834e     0x3e72 build/milestone1/production/_ext/1360937237/myjson.o
- .debug_info    0x0007c1c0     0x356e build/milestone1/production/_ext/1360937237/electromagnet.o
- .debug_info    0x0007f72e      0x131 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3\libgcc.a(floatunsisf.o)
- .debug_info    0x0007f85f       0xf5 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
- .debug_info    0x0007f954       0xcf c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
- .debug_info    0x0007fa23       0xd7 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
- .debug_info    0x0007fafa       0xe9 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
- .debug_info    0x0007fbe3       0xdd c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(w_atan2f.o)
- .debug_info    0x0007fcc0       0xbf c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(w_sqrtf.o)
- .debug_info    0x0007fd7f      0x1c6 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(support.o)
- .debug_info    0x0007ff45       0xc4 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(atoi.o)
- .debug_info    0x00080009       0xc8 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(strcat.o)
- .debug_info    0x000800d1       0xd4 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(sprintf_cdnopuxX.eo)
- .debug_info    0x000801a5       0xd5 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(doprnt_cdnopuxX.eo)
- .debug_info    0x0008027a       0xc6 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(_fputc_simple.o)
- .debug_info    0x00080340       0xc9 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(_flsbuf_simple.o)
- .debug_info    0x00080409       0xc0 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(write.o)
- .debug_info    0x000804c9       0xc8 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(_mon_putc.o)
- .debug_info    0x00080591      0x773 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3\libgcc.a(_udivdi3.o)
- .debug_info    0x00080d04      0x7b0 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3\libgcc.a(_umoddi3.o)
+ .debug_info    0x00000000     0x5541 build/milestone1/production/_ext/1864120335/drv_tmr_static.o
+ .debug_info    0x00005541     0x1705 build/milestone1/production/_ext/1864120335/drv_tmr_mapping.o
+ .debug_info    0x00006c46     0x41c2 build/milestone1/production/_ext/192191419/drv_usart_mapping.o
+ .debug_info    0x0000ae08     0x62bd build/milestone1/production/_ext/192191419/drv_usart_static.o
+ .debug_info    0x000110c5     0x46ae build/milestone1/production/_ext/192191419/drv_usart_static_byte_model.o
+ .debug_info    0x00015773     0x3fe7 build/milestone1/production/_ext/383799649/sys_clk_static.o
+ .debug_info    0x0001975a     0x3ade build/milestone1/production/_ext/956857457/sys_ports_static.o
+ .debug_info    0x0001d238     0x5616 build/milestone1/production/_ext/1555642536/system_init.o
+ .debug_info    0x0002284e     0x4833 build/milestone1/production/_ext/1555642536/system_interrupt.o
+ .debug_info    0x00027081     0x3352 build/milestone1/production/_ext/1555642536/system_exceptions.o
+ .debug_info    0x0002a3d3     0x37a7 build/milestone1/production/_ext/1555642536/system_tasks.o
+ .debug_info    0x0002db7a       0xa5 build/milestone1/production/_ext/1555642536/system_interrupt_a.o
+ .debug_info    0x0002dc1f      0x25b build/milestone1/production/_ext/1555642536/rtos_hooks.o
+ .debug_info    0x0002de7a     0x37b4 build/milestone1/production/_ext/1360937237/app.o
+ .debug_info    0x0003162e      0x1b0 build/milestone1/production/_ext/1360937237/main.o
+ .debug_info    0x000317de     0x61c7 build/milestone1/production/_ext/1360937237/navigation.o
+ .debug_info    0x000379a5     0x6447 build/milestone1/production/_ext/1360937237/communication.o
+ .debug_info    0x0003ddec     0x3854 build/milestone1/production/_ext/1360937237/ms2test.o
+ .debug_info    0x00041640     0x5444 build/milestone1/production/_ext/1360937237/pathfinding.o
+ .debug_info    0x00046a84     0x3770 build/milestone1/production/_ext/1360937237/flagcapture.o
+ .debug_info    0x0004a1f4     0x338f build/milestone1/production/_ext/1360937237/mapping.o
+ .debug_info    0x0004d583     0x3302 build/milestone1/production/_ext/1360937237/LED.o
+ .debug_info    0x00050885     0x3334 build/milestone1/production/_ext/1360937237/linesensing.o
+ .debug_info    0x00053bb9     0x6425 build/milestone1/production/_ext/1360937237/myi2c.o
+ .debug_info    0x00059fde     0xb34d build/milestone1/production/_ext/393803906/drv_i2c.o
+ .debug_info    0x0006532b      0xab5 build/milestone1/production/_ext/1423261102/osal_freertos.o
+ .debug_info    0x00065de0     0x1175 build/milestone1/production/_ext/2019779704/sys_devcon.o
+ .debug_info    0x00066f55      0xd66 build/milestone1/production/_ext/2019779704/sys_devcon_pic32mx.o
+ .debug_info    0x00067cbb     0x15cd build/milestone1/production/_ext/1620769490/sys_int_pic32.o
+ .debug_info    0x00069288      0x39c build/milestone1/production/_ext/1366647692/heap_1.o
+ .debug_info    0x00069624     0x11c5 build/milestone1/production/_ext/1475386849/port.o
+ .debug_info    0x0006a7e9       0xe4 build/milestone1/production/_ext/1475386849/port_asm.o
+ .debug_info    0x0006a8cd      0x196 build/milestone1/production/_ext/1241959881/croutine.o
+ .debug_info    0x0006aa63      0x492 build/milestone1/production/_ext/1241959881/list.o
+ .debug_info    0x0006aef5     0x1945 build/milestone1/production/_ext/1241959881/queue.o
+ .debug_info    0x0006c83a     0x2934 build/milestone1/production/_ext/1241959881/tasks.o
+ .debug_info    0x0006f16e      0x194 build/milestone1/production/_ext/1241959881/timers.o
+ .debug_info    0x0006f302      0xd69 build/milestone1/production/_ext/1241959881/event_groups.o
+ .debug_info    0x0007006b     0x3615 build/milestone1/production/_ext/1360937237/debug.o
+ .debug_info    0x00073680     0x49d6 build/milestone1/production/_ext/1360937237/motor.o
+ .debug_info    0x00078056     0x3e5f build/milestone1/production/_ext/1360937237/myjson.o
+ .debug_info    0x0007beb5     0x355b build/milestone1/production/_ext/1360937237/electromagnet.o
+ .debug_info    0x0007f410      0x131 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3\libgcc.a(floatunsisf.o)
+ .debug_info    0x0007f541       0xf5 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_info    0x0007f636       0xcf c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_info    0x0007f705       0xd7 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .debug_info    0x0007f7dc       0xe9 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+ .debug_info    0x0007f8c5       0xdd c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(w_atan2f.o)
+ .debug_info    0x0007f9a2       0xbf c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(w_sqrtf.o)
+ .debug_info    0x0007fa61      0x1c6 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(support.o)
+ .debug_info    0x0007fc27       0xc4 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(atoi.o)
+ .debug_info    0x0007fceb       0xc8 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(strcat.o)
+ .debug_info    0x0007fdb3       0xd4 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(sprintf_cdnopuxX.eo)
+ .debug_info    0x0007fe87       0xd5 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(doprnt_cdnopuxX.eo)
+ .debug_info    0x0007ff5c       0xc6 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(_fputc_simple.o)
+ .debug_info    0x00080022       0xc9 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(_flsbuf_simple.o)
+ .debug_info    0x000800eb       0xc0 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(write.o)
+ .debug_info    0x000801ab       0xc8 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(_mon_putc.o)
+ .debug_info    0x00080273      0x773 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3\libgcc.a(_udivdi3.o)
+ .debug_info    0x000809e6      0x7b0 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3\libgcc.a(_umoddi3.o)
 
 .debug_abbrev   0x00000000     0x5d23
  *(.debug_abbrev)
@@ -3069,73 +3069,73 @@ END GROUP
  .debug_abbrev  0x00005aa4      0x138 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3\libgcc.a(_udivdi3.o)
  .debug_abbrev  0x00005bdc      0x147 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3\libgcc.a(_umoddi3.o)
 
-.debug_line     0x00000000     0xebd5
+.debug_line     0x00000000     0xe8c8
  *(.debug_line)
- .debug_line    0x00000000      0xcaa build/milestone1/production/_ext/1864120335/drv_tmr_static.o
- .debug_line    0x00000caa      0x530 build/milestone1/production/_ext/1864120335/drv_tmr_mapping.o
- .debug_line    0x000011da      0x550 build/milestone1/production/_ext/192191419/drv_usart_mapping.o
- .debug_line    0x0000172a      0x8fc build/milestone1/production/_ext/192191419/drv_usart_static.o
- .debug_line    0x00002026      0x5ec build/milestone1/production/_ext/192191419/drv_usart_static_byte_model.o
- .debug_line    0x00002612      0x54b build/milestone1/production/_ext/383799649/sys_clk_static.o
- .debug_line    0x00002b5d      0x797 build/milestone1/production/_ext/956857457/sys_ports_static.o
- .debug_line    0x000032f4      0x766 build/milestone1/production/_ext/1555642536/system_init.o
- .debug_line    0x00003a5a      0x586 build/milestone1/production/_ext/1555642536/system_interrupt.o
- .debug_line    0x00003fe0      0x270 build/milestone1/production/_ext/1555642536/system_exceptions.o
- .debug_line    0x00004250      0x49c build/milestone1/production/_ext/1555642536/system_tasks.o
- .debug_line    0x000046ec      0x17a build/milestone1/production/_ext/1555642536/system_interrupt_a.o
- .debug_line    0x00004866      0x156 build/milestone1/production/_ext/1555642536/rtos_hooks.o
- .debug_line    0x000049bc      0x3f1 build/milestone1/production/_ext/1360937237/app.o
- .debug_line    0x00004dad       0xc8 build/milestone1/production/_ext/1360937237/main.o
- .debug_line    0x00004e75      0x88c build/milestone1/production/_ext/1360937237/navigation.o
- .debug_line    0x00005701      0x8f8 build/milestone1/production/_ext/1360937237/communication.o
- .debug_line    0x00005ff9      0x2bf build/milestone1/production/_ext/1360937237/ms2test.o
- .debug_line    0x000062b8      0x959 build/milestone1/production/_ext/1360937237/pathfinding.o
- .debug_line    0x00006c11      0x381 build/milestone1/production/_ext/1360937237/flagcapture.o
- .debug_line    0x00006f92      0x220 build/milestone1/production/_ext/1360937237/mapping.o
- .debug_line    0x000071b2      0x20c build/milestone1/production/_ext/1360937237/LED.o
- .debug_line    0x000073be      0x208 build/milestone1/production/_ext/1360937237/linesensing.o
- .debug_line    0x000075c6      0xbc0 build/milestone1/production/_ext/1360937237/myi2c.o
- .debug_line    0x00008186     0x26e2 build/milestone1/production/_ext/393803906/drv_i2c.o
- .debug_line    0x0000a868      0x2bb build/milestone1/production/_ext/1423261102/osal_freertos.o
- .debug_line    0x0000ab23      0x5c6 build/milestone1/production/_ext/2019779704/sys_devcon.o
- .debug_line    0x0000b0e9      0x471 build/milestone1/production/_ext/2019779704/sys_devcon_pic32mx.o
- .debug_line    0x0000b55a      0x38c build/milestone1/production/_ext/1620769490/sys_int_pic32.o
- .debug_line    0x0000b8e6      0x217 build/milestone1/production/_ext/1366647692/heap_1.o
- .debug_line    0x0000bafd      0x23a build/milestone1/production/_ext/1475386849/port.o
- .debug_line    0x0000bd37      0x123 build/milestone1/production/_ext/1475386849/port_asm.o
- .debug_line    0x0000be5a       0x1d build/milestone1/production/_ext/1241959881/croutine.o
- .debug_line    0x0000be77      0x1dc build/milestone1/production/_ext/1241959881/list.o
- .debug_line    0x0000c053      0x496 build/milestone1/production/_ext/1241959881/queue.o
- .debug_line    0x0000c4e9      0x7ba build/milestone1/production/_ext/1241959881/tasks.o
- .debug_line    0x0000cca3       0x1d build/milestone1/production/_ext/1241959881/timers.o
- .debug_line    0x0000ccc0      0x325 build/milestone1/production/_ext/1241959881/event_groups.o
- .debug_line    0x0000cfe5      0x35a build/milestone1/production/_ext/1360937237/debug.o
- .debug_line    0x0000d33f      0x6ad build/milestone1/production/_ext/1360937237/motor.o
- .debug_line    0x0000d9ec      0x461 build/milestone1/production/_ext/1360937237/myjson.o
- .debug_line    0x0000de4d      0x29a build/milestone1/production/_ext/1360937237/electromagnet.o
- .debug_line    0x0000e0e7       0x9c c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3\libgcc.a(floatunsisf.o)
- .debug_line    0x0000e183       0xa9 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
- .debug_line    0x0000e22c       0x96 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
- .debug_line    0x0000e2c2       0x9a c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
- .debug_line    0x0000e35c       0xa8 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
- .debug_line    0x0000e404       0x8b c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(w_atan2f.o)
- .debug_line    0x0000e48f       0x8a c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(w_sqrtf.o)
- .debug_line    0x0000e519       0x88 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(support.o)
- .debug_line    0x0000e5a1        0x0 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(s_lib_ver.o)
- .debug_line    0x0000e5a1       0x80 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(atoi.o)
- .debug_line    0x0000e621        0x0 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(ctype.o)
- .debug_line    0x0000e621        0x0 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(errno.o)
- .debug_line    0x0000e621       0x82 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(strcat.o)
- .debug_line    0x0000e6a3       0x83 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(sprintf_cdnopuxX.eo)
- .debug_line    0x0000e726       0x82 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(doprnt_cdnopuxX.eo)
- .debug_line    0x0000e7a8       0x81 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(_fputc_simple.o)
- .debug_line    0x0000e829        0x0 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(_iob.o)
- .debug_line    0x0000e829       0x82 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(_flsbuf_simple.o)
- .debug_line    0x0000e8ab       0x8b c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(write.o)
- .debug_line    0x0000e936       0x8f c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(_mon_putc.o)
- .debug_line    0x0000e9c5        0x0 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(xc32_uart.o)
- .debug_line    0x0000e9c5       0xff c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3\libgcc.a(_udivdi3.o)
- .debug_line    0x0000eac4      0x111 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3\libgcc.a(_umoddi3.o)
+ .debug_line    0x00000000      0xc97 build/milestone1/production/_ext/1864120335/drv_tmr_static.o
+ .debug_line    0x00000c97      0x50a build/milestone1/production/_ext/1864120335/drv_tmr_mapping.o
+ .debug_line    0x000011a1      0x517 build/milestone1/production/_ext/192191419/drv_usart_mapping.o
+ .debug_line    0x000016b8      0x8d6 build/milestone1/production/_ext/192191419/drv_usart_static.o
+ .debug_line    0x00001f8e      0x5c6 build/milestone1/production/_ext/192191419/drv_usart_static_byte_model.o
+ .debug_line    0x00002554      0x525 build/milestone1/production/_ext/383799649/sys_clk_static.o
+ .debug_line    0x00002a79      0x784 build/milestone1/production/_ext/956857457/sys_ports_static.o
+ .debug_line    0x000031fd      0x72d build/milestone1/production/_ext/1555642536/system_init.o
+ .debug_line    0x0000392a      0x560 build/milestone1/production/_ext/1555642536/system_interrupt.o
+ .debug_line    0x00003e8a      0x24a build/milestone1/production/_ext/1555642536/system_exceptions.o
+ .debug_line    0x000040d4      0x476 build/milestone1/production/_ext/1555642536/system_tasks.o
+ .debug_line    0x0000454a      0x17a build/milestone1/production/_ext/1555642536/system_interrupt_a.o
+ .debug_line    0x000046c4      0x143 build/milestone1/production/_ext/1555642536/rtos_hooks.o
+ .debug_line    0x00004807      0x3cb build/milestone1/production/_ext/1360937237/app.o
+ .debug_line    0x00004bd2       0xb5 build/milestone1/production/_ext/1360937237/main.o
+ .debug_line    0x00004c87      0x866 build/milestone1/production/_ext/1360937237/navigation.o
+ .debug_line    0x000054ed      0x8e5 build/milestone1/production/_ext/1360937237/communication.o
+ .debug_line    0x00005dd2      0x2ac build/milestone1/production/_ext/1360937237/ms2test.o
+ .debug_line    0x0000607e      0x944 build/milestone1/production/_ext/1360937237/pathfinding.o
+ .debug_line    0x000069c2      0x36e build/milestone1/production/_ext/1360937237/flagcapture.o
+ .debug_line    0x00006d30      0x20d build/milestone1/production/_ext/1360937237/mapping.o
+ .debug_line    0x00006f3d      0x1f9 build/milestone1/production/_ext/1360937237/LED.o
+ .debug_line    0x00007136      0x1f5 build/milestone1/production/_ext/1360937237/linesensing.o
+ .debug_line    0x0000732b      0xbad build/milestone1/production/_ext/1360937237/myi2c.o
+ .debug_line    0x00007ed8     0x26e2 build/milestone1/production/_ext/393803906/drv_i2c.o
+ .debug_line    0x0000a5ba      0x2bb build/milestone1/production/_ext/1423261102/osal_freertos.o
+ .debug_line    0x0000a875      0x5c6 build/milestone1/production/_ext/2019779704/sys_devcon.o
+ .debug_line    0x0000ae3b      0x471 build/milestone1/production/_ext/2019779704/sys_devcon_pic32mx.o
+ .debug_line    0x0000b2ac      0x38c build/milestone1/production/_ext/1620769490/sys_int_pic32.o
+ .debug_line    0x0000b638      0x217 build/milestone1/production/_ext/1366647692/heap_1.o
+ .debug_line    0x0000b84f      0x23a build/milestone1/production/_ext/1475386849/port.o
+ .debug_line    0x0000ba89      0x123 build/milestone1/production/_ext/1475386849/port_asm.o
+ .debug_line    0x0000bbac       0x1d build/milestone1/production/_ext/1241959881/croutine.o
+ .debug_line    0x0000bbc9      0x1dc build/milestone1/production/_ext/1241959881/list.o
+ .debug_line    0x0000bda5      0x496 build/milestone1/production/_ext/1241959881/queue.o
+ .debug_line    0x0000c23b      0x7ba build/milestone1/production/_ext/1241959881/tasks.o
+ .debug_line    0x0000c9f5       0x1d build/milestone1/production/_ext/1241959881/timers.o
+ .debug_line    0x0000ca12      0x325 build/milestone1/production/_ext/1241959881/event_groups.o
+ .debug_line    0x0000cd37      0x334 build/milestone1/production/_ext/1360937237/debug.o
+ .debug_line    0x0000d06b      0x69a build/milestone1/production/_ext/1360937237/motor.o
+ .debug_line    0x0000d705      0x44e build/milestone1/production/_ext/1360937237/myjson.o
+ .debug_line    0x0000db53      0x287 build/milestone1/production/_ext/1360937237/electromagnet.o
+ .debug_line    0x0000ddda       0x9c c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3\libgcc.a(floatunsisf.o)
+ .debug_line    0x0000de76       0xa9 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_line    0x0000df1f       0x96 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_line    0x0000dfb5       0x9a c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .debug_line    0x0000e04f       0xa8 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+ .debug_line    0x0000e0f7       0x8b c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(w_atan2f.o)
+ .debug_line    0x0000e182       0x8a c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(w_sqrtf.o)
+ .debug_line    0x0000e20c       0x88 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(support.o)
+ .debug_line    0x0000e294        0x0 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(s_lib_ver.o)
+ .debug_line    0x0000e294       0x80 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(atoi.o)
+ .debug_line    0x0000e314        0x0 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(ctype.o)
+ .debug_line    0x0000e314        0x0 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(errno.o)
+ .debug_line    0x0000e314       0x82 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(strcat.o)
+ .debug_line    0x0000e396       0x83 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(sprintf_cdnopuxX.eo)
+ .debug_line    0x0000e419       0x82 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(doprnt_cdnopuxX.eo)
+ .debug_line    0x0000e49b       0x81 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(_fputc_simple.o)
+ .debug_line    0x0000e51c        0x0 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(_iob.o)
+ .debug_line    0x0000e51c       0x82 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(_flsbuf_simple.o)
+ .debug_line    0x0000e59e       0x8b c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(write.o)
+ .debug_line    0x0000e629       0x8f c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(_mon_putc.o)
+ .debug_line    0x0000e6b8        0x0 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(xc32_uart.o)
+ .debug_line    0x0000e6b8       0xff c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3\libgcc.a(_udivdi3.o)
+ .debug_line    0x0000e7b7      0x111 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3\libgcc.a(_umoddi3.o)
 
 .debug_frame    0x00000000     0x3348
  *(.debug_frame)
@@ -3785,1435 +3785,1435 @@ LOAD data_init
                 0x9d00c0c0                __mchp_sqrtf
                 0x9d00c0c0                fpsqrt
 
-.text.storeInFieldItemStack
-                0x9d00c26c      0x19c
- .text.storeInFieldItemStack
-                0x9d00c26c      0x19c build/milestone1/production/_ext/1360937237/pathfinding.o
-                0x9d00c26c                storeInFieldItemStack
-
 .text.xTaskIncrementTick
-                0x9d00c408      0x198
+                0x9d00c26c      0x198
  .text.xTaskIncrementTick
-                0x9d00c408      0x198 build/milestone1/production/_ext/1241959881/tasks.o
-                0x9d00c408                xTaskIncrementTick
+                0x9d00c26c      0x198 build/milestone1/production/_ext/1241959881/tasks.o
+                0x9d00c26c                xTaskIncrementTick
+
+.text.storeInFieldItemStack
+                0x9d00c404      0x190
+ .text.storeInFieldItemStack
+                0x9d00c404      0x190 build/milestone1/production/_ext/1360937237/pathfinding.o
+                0x9d00c404                storeInFieldItemStack
 
 .text.parseFieldItem
-                0x9d00c5a0      0x190
+                0x9d00c594      0x190
  .text.parseFieldItem
-                0x9d00c5a0      0x190 build/milestone1/production/_ext/1360937237/myjson.o
-                0x9d00c5a0                parseFieldItem
+                0x9d00c594      0x190 build/milestone1/production/_ext/1360937237/myjson.o
+                0x9d00c594                parseFieldItem
 
-.rodata         0x9d00c730      0x188
- .rodata        0x9d00c730      0x188 build/milestone1/production/_ext/1360937237/navigation.o
+.rodata         0x9d00c724      0x188
+ .rodata        0x9d00c724      0x188 build/milestone1/production/_ext/1360937237/navigation.o
 
 .text.DRV_I2C_Open
-                0x9d00c8b8      0x17c
+                0x9d00c8ac      0x17c
  .text.DRV_I2C_Open
-                0x9d00c8b8      0x17c build/milestone1/production/_ext/393803906/drv_i2c.o
-                0x9d00c8b8                DRV_I2C_Open
+                0x9d00c8ac      0x17c build/milestone1/production/_ext/393803906/drv_i2c.o
+                0x9d00c8ac                DRV_I2C_Open
 
 .text.DRV_USART0_Initialize
-                0x9d00ca34      0x174
+                0x9d00ca28      0x174
  .text.DRV_USART0_Initialize
-                0x9d00ca34      0x174 build/milestone1/production/_ext/192191419/drv_usart_static.o
-                0x9d00ca34                DRV_USART0_Initialize
+                0x9d00ca28      0x174 build/milestone1/production/_ext/192191419/drv_usart_static.o
+                0x9d00ca28                DRV_USART0_Initialize
 
 .text.motorTestCommReceive
-                0x9d00cba8      0x168
+                0x9d00cb9c      0x168
  .text.motorTestCommReceive
-                0x9d00cba8      0x168 build/milestone1/production/_ext/1360937237/motor.o
-                0x9d00cba8                motorTestCommReceive
+                0x9d00cb9c      0x168 build/milestone1/production/_ext/1360937237/motor.o
+                0x9d00cb9c                motorTestCommReceive
 
-.text           0x9d00cd10      0x2d0
- .text          0x9d00cd10      0x168 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(memcpy.o)
-                0x9d00cd10                memcpy
- .text          0x9d00ce78      0x168 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(strlen.o)
-                0x9d00ce78                strlen
+.text           0x9d00cd04      0x2d0
+ .text          0x9d00cd04      0x168 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(memcpy.o)
+                0x9d00cd04                memcpy
+ .text          0x9d00ce6c      0x168 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(strlen.o)
+                0x9d00ce6c                strlen
 
 .text.SYS_Initialize
-                0x9d00cfe0      0x150
+                0x9d00cfd4      0x150
  .text.SYS_Initialize
-                0x9d00cfe0      0x150 build/milestone1/production/_ext/1555642536/system_init.o
-                0x9d00cfe0                SYS_Initialize
+                0x9d00cfd4      0x150 build/milestone1/production/_ext/1555642536/system_init.o
+                0x9d00cfd4                SYS_Initialize
 
 .text.xTaskResumeAll
-                0x9d00d130      0x148
+                0x9d00d124      0x148
  .text.xTaskResumeAll
-                0x9d00d130      0x148 build/milestone1/production/_ext/1241959881/tasks.o
-                0x9d00d130                xTaskResumeAll
+                0x9d00d124      0x148 build/milestone1/production/_ext/1241959881/tasks.o
+                0x9d00d124                xTaskResumeAll
 
-.text.fputc     0x9d00d278      0x144
- .text.fputc    0x9d00d278      0x144 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(_fputc_simple.o)
-                0x9d00d278                fputc
+.text.fputc     0x9d00d26c      0x144
+ .text.fputc    0x9d00d26c      0x144 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(_fputc_simple.o)
+                0x9d00d26c                fputc
 
 .text.initializeRegions
-                0x9d00d3bc      0x140
+                0x9d00d3b0      0x140
  .text.initializeRegions
-                0x9d00d3bc      0x140 build/milestone1/production/_ext/1360937237/pathfinding.o
-                0x9d00d3bc                initializeRegions
+                0x9d00d3b0      0x140 build/milestone1/production/_ext/1360937237/pathfinding.o
+                0x9d00d3b0                initializeRegions
 
 .text.sendPathToNavigationThread
-                0x9d00d4fc      0x134
+                0x9d00d4f0      0x134
  .text.sendPathToNavigationThread
-                0x9d00d4fc      0x134 build/milestone1/production/_ext/1360937237/pathfinding.o
-                0x9d00d4fc                sendPathToNavigationThread
+                0x9d00d4f0      0x134 build/milestone1/production/_ext/1360937237/pathfinding.o
+                0x9d00d4f0                sendPathToNavigationThread
 
 .text.vTaskPriorityInherit
-                0x9d00d630      0x12c
+                0x9d00d624      0x12c
  .text.vTaskPriorityInherit
-                0x9d00d630      0x12c build/milestone1/production/_ext/1241959881/tasks.o
-                0x9d00d630                vTaskPriorityInherit
+                0x9d00d624      0x12c build/milestone1/production/_ext/1241959881/tasks.o
+                0x9d00d624                vTaskPriorityInherit
 
-.text.dpcmp     0x9d00d75c      0x12c
- .text.dpcmp    0x9d00d75c      0x12c c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(dpcmp.o)
-                0x9d00d75c                __ltdf2
-                0x9d00d75c                __gedf2
-                0x9d00d75c                dpcmp
-                0x9d00d75c                __ledf2
-                0x9d00d75c                __nedf2
-                0x9d00d75c                __eqdf2
-                0x9d00d75c                __gtdf2
+.text.dpcmp     0x9d00d750      0x12c
+ .text.dpcmp    0x9d00d750      0x12c c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(dpcmp.o)
+                0x9d00d750                __ltdf2
+                0x9d00d750                __gedf2
+                0x9d00d750                dpcmp
+                0x9d00d750                __ledf2
+                0x9d00d750                __nedf2
+                0x9d00d750                __eqdf2
+                0x9d00d750                __gtdf2
 
-.text._flsbuf   0x9d00d888      0x12c
- .text._flsbuf  0x9d00d888      0x12c c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(_flsbuf_simple.o)
-                0x9d00d888                _flsbuf
+.text._flsbuf   0x9d00d87c      0x12c
+ .text._flsbuf  0x9d00d87c      0x12c c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(_flsbuf_simple.o)
+                0x9d00d87c                _flsbuf
 
-.rodata         0x9d00d9b4      0x128
- .rodata        0x9d00d9b4      0x128 build/milestone1/production/_ext/1555642536/system_exceptions.o
+.rodata         0x9d00d9a8      0x128
+ .rodata        0x9d00d9a8      0x128 build/milestone1/production/_ext/1555642536/system_exceptions.o
 
 .text.motorTestNavReceive
-                0x9d00dadc      0x120
+                0x9d00dad0      0x120
  .text.motorTestNavReceive
-                0x9d00dadc      0x120 build/milestone1/production/_ext/1360937237/motor.o
-                0x9d00dadc                motorTestNavReceive
+                0x9d00dad0      0x120 build/milestone1/production/_ext/1360937237/motor.o
+                0x9d00dad0                motorTestNavReceive
 
-.text.libm      0x9d00dbfc      0x234
- .text.libm     0x9d00dbfc      0x11c c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(fpsin32.o)
-                0x9d00dbfc                sinf
-                0x9d00dbfc                fpsin
- .text.libm     0x9d00dd18      0x118 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(fpcos32.o)
-                0x9d00dd18                fpcos
-                0x9d00dd18                cosf
+.text.libm      0x9d00dbf0      0x234
+ .text.libm     0x9d00dbf0      0x11c c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(fpsin32.o)
+                0x9d00dbf0                sinf
+                0x9d00dbf0                fpsin
+ .text.libm     0x9d00dd0c      0x118 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(fpcos32.o)
+                0x9d00dd0c                fpcos
+                0x9d00dd0c                cosf
 
 .text.IntHandlerDrvUsartInstance0
-                0x9d00de30      0x114
+                0x9d00de24      0x114
  .text.IntHandlerDrvUsartInstance0
-                0x9d00de30      0x114 build/milestone1/production/_ext/1555642536/system_interrupt.o
-                0x9d00de30                IntHandlerDrvUsartInstance0
+                0x9d00de24      0x114 build/milestone1/production/_ext/1555642536/system_interrupt.o
+                0x9d00de24                IntHandlerDrvUsartInstance0
 
 .text.checkIntersectionOfTwoLines
-                0x9d00df44      0x10c
+                0x9d00df38      0x10c
  .text.checkIntersectionOfTwoLines
-                0x9d00df44      0x10c build/milestone1/production/_ext/1360937237/pathfinding.o
-                0x9d00df44                checkIntersectionOfTwoLines
+                0x9d00df38      0x10c build/milestone1/production/_ext/1360937237/pathfinding.o
+                0x9d00df38                checkIntersectionOfTwoLines
 
-.text.libm      0x9d00e050      0x10c
- .text.libm     0x9d00e050      0x10c c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(fpreduct32.o)
-                0x9d00e050                fpreduct
+.text.libm      0x9d00e044      0x10c
+ .text.libm     0x9d00e044      0x10c c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(fpreduct32.o)
+                0x9d00e044                fpreduct
 
-.rodata         0x9d00e15c      0x104
- .rodata        0x9d00e15c      0x104 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(ctype.o)
-                0x9d00e15c                _ctype
+.rodata         0x9d00e150      0x104
+ .rodata        0x9d00e150      0x104 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(ctype.o)
+                0x9d00e150                _ctype
 
 .text.SYS_Tasks
-                0x9d00e260      0x100
+                0x9d00e254      0x100
  .text.SYS_Tasks
-                0x9d00e260      0x100 build/milestone1/production/_ext/1555642536/system_tasks.o
-                0x9d00e260                SYS_Tasks
+                0x9d00e254      0x100 build/milestone1/production/_ext/1555642536/system_tasks.o
+                0x9d00e254                SYS_Tasks
 
 .text.AdjustAngleToRotate
-                0x9d00e360      0x100
+                0x9d00e354      0x100
  .text.AdjustAngleToRotate
-                0x9d00e360      0x100 build/milestone1/production/_ext/1360937237/motor.o
-                0x9d00e360                AdjustAngleToRotate
+                0x9d00e354      0x100 build/milestone1/production/_ext/1360937237/motor.o
+                0x9d00e354                AdjustAngleToRotate
 
-.text.dptofp    0x9d00e460      0x100
- .text.dptofp   0x9d00e460      0x100 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(dptofp.o)
-                0x9d00e460                __truncdfsf2
-                0x9d00e460                dptofp
+.text.dptofp    0x9d00e454      0x100
+ .text.dptofp   0x9d00e454      0x100 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(dptofp.o)
+                0x9d00e454                __truncdfsf2
+                0x9d00e454                dptofp
 
 .text.prvUnlockQueue
-                0x9d00e560       0xfc
+                0x9d00e554       0xfc
  .text.prvUnlockQueue
-                0x9d00e560       0xfc build/milestone1/production/_ext/1241959881/queue.o
+                0x9d00e554       0xfc build/milestone1/production/_ext/1241959881/queue.o
 
 .text.libm.fpexsqrt
-                0x9d00e65c       0xfc
+                0x9d00e650       0xfc
  .text.libm.fpexsqrt
-                0x9d00e65c       0xfc c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(fpexsqrt32.o)
-                0x9d00e65c                fpexsqrt
+                0x9d00e650       0xfc c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(fpexsqrt32.o)
+                0x9d00e650                fpexsqrt
 
 .text.xTaskPriorityDisinherit
-                0x9d00e758       0xf8
+                0x9d00e74c       0xf8
  .text.xTaskPriorityDisinherit
-                0x9d00e758       0xf8 build/milestone1/production/_ext/1241959881/tasks.o
-                0x9d00e758                xTaskPriorityDisinherit
+                0x9d00e74c       0xf8 build/milestone1/production/_ext/1241959881/tasks.o
+                0x9d00e74c                xTaskPriorityDisinherit
 
 .text.prvCopyDataToQueue
-                0x9d00e850       0xf4
+                0x9d00e844       0xf4
  .text.prvCopyDataToQueue
-                0x9d00e850       0xf4 build/milestone1/production/_ext/1241959881/queue.o
+                0x9d00e844       0xf4 build/milestone1/production/_ext/1241959881/queue.o
 
 .text.APP_Tasks
-                0x9d00e944       0xf0
+                0x9d00e938       0xf0
  .text.APP_Tasks
-                0x9d00e944       0xf0 build/milestone1/production/_ext/1360937237/app.o
-                0x9d00e944                APP_Tasks
+                0x9d00e938       0xf0 build/milestone1/production/_ext/1360937237/app.o
+                0x9d00e938                APP_Tasks
 
 .text.xQueueGenericSendFromISR
-                0x9d00ea34       0xf0
+                0x9d00ea28       0xf0
  .text.xQueueGenericSendFromISR
-                0x9d00ea34       0xf0 build/milestone1/production/_ext/1241959881/queue.o
-                0x9d00ea34                xQueueGenericSendFromISR
+                0x9d00ea28       0xf0 build/milestone1/production/_ext/1241959881/queue.o
+                0x9d00ea28                xQueueGenericSendFromISR
 
-.text.parseInt  0x9d00eb24       0xec
+.text.parseInt  0x9d00eb18       0xec
  .text.parseInt
-                0x9d00eb24       0xec build/milestone1/production/_ext/1360937237/myjson.o
-                0x9d00eb24                parseInt
+                0x9d00eb18       0xec build/milestone1/production/_ext/1360937237/myjson.o
+                0x9d00eb18                parseInt
 
 .text.prvAddCurrentTaskToDelayedList
-                0x9d00ec10       0xe4
+                0x9d00ec04       0xe4
  .text.prvAddCurrentTaskToDelayedList
-                0x9d00ec10       0xe4 build/milestone1/production/_ext/1241959881/tasks.o
+                0x9d00ec04       0xe4 build/milestone1/production/_ext/1241959881/tasks.o
 
 .text.xQueueReceiveFromISR
-                0x9d00ecf4       0xe0
+                0x9d00ece8       0xe0
  .text.xQueueReceiveFromISR
-                0x9d00ecf4       0xe0 build/milestone1/production/_ext/1241959881/queue.o
-                0x9d00ecf4                xQueueReceiveFromISR
+                0x9d00ece8       0xe0 build/milestone1/production/_ext/1241959881/queue.o
+                0x9d00ece8                xQueueReceiveFromISR
 
 .text.vTaskSwitchContext
-                0x9d00edd4       0xe0
+                0x9d00edc8       0xe0
  .text.vTaskSwitchContext
-                0x9d00edd4       0xe0 build/milestone1/production/_ext/1241959881/tasks.o
-                0x9d00edd4                vTaskSwitchContext
+                0x9d00edc8       0xe0 build/milestone1/production/_ext/1241959881/tasks.o
+                0x9d00edc8                vTaskSwitchContext
 
 .text.parseUInt8
-                0x9d00eeb4       0xe0
+                0x9d00eea8       0xe0
  .text.parseUInt8
-                0x9d00eeb4       0xe0 build/milestone1/production/_ext/1360937237/myjson.o
-                0x9d00eeb4                parseUInt8
+                0x9d00eea8       0xe0 build/milestone1/production/_ext/1360937237/myjson.o
+                0x9d00eea8                parseUInt8
 
 .text.SYS_DEVCON_PerformanceConfig
-                0x9d00ef94       0xdc
+                0x9d00ef88       0xdc
  .text.SYS_DEVCON_PerformanceConfig
-                0x9d00ef94       0xdc build/milestone1/production/_ext/2019779704/sys_devcon_pic32mx.o
-                0x9d00ef94                SYS_DEVCON_PerformanceConfig
+                0x9d00ef88       0xdc build/milestone1/production/_ext/2019779704/sys_devcon_pic32mx.o
+                0x9d00ef88                SYS_DEVCON_PerformanceConfig
 
 .text.general_exception
-                0x9d00f070       0xdc
+                0x9d00f064       0xdc
  .text.general_exception
-                0x9d00f070       0xdc c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(general-exception.o)
-                0x9d00f070                _general_exception_context
+                0x9d00f064       0xdc c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(general-exception.o)
+                0x9d00f064                _general_exception_context
 
 .text._mon_putc
-                0x9d00f14c       0xd4
+                0x9d00f140       0xd4
  .text._mon_putc
-                0x9d00f14c       0xd4 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(_mon_putc.o)
-                0x9d00f14c                _mon_putc
+                0x9d00f140       0xd4 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(_mon_putc.o)
+                0x9d00f140                _mon_putc
 
-.rodata         0x9d00f220       0xd0
- .rodata        0x9d00f220       0xd0 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(doprnt_cdnopuxX.eo)
+.rodata         0x9d00f218       0xd0
+ .rodata        0x9d00f218       0xd0 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(doprnt_cdnopuxX.eo)
 
 .text.IntHandlerDrvTmrInstance0
-                0x9d00f2f0       0xcc
+                0x9d00f2e8       0xcc
  .text.IntHandlerDrvTmrInstance0
-                0x9d00f2f0       0xcc build/milestone1/production/_ext/1555642536/system_interrupt.o
-                0x9d00f2f0                IntHandlerDrvTmrInstance0
+                0x9d00f2e8       0xcc build/milestone1/production/_ext/1555642536/system_interrupt.o
+                0x9d00f2e8                IntHandlerDrvTmrInstance0
 
 .text.checkIfNodeValid
-                0x9d00f3bc       0xc8
+                0x9d00f3b4       0xc8
  .text.checkIfNodeValid
-                0x9d00f3bc       0xc8 build/milestone1/production/_ext/1360937237/pathfinding.o
-                0x9d00f3bc                checkIfNodeValid
+                0x9d00f3b4       0xc8 build/milestone1/production/_ext/1360937237/pathfinding.o
+                0x9d00f3b4                checkIfNodeValid
 
 .text.calculatePath
-                0x9d00f484       0xc4
+                0x9d00f47c       0xc4
  .text.calculatePath
-                0x9d00f484       0xc4 build/milestone1/production/_ext/1360937237/pathfinding.o
-                0x9d00f484                calculatePath
+                0x9d00f47c       0xc4 build/milestone1/production/_ext/1360937237/pathfinding.o
+                0x9d00f47c                calculatePath
 
 .text._DRV_I2C_QueuePush
-                0x9d00f548       0xc4
+                0x9d00f540       0xc4
  .text._DRV_I2C_QueuePush
-                0x9d00f548       0xc4 build/milestone1/production/_ext/393803906/drv_i2c.o
-                0x9d00f548                _DRV_I2C_QueuePush
+                0x9d00f540       0xc4 build/milestone1/production/_ext/393803906/drv_i2c.o
+                0x9d00f540                _DRV_I2C_QueuePush
 
 .text.calculateEuclideanDistance
-                0x9d00f60c       0xc0
+                0x9d00f604       0xc0
  .text.calculateEuclideanDistance
-                0x9d00f60c       0xc0 build/milestone1/production/_ext/1360937237/pathfinding.o
-                0x9d00f60c                calculateEuclideanDistance
+                0x9d00f604       0xc0 build/milestone1/production/_ext/1360937237/pathfinding.o
+                0x9d00f604                calculateEuclideanDistance
 
 .text.pvPortMalloc
-                0x9d00f6cc       0xc0
+                0x9d00f6c4       0xc0
  .text.pvPortMalloc
-                0x9d00f6cc       0xc0 build/milestone1/production/_ext/1366647692/heap_1.o
-                0x9d00f6cc                pvPortMalloc
+                0x9d00f6c4       0xc0 build/milestone1/production/_ext/1366647692/heap_1.o
+                0x9d00f6c4                pvPortMalloc
 
 .text.xQueueGenericReset
-                0x9d00f78c       0xc0
+                0x9d00f784       0xc0
  .text.xQueueGenericReset
-                0x9d00f78c       0xc0 build/milestone1/production/_ext/1241959881/queue.o
-                0x9d00f78c                xQueueGenericReset
+                0x9d00f784       0xc0 build/milestone1/production/_ext/1241959881/queue.o
+                0x9d00f784                xQueueGenericReset
 
 .text.CalculateDistanceFromPoints
-                0x9d00f84c       0xc0
+                0x9d00f844       0xc0
  .text.CalculateDistanceFromPoints
-                0x9d00f84c       0xc0 build/milestone1/production/_ext/1360937237/motor.o
-                0x9d00f84c                CalculateDistanceFromPoints
+                0x9d00f844       0xc0 build/milestone1/production/_ext/1360937237/motor.o
+                0x9d00f844                CalculateDistanceFromPoints
 
 .text.sendTapeSignalToSensor
-                0x9d00f90c       0xbc
+                0x9d00f904       0xbc
  .text.sendTapeSignalToSensor
-                0x9d00f90c       0xbc build/milestone1/production/_ext/1360937237/communication.o
-                0x9d00f90c                sendTapeSignalToSensor
+                0x9d00f904       0xbc build/milestone1/production/_ext/1360937237/communication.o
+                0x9d00f904                sendTapeSignalToSensor
 
 .text.xTaskRemoveFromEventList
-                0x9d00f9c8       0xbc
+                0x9d00f9c0       0xbc
  .text.xTaskRemoveFromEventList
-                0x9d00f9c8       0xbc build/milestone1/production/_ext/1241959881/tasks.o
-                0x9d00f9c8                xTaskRemoveFromEventList
+                0x9d00f9c0       0xbc build/milestone1/production/_ext/1241959881/tasks.o
+                0x9d00f9c0                xTaskRemoveFromEventList
 
 .text.prvIdleTask
-                0x9d00fa84       0xb4
+                0x9d00fa7c       0xb4
  .text.prvIdleTask
-                0x9d00fa84       0xb4 build/milestone1/production/_ext/1241959881/tasks.o
+                0x9d00fa7c       0xb4 build/milestone1/production/_ext/1241959881/tasks.o
 
-.text.PID1      0x9d00fb38       0xb4
- .text.PID1     0x9d00fb38       0xb4 build/milestone1/production/_ext/1360937237/motor.o
-                0x9d00fb38                PID1
+.text.PID1      0x9d00fb30       0xb4
+ .text.PID1     0x9d00fb30       0xb4 build/milestone1/production/_ext/1360937237/motor.o
+                0x9d00fb30                PID1
 
-.text.PID2      0x9d00fbec       0xb4
- .text.PID2     0x9d00fbec       0xb4 build/milestone1/production/_ext/1360937237/motor.o
-                0x9d00fbec                PID2
+.text.PID2      0x9d00fbe4       0xb4
+ .text.PID2     0x9d00fbe4       0xb4 build/milestone1/production/_ext/1360937237/motor.o
+                0x9d00fbe4                PID2
 
 .text.readNumInStringForm
-                0x9d00fca0       0xb4
+                0x9d00fc98       0xb4
  .text.readNumInStringForm
-                0x9d00fca0       0xb4 build/milestone1/production/_ext/1360937237/myjson.o
-                0x9d00fca0                readNumInStringForm
+                0x9d00fc98       0xb4 build/milestone1/production/_ext/1360937237/myjson.o
+                0x9d00fc98                readNumInStringForm
 
-.text.fptodp    0x9d00fd54       0xac
- .text.fptodp   0x9d00fd54       0xac c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(fptodp.o)
-                0x9d00fd54                fptodp
-                0x9d00fd54                __extendsfdf2
+.text.fptodp    0x9d00fd4c       0xac
+ .text.fptodp   0x9d00fd4c       0xac c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(fptodp.o)
+                0x9d00fd4c                fptodp
+                0x9d00fd4c                __extendsfdf2
 
 .text.readPublic2
-                0x9d00fe00       0xa8
+                0x9d00fdf8       0xa8
  .text.readPublic2
-                0x9d00fe00       0xa8 build/milestone1/production/_ext/1360937237/communication.o
-                0x9d00fe00                readPublic2
+                0x9d00fdf8       0xa8 build/milestone1/production/_ext/1360937237/communication.o
+                0x9d00fdf8                readPublic2
 
 .text.onSegment
-                0x9d00fea8       0xa8
+                0x9d00fea0       0xa8
  .text.onSegment
-                0x9d00fea8       0xa8 build/milestone1/production/_ext/1360937237/pathfinding.o
-                0x9d00fea8                onSegment
+                0x9d00fea0       0xa8 build/milestone1/production/_ext/1360937237/pathfinding.o
+                0x9d00fea0                onSegment
 
-.text           0x9d00ff50       0xa8
- .text          0x9d00ff50       0xa8 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(memset.o)
-                0x9d00ff50                memset
+.text           0x9d00ff48       0xa8
+ .text          0x9d00ff48       0xa8 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(memset.o)
+                0x9d00ff48                memset
 
-.text.atoi      0x9d00fff8       0xa8
- .text.atoi     0x9d00fff8       0xa8 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(atoi.o)
-                0x9d00fff8                atoi
+.text.atoi      0x9d00fff0       0xa8
+ .text.atoi     0x9d00fff0       0xa8 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(atoi.o)
+                0x9d00fff0                atoi
 
 .text._DRV_I2C_QueuePop
-                0x9d0100a0       0xa4
+                0x9d010098       0xa4
  .text._DRV_I2C_QueuePop
-                0x9d0100a0       0xa4 build/milestone1/production/_ext/393803906/drv_i2c.o
-                0x9d0100a0                _DRV_I2C_QueuePop
+                0x9d010098       0xa4 build/milestone1/production/_ext/393803906/drv_i2c.o
+                0x9d010098                _DRV_I2C_QueuePop
 
 .text.xTaskCheckForTimeOut
-                0x9d010144       0xa0
+                0x9d01013c       0xa0
  .text.xTaskCheckForTimeOut
-                0x9d010144       0xa0 build/milestone1/production/_ext/1241959881/tasks.o
-                0x9d010144                xTaskCheckForTimeOut
+                0x9d01013c       0xa0 build/milestone1/production/_ext/1241959881/tasks.o
+                0x9d01013c                xTaskCheckForTimeOut
 
-.rodata         0x9d0101e4       0x9c
- .rodata        0x9d0101e4       0x9c build/milestone1/production/_ext/1555642536/system_init.o
-                0x9d0101e4                sysDevconInit
-                0x9d0101e8                drvI2C1InitData
-                0x9d010234                drvI2C0InitData
+.rodata         0x9d0101dc       0x9c
+ .rodata        0x9d0101dc       0x9c build/milestone1/production/_ext/1555642536/system_init.o
+                0x9d0101dc                sysDevconInit
+                0x9d0101e0                drvI2C1InitData
+                0x9d01022c                drvI2C0InitData
 
 .text.jsonFindElementFromKey
-                0x9d010280       0x9c
+                0x9d010278       0x9c
  .text.jsonFindElementFromKey
-                0x9d010280       0x9c build/milestone1/production/_ext/1360937237/myjson.o
-                0x9d010280                jsonFindElementFromKey
+                0x9d010278       0x9c build/milestone1/production/_ext/1360937237/myjson.o
+                0x9d010278                jsonFindElementFromKey
 
-.text.fpcmp     0x9d01031c       0x9c
- .text.fpcmp    0x9d01031c       0x9c c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(fpcmp.o)
-                0x9d01031c                __eqsf2
-                0x9d01031c                __lesf2
-                0x9d01031c                __gtsf2
-                0x9d01031c                __nesf2
-                0x9d01031c                fpcmp
-                0x9d01031c                __gesf2
-                0x9d01031c                __ltsf2
+.text.fpcmp     0x9d010314       0x9c
+ .text.fpcmp    0x9d010314       0x9c c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(fpcmp.o)
+                0x9d010314                __eqsf2
+                0x9d010314                __lesf2
+                0x9d010314                __gtsf2
+                0x9d010314                __nesf2
+                0x9d010314                fpcmp
+                0x9d010314                __gesf2
+                0x9d010314                __ltsf2
 
-.text.write     0x9d0103b8       0x9c
- .text.write    0x9d0103b8       0x9c c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(write.o)
-                0x9d0103b8                write
+.text.write     0x9d0103b0       0x9c
+ .text.write    0x9d0103b0       0x9c c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(write.o)
+                0x9d0103b0                write
 
 .text.CalculateAngleFromPoints
-                0x9d010454       0x98
+                0x9d01044c       0x98
  .text.CalculateAngleFromPoints
-                0x9d010454       0x98 build/milestone1/production/_ext/1360937237/motor.o
-                0x9d010454                CalculateAngleFromPoints
+                0x9d01044c       0x98 build/milestone1/production/_ext/1360937237/motor.o
+                0x9d01044c                CalculateAngleFromPoints
 
 .text.xQueueGenericCreate
-                0x9d0104ec       0x94
+                0x9d0104e4       0x94
  .text.xQueueGenericCreate
-                0x9d0104ec       0x94 build/milestone1/production/_ext/1241959881/queue.o
-                0x9d0104ec                xQueueGenericCreate
+                0x9d0104e4       0x94 build/milestone1/production/_ext/1241959881/queue.o
+                0x9d0104e4                xQueueGenericCreate
 
 .text.parseCheckSum
-                0x9d010580       0x94
+                0x9d010578       0x94
  .text.parseCheckSum
-                0x9d010580       0x94 build/milestone1/production/_ext/1360937237/myjson.o
-                0x9d010580                parseCheckSum
+                0x9d010578       0x94 build/milestone1/production/_ext/1360937237/myjson.o
+                0x9d010578                parseCheckSum
 
 .text.clearAStarLists
-                0x9d010614       0x8c
+                0x9d01060c       0x8c
  .text.clearAStarLists
-                0x9d010614       0x8c build/milestone1/production/_ext/1360937237/pathfinding.o
-                0x9d010614                clearAStarLists
+                0x9d01060c       0x8c build/milestone1/production/_ext/1360937237/pathfinding.o
+                0x9d01060c                clearAStarLists
 
 .text.electromagnetTestCommReceive
-                0x9d0106a0       0x8c
+                0x9d010698       0x8c
  .text.electromagnetTestCommReceive
-                0x9d0106a0       0x8c build/milestone1/production/_ext/1360937237/electromagnet.o
-                0x9d0106a0                electromagnetTestCommReceive
+                0x9d010698       0x8c build/milestone1/production/_ext/1360937237/electromagnet.o
+                0x9d010698                electromagnetTestCommReceive
 
 .text.fillAdjacencyNodes
-                0x9d01072c       0x80
+                0x9d010724       0x80
  .text.fillAdjacencyNodes
-                0x9d01072c       0x80 build/milestone1/production/_ext/1360937237/pathfinding.o
-                0x9d01072c                fillAdjacencyNodes
+                0x9d010724       0x80 build/milestone1/production/_ext/1360937237/pathfinding.o
+                0x9d010724                fillAdjacencyNodes
 
 .text.vTaskStartScheduler
-                0x9d0107ac       0x80
+                0x9d0107a4       0x80
  .text.vTaskStartScheduler
-                0x9d0107ac       0x80 build/milestone1/production/_ext/1241959881/tasks.o
-                0x9d0107ac                vTaskStartScheduler
+                0x9d0107a4       0x80 build/milestone1/production/_ext/1241959881/tasks.o
+                0x9d0107a4                vTaskStartScheduler
 
-.text.fptoli    0x9d01082c       0x80
- .text.fptoli   0x9d01082c       0x80 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(fptoli.o)
-                0x9d01082c                fptoli
-                0x9d01082c                fptosi
-                0x9d01082c                __fixsfsi
+.text.fptoli    0x9d010824       0x80
+ .text.fptoli   0x9d010824       0x80 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(fptoli.o)
+                0x9d010824                fptoli
+                0x9d010824                fptosi
+                0x9d010824                __fixsfsi
 
-.text.fptoul    0x9d0108ac       0x7c
- .text.fptoul   0x9d0108ac       0x7c c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(fptoul.o)
-                0x9d0108ac                fptoul
-                0x9d0108ac                fptoui
-                0x9d0108ac                __fixunssfsi
+.text.fptoul    0x9d0108a4       0x7c
+ .text.fptoul   0x9d0108a4       0x7c c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(fptoul.o)
+                0x9d0108a4                fptoul
+                0x9d0108a4                fptoui
+                0x9d0108a4                __fixunssfsi
 
 .text.commSendMsgToWifiQueue
-                0x9d010928       0x78
+                0x9d010920       0x78
  .text.commSendMsgToWifiQueue
-                0x9d010928       0x78 build/milestone1/production/_ext/1360937237/communication.o
-                0x9d010928                commSendMsgToWifiQueue
+                0x9d010920       0x78 build/milestone1/production/_ext/1360937237/communication.o
+                0x9d010920                commSendMsgToWifiQueue
 
 .text.convertFieldItemToCrossSquare
-                0x9d0109a0       0x78
+                0x9d010998       0x78
  .text.convertFieldItemToCrossSquare
-                0x9d0109a0       0x78 build/milestone1/production/_ext/1360937237/pathfinding.o
-                0x9d0109a0                convertFieldItemToCrossSquare
+                0x9d010998       0x78 build/milestone1/production/_ext/1360937237/pathfinding.o
+                0x9d010998                convertFieldItemToCrossSquare
 
 .text.FLAGCAPTURE_Tasks
-                0x9d010a18       0x78
+                0x9d010a10       0x78
  .text.FLAGCAPTURE_Tasks
-                0x9d010a18       0x78 build/milestone1/production/_ext/1360937237/flagcapture.o
-                0x9d010a18                FLAGCAPTURE_Tasks
+                0x9d010a10       0x78 build/milestone1/production/_ext/1360937237/flagcapture.o
+                0x9d010a10                FLAGCAPTURE_Tasks
 
 .text.DRV_TMR0_Initialize
-                0x9d010a90       0x74
+                0x9d010a88       0x74
  .text.DRV_TMR0_Initialize
-                0x9d010a90       0x74 build/milestone1/production/_ext/1864120335/drv_tmr_static.o
-                0x9d010a90                DRV_TMR0_Initialize
+                0x9d010a88       0x74 build/milestone1/production/_ext/1864120335/drv_tmr_static.o
+                0x9d010a88                DRV_TMR0_Initialize
 
 .text.DRV_TMR3_Initialize
-                0x9d010b04       0x74
+                0x9d010afc       0x74
  .text.DRV_TMR3_Initialize
-                0x9d010b04       0x74 build/milestone1/production/_ext/1864120335/drv_tmr_static.o
-                0x9d010b04                DRV_TMR3_Initialize
+                0x9d010afc       0x74 build/milestone1/production/_ext/1864120335/drv_tmr_static.o
+                0x9d010afc                DRV_TMR3_Initialize
 
 .text.checkIntersectionOfLineAndCrossSquare
-                0x9d010b78       0x74
+                0x9d010b70       0x74
  .text.checkIntersectionOfLineAndCrossSquare
-                0x9d010b78       0x74 build/milestone1/production/_ext/1360937237/pathfinding.o
-                0x9d010b78                checkIntersectionOfLineAndCrossSquare
+                0x9d010b70       0x74 build/milestone1/production/_ext/1360937237/pathfinding.o
+                0x9d010b70                checkIntersectionOfLineAndCrossSquare
 
 .text.calcSimpleChecksum
-                0x9d010bec       0x70
+                0x9d010be4       0x70
  .text.calcSimpleChecksum
-                0x9d010bec       0x70 build/milestone1/production/_ext/1360937237/communication.o
-                0x9d010bec                calcSimpleChecksum
+                0x9d010be4       0x70 build/milestone1/production/_ext/1360937237/communication.o
+                0x9d010be4                calcSimpleChecksum
 
 .text.checkIfPointWithinFieldItem
-                0x9d010c5c       0x70
+                0x9d010c54       0x70
  .text.checkIfPointWithinFieldItem
-                0x9d010c5c       0x70 build/milestone1/production/_ext/1360937237/pathfinding.o
-                0x9d010c5c                checkIfPointWithinFieldItem
+                0x9d010c54       0x70 build/milestone1/production/_ext/1360937237/pathfinding.o
+                0x9d010c54                checkIfPointWithinFieldItem
 
 .text.isUnsortedOpenSetEmpty
-                0x9d010ccc       0x70
+                0x9d010cc4       0x70
  .text.isUnsortedOpenSetEmpty
-                0x9d010ccc       0x70 build/milestone1/production/_ext/1360937237/pathfinding.o
-                0x9d010ccc                isUnsortedOpenSetEmpty
+                0x9d010cc4       0x70 build/milestone1/production/_ext/1360937237/pathfinding.o
+                0x9d010cc4                isUnsortedOpenSetEmpty
 
 .text.DRV_TMR1_Initialize
-                0x9d010d3c       0x6c
+                0x9d010d34       0x6c
  .text.DRV_TMR1_Initialize
-                0x9d010d3c       0x6c build/milestone1/production/_ext/1864120335/drv_tmr_static.o
-                0x9d010d3c                DRV_TMR1_Initialize
+                0x9d010d34       0x6c build/milestone1/production/_ext/1864120335/drv_tmr_static.o
+                0x9d010d34                DRV_TMR1_Initialize
 
 .text.DRV_TMR2_Initialize
-                0x9d010da8       0x6c
+                0x9d010da0       0x6c
  .text.DRV_TMR2_Initialize
-                0x9d010da8       0x6c build/milestone1/production/_ext/1864120335/drv_tmr_static.o
-                0x9d010da8                DRV_TMR2_Initialize
+                0x9d010da0       0x6c build/milestone1/production/_ext/1864120335/drv_tmr_static.o
+                0x9d010da0                DRV_TMR2_Initialize
 
 .text.vApplicationSetupTickTimerInterrupt
-                0x9d010e14       0x6c
+                0x9d010e0c       0x6c
  .text.vApplicationSetupTickTimerInterrupt
-                0x9d010e14       0x6c build/milestone1/production/_ext/1475386849/port.o
-                0x9d010e14                vApplicationSetupTickTimerInterrupt
+                0x9d010e0c       0x6c build/milestone1/production/_ext/1475386849/port.o
+                0x9d010e0c                vApplicationSetupTickTimerInterrupt
 
-.rodata         0x9d010e80       0x68
- .rodata        0x9d010e80       0x68 build/milestone1/production/_ext/1555642536/system_tasks.o
+.rodata         0x9d010e78       0x68
+ .rodata        0x9d010e78       0x68 build/milestone1/production/_ext/1555642536/system_tasks.o
 
 .text.getNumberOfNeighborsOfNode
-                0x9d010ee8       0x68
+                0x9d010ee0       0x68
  .text.getNumberOfNeighborsOfNode
-                0x9d010ee8       0x68 build/milestone1/production/_ext/1360937237/pathfinding.o
-                0x9d010ee8                getNumberOfNeighborsOfNode
+                0x9d010ee0       0x68 build/milestone1/production/_ext/1360937237/pathfinding.o
+                0x9d010ee0                getNumberOfNeighborsOfNode
 
 .text.vTaskExitCritical
-                0x9d010f50       0x68
+                0x9d010f48       0x68
  .text.vTaskExitCritical
-                0x9d010f50       0x68 build/milestone1/production/_ext/1241959881/tasks.o
-                0x9d010f50                vTaskExitCritical
+                0x9d010f48       0x68 build/milestone1/production/_ext/1241959881/tasks.o
+                0x9d010f48                vTaskExitCritical
 
 .text.motorTestCommSend
-                0x9d010fb8       0x68
+                0x9d010fb0       0x68
  .text.motorTestCommSend
-                0x9d010fb8       0x68 build/milestone1/production/_ext/1360937237/motor.o
-                0x9d010fb8                motorTestCommSend
+                0x9d010fb0       0x68 build/milestone1/production/_ext/1360937237/motor.o
+                0x9d010fb0                motorTestCommSend
 
-.text.sqrtf     0x9d011020       0x68
- .text.sqrtf    0x9d011020       0x68 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(w_sqrtf.o)
-                0x9d011020                sqrtf
+.text.sqrtf     0x9d011018       0x68
+ .text.sqrtf    0x9d011018       0x68 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(w_sqrtf.o)
+                0x9d011018                sqrtf
 
 .text._sprintf_cdnopuxX
-                0x9d011088       0x68
+                0x9d011080       0x68
  .text._sprintf_cdnopuxX
-                0x9d011088       0x68 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(sprintf_cdnopuxX.eo)
-                0x9d011088                _sprintf_cdnopuxX
+                0x9d011080       0x68 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(sprintf_cdnopuxX.eo)
+                0x9d011080                _sprintf_cdnopuxX
 
 .text.orientation
-                0x9d0110f0       0x64
+                0x9d0110e8       0x64
  .text.orientation
-                0x9d0110f0       0x64 build/milestone1/production/_ext/1360937237/pathfinding.o
-                0x9d0110f0                orientation
+                0x9d0110e8       0x64 build/milestone1/production/_ext/1360937237/pathfinding.o
+                0x9d0110e8                orientation
 
 .text.isClosedSetEmpty
-                0x9d011154       0x64
+                0x9d01114c       0x64
  .text.isClosedSetEmpty
-                0x9d011154       0x64 build/milestone1/production/_ext/1360937237/pathfinding.o
-                0x9d011154                isClosedSetEmpty
+                0x9d01114c       0x64 build/milestone1/production/_ext/1360937237/pathfinding.o
+                0x9d01114c                isClosedSetEmpty
 
 .text.isNodeInOpenSet
-                0x9d0111b8       0x64
+                0x9d0111b0       0x64
  .text.isNodeInOpenSet
-                0x9d0111b8       0x64 build/milestone1/production/_ext/1360937237/pathfinding.o
-                0x9d0111b8                isNodeInOpenSet
+                0x9d0111b0       0x64 build/milestone1/production/_ext/1360937237/pathfinding.o
+                0x9d0111b0                isNodeInOpenSet
 
 .text.getLowestFScore
-                0x9d01121c       0x64
+                0x9d011214       0x64
  .text.getLowestFScore
-                0x9d01121c       0x64 build/milestone1/production/_ext/1360937237/pathfinding.o
-                0x9d01121c                getLowestFScore
+                0x9d011214       0x64 build/milestone1/production/_ext/1360937237/pathfinding.o
+                0x9d011214                getLowestFScore
 
 .text.CalculateTicksToRotate
-                0x9d011280       0x64
+                0x9d011278       0x64
  .text.CalculateTicksToRotate
-                0x9d011280       0x64 build/milestone1/production/_ext/1360937237/motor.o
-                0x9d011280                CalculateTicksToRotate
+                0x9d011278       0x64 build/milestone1/production/_ext/1360937237/motor.o
+                0x9d011278                CalculateTicksToRotate
 
 .text.removeFromOpenSet
-                0x9d0112e4       0x60
+                0x9d0112dc       0x60
  .text.removeFromOpenSet
-                0x9d0112e4       0x60 build/milestone1/production/_ext/1360937237/pathfinding.o
-                0x9d0112e4                removeFromOpenSet
+                0x9d0112dc       0x60 build/milestone1/production/_ext/1360937237/pathfinding.o
+                0x9d0112dc                removeFromOpenSet
 
 .text.HandleDistanceRemaining
-                0x9d011344       0x60
+                0x9d01133c       0x60
  .text.HandleDistanceRemaining
-                0x9d011344       0x60 build/milestone1/production/_ext/1360937237/motor.o
-                0x9d011344                HandleDistanceRemaining
+                0x9d01133c       0x60 build/milestone1/production/_ext/1360937237/motor.o
+                0x9d01133c                HandleDistanceRemaining
 
-.text.sitofp    0x9d0113a4       0x60
- .text.sitofp   0x9d0113a4       0x60 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(sitofp.o)
-                0x9d0113a4                sitofp
-                0x9d0113a4                litofp
-                0x9d0113a4                __floatsisf
+.text.sitofp    0x9d01139c       0x60
+ .text.sitofp   0x9d01139c       0x60 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(sitofp.o)
+                0x9d01139c                sitofp
+                0x9d01139c                litofp
+                0x9d01139c                __floatsisf
 
 .text.checkIfObjectInStack
-                0x9d011404       0x5c
+                0x9d0113fc       0x5c
  .text.checkIfObjectInStack
-                0x9d011404       0x5c build/milestone1/production/_ext/1360937237/pathfinding.o
-                0x9d011404                checkIfObjectInStack
+                0x9d0113fc       0x5c build/milestone1/production/_ext/1360937237/pathfinding.o
+                0x9d0113fc                checkIfObjectInStack
 
 .text.xPortStartScheduler
-                0x9d011460       0x5c
+                0x9d011458       0x5c
  .text.xPortStartScheduler
-                0x9d011460       0x5c build/milestone1/production/_ext/1475386849/port.o
-                0x9d011460                xPortStartScheduler
+                0x9d011458       0x5c build/milestone1/production/_ext/1475386849/port.o
+                0x9d011458                xPortStartScheduler
 
 .text.vListInsert
-                0x9d0114bc       0x5c
+                0x9d0114b4       0x5c
  .text.vListInsert
-                0x9d0114bc       0x5c build/milestone1/production/_ext/1241959881/list.o
-                0x9d0114bc                vListInsert
+                0x9d0114b4       0x5c build/milestone1/production/_ext/1241959881/list.o
+                0x9d0114b4                vListInsert
 
 .text.SYS_CLK_Initialize
-                0x9d011518       0x58
+                0x9d011510       0x58
  .text.SYS_CLK_Initialize
-                0x9d011518       0x58 build/milestone1/production/_ext/383799649/sys_clk_static.o
-                0x9d011518                SYS_CLK_Initialize
+                0x9d011510       0x58 build/milestone1/production/_ext/383799649/sys_clk_static.o
+                0x9d011510                SYS_CLK_Initialize
 
 .text.GoToRandomLine
-                0x9d011570       0x58
+                0x9d011568       0x58
  .text.GoToRandomLine
-                0x9d011570       0x58 build/milestone1/production/_ext/1360937237/navigation.o
-                0x9d011570                GoToRandomLine
+                0x9d011568       0x58 build/milestone1/production/_ext/1360937237/navigation.o
+                0x9d011568                GoToRandomLine
 
 .text.SYS_DEVCON_SystemUnlock
-                0x9d0115c8       0x58
+                0x9d0115c0       0x58
  .text.SYS_DEVCON_SystemUnlock
-                0x9d0115c8       0x58 build/milestone1/production/_ext/2019779704/sys_devcon.o
-                0x9d0115c8                SYS_DEVCON_SystemUnlock
+                0x9d0115c0       0x58 build/milestone1/production/_ext/2019779704/sys_devcon.o
+                0x9d0115c0                SYS_DEVCON_SystemUnlock
 
 .text.SYS_INT_SourceDisable
-                0x9d011620       0x58
+                0x9d011618       0x58
  .text.SYS_INT_SourceDisable
-                0x9d011620       0x58 build/milestone1/production/_ext/1620769490/sys_int_pic32.o
-                0x9d011620                SYS_INT_SourceDisable
+                0x9d011618       0x58 build/milestone1/production/_ext/1620769490/sys_int_pic32.o
+                0x9d011618                SYS_INT_SourceDisable
 
 .text.xQueueCreateMutex
-                0x9d011678       0x58
+                0x9d011670       0x58
  .text.xQueueCreateMutex
-                0x9d011678       0x58 build/milestone1/production/_ext/1241959881/queue.o
-                0x9d011678                xQueueCreateMutex
+                0x9d011670       0x58 build/milestone1/production/_ext/1241959881/queue.o
+                0x9d011670                xQueueCreateMutex
 
 .text.jsonGetSource
-                0x9d0116d0       0x58
+                0x9d0116c8       0x58
  .text.jsonGetSource
-                0x9d0116d0       0x58 build/milestone1/production/_ext/1360937237/myjson.o
-                0x9d0116d0                jsonGetSource
+                0x9d0116c8       0x58 build/milestone1/production/_ext/1360937237/myjson.o
+                0x9d0116c8                jsonGetSource
 
 .text.jsonGetDestination
-                0x9d011728       0x58
+                0x9d011720       0x58
  .text.jsonGetDestination
-                0x9d011728       0x58 build/milestone1/production/_ext/1360937237/myjson.o
-                0x9d011728                jsonGetDestination
+                0x9d011720       0x58 build/milestone1/production/_ext/1360937237/myjson.o
+                0x9d011720                jsonGetDestination
 
 .text.jsonGetMessageType
-                0x9d011780       0x58
+                0x9d011778       0x58
  .text.jsonGetMessageType
-                0x9d011780       0x58 build/milestone1/production/_ext/1360937237/myjson.o
-                0x9d011780                jsonGetMessageType
+                0x9d011778       0x58 build/milestone1/production/_ext/1360937237/myjson.o
+                0x9d011778                jsonGetMessageType
 
 .text.jsonGetChecksum
-                0x9d0117d8       0x58
+                0x9d0117d0       0x58
  .text.jsonGetChecksum
-                0x9d0117d8       0x58 build/milestone1/production/_ext/1360937237/myjson.o
-                0x9d0117d8                jsonGetChecksum
+                0x9d0117d0       0x58 build/milestone1/production/_ext/1360937237/myjson.o
+                0x9d0117d0                jsonGetChecksum
 
 .text.jsonGetChecksumString
-                0x9d011830       0x58
+                0x9d011828       0x58
  .text.jsonGetChecksumString
-                0x9d011830       0x58 build/milestone1/production/_ext/1360937237/myjson.o
-                0x9d011830                jsonGetChecksumString
+                0x9d011828       0x58 build/milestone1/production/_ext/1360937237/myjson.o
+                0x9d011828                jsonGetChecksumString
 
 .text.jsonGetPassedInUInt8
-                0x9d011888       0x58
+                0x9d011880       0x58
  .text.jsonGetPassedInUInt8
-                0x9d011888       0x58 build/milestone1/production/_ext/1360937237/myjson.o
-                0x9d011888                jsonGetPassedInUInt8
+                0x9d011880       0x58 build/milestone1/production/_ext/1360937237/myjson.o
+                0x9d011880                jsonGetPassedInUInt8
 
 .text.jsonGetSequenceNumber
-                0x9d0118e0       0x58
+                0x9d0118d8       0x58
  .text.jsonGetSequenceNumber
-                0x9d0118e0       0x58 build/milestone1/production/_ext/1360937237/myjson.o
-                0x9d0118e0                jsonGetSequenceNumber
+                0x9d0118d8       0x58 build/milestone1/production/_ext/1360937237/myjson.o
+                0x9d0118d8                jsonGetSequenceNumber
 
 .text.jsonGetFieldItem
-                0x9d011938       0x58
+                0x9d011930       0x58
  .text.jsonGetFieldItem
-                0x9d011938       0x58 build/milestone1/production/_ext/1360937237/myjson.o
-                0x9d011938                jsonGetFieldItem
+                0x9d011930       0x58 build/milestone1/production/_ext/1360937237/myjson.o
+                0x9d011930                jsonGetFieldItem
 
 .text.main_entry
-                0x9d011990       0x54
+                0x9d011988       0x54
  .text.main_entry
-                0x9d011990       0x54 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX795F512L/crt0_mips32r2.o
-                0x9d0119c4                __crt0_exit
+                0x9d011988       0x54 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX795F512L/crt0_mips32r2.o
+                0x9d0119bc                __crt0_exit
 
 .text.sendEdgeToNavigationThread
-                0x9d0119e4       0x54
+                0x9d0119dc       0x54
  .text.sendEdgeToNavigationThread
-                0x9d0119e4       0x54 build/milestone1/production/_ext/1360937237/navigation.o
-                0x9d0119e4                sendEdgeToNavigationThread
+                0x9d0119dc       0x54 build/milestone1/production/_ext/1360937237/navigation.o
+                0x9d0119dc                sendEdgeToNavigationThread
 
 .text.COMMUNICATION_Initialize
-                0x9d011a38       0x54
+                0x9d011a30       0x54
  .text.COMMUNICATION_Initialize
-                0x9d011a38       0x54 build/milestone1/production/_ext/1360937237/communication.o
-                0x9d011a38                COMMUNICATION_Initialize
+                0x9d011a30       0x54 build/milestone1/production/_ext/1360937237/communication.o
+                0x9d011a30                COMMUNICATION_Initialize
 
 .text.pxPortInitialiseStack
-                0x9d011a8c       0x54
+                0x9d011a84       0x54
  .text.pxPortInitialiseStack
-                0x9d011a8c       0x54 build/milestone1/production/_ext/1475386849/port.o
-                0x9d011a8c                pxPortInitialiseStack
+                0x9d011a84       0x54 build/milestone1/production/_ext/1475386849/port.o
+                0x9d011a84                pxPortInitialiseStack
 
 .text.vPortIncrementTick
-                0x9d011ae0       0x54
+                0x9d011ad8       0x54
  .text.vPortIncrementTick
-                0x9d011ae0       0x54 build/milestone1/production/_ext/1475386849/port.o
-                0x9d011ae0                vPortIncrementTick
+                0x9d011ad8       0x54 build/milestone1/production/_ext/1475386849/port.o
+                0x9d011ad8                vPortIncrementTick
 
 .text.sendLocToNavigationThread
-                0x9d011b34       0x50
+                0x9d011b2c       0x50
  .text.sendLocToNavigationThread
-                0x9d011b34       0x50 build/milestone1/production/_ext/1360937237/navigation.o
-                0x9d011b34                sendLocToNavigationThread
+                0x9d011b2c       0x50 build/milestone1/production/_ext/1360937237/navigation.o
+                0x9d011b2c                sendLocToNavigationThread
 
 .text.clearAdjacencyList
-                0x9d011b84       0x50
+                0x9d011b7c       0x50
  .text.clearAdjacencyList
-                0x9d011b84       0x50 build/milestone1/production/_ext/1360937237/pathfinding.o
-                0x9d011b84                clearAdjacencyList
+                0x9d011b7c       0x50 build/milestone1/production/_ext/1360937237/pathfinding.o
+                0x9d011b7c                clearAdjacencyList
 
 .text.prvCopyDataFromQueue
-                0x9d011bd4       0x50
+                0x9d011bcc       0x50
  .text.prvCopyDataFromQueue
-                0x9d011bd4       0x50 build/milestone1/production/_ext/1241959881/queue.o
+                0x9d011bcc       0x50 build/milestone1/production/_ext/1241959881/queue.o
 
 .text.vTaskEnterCritical
-                0x9d011c24       0x50
+                0x9d011c1c       0x50
  .text.vTaskEnterCritical
-                0x9d011c24       0x50 build/milestone1/production/_ext/1241959881/tasks.o
-                0x9d011c24                vTaskEnterCritical
+                0x9d011c1c       0x50 build/milestone1/production/_ext/1241959881/tasks.o
+                0x9d011c1c                vTaskEnterCritical
 
 .text.motorTestNavSendSpeed
-                0x9d011c74       0x50
+                0x9d011c6c       0x50
  .text.motorTestNavSendSpeed
-                0x9d011c74       0x50 build/milestone1/production/_ext/1360937237/motor.o
-                0x9d011c74                motorTestNavSendSpeed
+                0x9d011c6c       0x50 build/milestone1/production/_ext/1360937237/motor.o
+                0x9d011c6c                motorTestNavSendSpeed
 
 .text.parseCharacter
-                0x9d011cc4       0x50
+                0x9d011cbc       0x50
  .text.parseCharacter
-                0x9d011cc4       0x50 build/milestone1/production/_ext/1360937237/myjson.o
-                0x9d011cc4                parseCharacter
+                0x9d011cbc       0x50 build/milestone1/production/_ext/1360937237/myjson.o
+                0x9d011cbc                parseCharacter
 
 .text._DRV_I2C_IsQueueEmpty
-                0x9d011d14       0x4c
+                0x9d011d0c       0x4c
  .text._DRV_I2C_IsQueueEmpty
-                0x9d011d14       0x4c build/milestone1/production/_ext/393803906/drv_i2c.o
-                0x9d011d14                _DRV_I2C_IsQueueEmpty
+                0x9d011d0c       0x4c build/milestone1/production/_ext/393803906/drv_i2c.o
+                0x9d011d0c                _DRV_I2C_IsQueueEmpty
 
-.rodata         0x9d011d60       0x4c
- .rodata        0x9d011d60       0x4c build/milestone1/production/_ext/1360937237/motor.o
+.rodata         0x9d011d58       0x4c
+ .rodata        0x9d011d58       0x4c build/milestone1/production/_ext/1360937237/motor.o
 
-.text           0x9d011dac       0x4c
- .text          0x9d011dac       0x4c c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3\libgcc.a(floatunsisf.o)
-                0x9d011dac                __floatunsisf
+.text           0x9d011da4       0x4c
+ .text          0x9d011da4       0x4c c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3\libgcc.a(floatunsisf.o)
+                0x9d011da4                __floatunsisf
 
 .text.IntHandlerDrvTmrInstance3
-                0x9d011df8       0x48
+                0x9d011df0       0x48
  .text.IntHandlerDrvTmrInstance3
-                0x9d011df8       0x48 build/milestone1/production/_ext/1555642536/system_interrupt.o
-                0x9d011df8                IntHandlerDrvTmrInstance3
+                0x9d011df0       0x48 build/milestone1/production/_ext/1555642536/system_interrupt.o
+                0x9d011df0                IntHandlerDrvTmrInstance3
 
 .text.calculateJsonStringCheckSum
-                0x9d011e40       0x48
+                0x9d011e38       0x48
  .text.calculateJsonStringCheckSum
-                0x9d011e40       0x48 build/milestone1/production/_ext/1360937237/communication.o
-                0x9d011e40                calculateJsonStringCheckSum
+                0x9d011e38       0x48 build/milestone1/production/_ext/1360937237/communication.o
+                0x9d011e38                calculateJsonStringCheckSum
 
 .text.writePublic
-                0x9d011e88       0x48
+                0x9d011e80       0x48
  .text.writePublic
-                0x9d011e88       0x48 build/milestone1/production/_ext/1360937237/communication.o
-                0x9d011e88                writePublic
+                0x9d011e80       0x48 build/milestone1/production/_ext/1360937237/communication.o
+                0x9d011e80                writePublic
 
 .text.SYS_DEVCON_SystemLock
-                0x9d011ed0       0x48
+                0x9d011ec8       0x48
  .text.SYS_DEVCON_SystemLock
-                0x9d011ed0       0x48 build/milestone1/production/_ext/2019779704/sys_devcon.o
-                0x9d011ed0                SYS_DEVCON_SystemLock
+                0x9d011ec8       0x48 build/milestone1/production/_ext/2019779704/sys_devcon.o
+                0x9d011ec8                SYS_DEVCON_SystemLock
 
 .text.electromagnetTestSend
-                0x9d011f18       0x48
+                0x9d011f10       0x48
  .text.electromagnetTestSend
-                0x9d011f18       0x48 build/milestone1/production/_ext/1360937237/electromagnet.o
-                0x9d011f18                electromagnetTestSend
+                0x9d011f10       0x48 build/milestone1/production/_ext/1360937237/electromagnet.o
+                0x9d011f10                electromagnetTestSend
 
 .text._bootstrap_exception_handler
-                0x9d011f60       0x48
+                0x9d011f58       0x48
  .text._bootstrap_exception_handler
-                0x9d011f60       0x48 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
-                0x9d011f60                _bootstrap_exception_handler
+                0x9d011f58       0x48 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+                0x9d011f58                _bootstrap_exception_handler
 
 .vector_default
-                0x9d011fa8       0x48
+                0x9d011fa0       0x48
  .vector_default
-                0x9d011fa8       0x48 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
-                0x9d011fa8                _DefaultInterrupt
+                0x9d011fa0       0x48 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+                0x9d011fa0                _DefaultInterrupt
 
 .text.sendStartMessageToNavigationThread
-                0x9d011ff0       0x44
+                0x9d011fe8       0x44
  .text.sendStartMessageToNavigationThread
-                0x9d011ff0       0x44 build/milestone1/production/_ext/1360937237/navigation.o
-                0x9d011ff0                sendStartMessageToNavigationThread
+                0x9d011fe8       0x44 build/milestone1/production/_ext/1360937237/navigation.o
+                0x9d011fe8                sendStartMessageToNavigationThread
 
 .text.sendNoPathFoundToNavigationThread
-                0x9d012034       0x44
+                0x9d01202c       0x44
  .text.sendNoPathFoundToNavigationThread
-                0x9d012034       0x44 build/milestone1/production/_ext/1360937237/navigation.o
-                0x9d012034                sendNoPathFoundToNavigationThread
+                0x9d01202c       0x44 build/milestone1/production/_ext/1360937237/navigation.o
+                0x9d01202c                sendNoPathFoundToNavigationThread
 
 .text.reconstructPath
-                0x9d012078       0x44
+                0x9d012070       0x44
  .text.reconstructPath
-                0x9d012078       0x44 build/milestone1/production/_ext/1360937237/pathfinding.o
-                0x9d012078                reconstructPath
+                0x9d012070       0x44 build/milestone1/production/_ext/1360937237/pathfinding.o
+                0x9d012070                reconstructPath
 
 .text.ColorIsBlue
-                0x9d0120bc       0x44
+                0x9d0120b4       0x44
  .text.ColorIsBlue
-                0x9d0120bc       0x44 build/milestone1/production/_ext/1360937237/linesensing.o
-                0x9d0120bc                ColorIsBlue
+                0x9d0120b4       0x44 build/milestone1/production/_ext/1360937237/linesensing.o
+                0x9d0120b4                ColorIsBlue
 
 .text.DRV_TCS_GetColors
-                0x9d012100       0x44
+                0x9d0120f8       0x44
  .text.DRV_TCS_GetColors
-                0x9d012100       0x44 build/milestone1/production/_ext/1360937237/myi2c.o
-                0x9d012100                DRV_TCS_GetColors
+                0x9d0120f8       0x44 build/milestone1/production/_ext/1360937237/myi2c.o
+                0x9d0120f8                DRV_TCS_GetColors
 
 .text.OSAL_MUTEX_Lock
-                0x9d012144       0x44
+                0x9d01213c       0x44
  .text.OSAL_MUTEX_Lock
-                0x9d012144       0x44 build/milestone1/production/_ext/1423261102/osal_freertos.o
-                0x9d012144                OSAL_MUTEX_Lock
+                0x9d01213c       0x44 build/milestone1/production/_ext/1423261102/osal_freertos.o
+                0x9d01213c                OSAL_MUTEX_Lock
 
 .text.uxListRemove
-                0x9d012188       0x44
+                0x9d012180       0x44
  .text.uxListRemove
-                0x9d012188       0x44 build/milestone1/production/_ext/1241959881/list.o
-                0x9d012188                uxListRemove
+                0x9d012180       0x44 build/milestone1/production/_ext/1241959881/list.o
+                0x9d012180                uxListRemove
 
-.text           0x9d0121cc       0x44
- .text          0x9d0121cc       0x44 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\pic32_software_reset.o
-                0x9d0121cc                __pic32_software_reset
+.text           0x9d0121c4       0x44
+ .text          0x9d0121c4       0x44 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\pic32_software_reset.o
+                0x9d0121c4                __pic32_software_reset
 
-.text.strcat    0x9d012210       0x44
- .text.strcat   0x9d012210       0x44 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(strcat.o)
-                0x9d012210                strcat
+.text.strcat    0x9d012208       0x44
+ .text.strcat   0x9d012208       0x44 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a(strcat.o)
+                0x9d012208                strcat
 
 .text.SYS_PORTS_Initialize
-                0x9d012254       0x40
+                0x9d01224c       0x40
  .text.SYS_PORTS_Initialize
-                0x9d012254       0x40 build/milestone1/production/_ext/956857457/sys_ports_static.o
-                0x9d012254                SYS_PORTS_Initialize
+                0x9d01224c       0x40 build/milestone1/production/_ext/956857457/sys_ports_static.o
+                0x9d01224c                SYS_PORTS_Initialize
 
 .text._general_exception_handler
-                0x9d012294       0x40
+                0x9d01228c       0x40
  .text._general_exception_handler
-                0x9d012294       0x40 build/milestone1/production/_ext/1555642536/system_exceptions.o
-                0x9d012294                _general_exception_handler
+                0x9d01228c       0x40 build/milestone1/production/_ext/1555642536/system_exceptions.o
+                0x9d01228c                _general_exception_handler
 
 .text.CalculateTicksToTravel
-                0x9d0122d4       0x40
+                0x9d0122cc       0x40
  .text.CalculateTicksToTravel
-                0x9d0122d4       0x40 build/milestone1/production/_ext/1360937237/motor.o
-                0x9d0122d4                CalculateTicksToTravel
+                0x9d0122cc       0x40 build/milestone1/production/_ext/1360937237/motor.o
+                0x9d0122cc                CalculateTicksToTravel
 
 .text.DRV_TMR0_Start
-                0x9d012314       0x3c
+                0x9d01230c       0x3c
  .text.DRV_TMR0_Start
-                0x9d012314       0x3c build/milestone1/production/_ext/1864120335/drv_tmr_static.o
-                0x9d012314                DRV_TMR0_Start
+                0x9d01230c       0x3c build/milestone1/production/_ext/1864120335/drv_tmr_static.o
+                0x9d01230c                DRV_TMR0_Start
 
 .text.DRV_TMR1_Start
-                0x9d012350       0x3c
+                0x9d012348       0x3c
  .text.DRV_TMR1_Start
-                0x9d012350       0x3c build/milestone1/production/_ext/1864120335/drv_tmr_static.o
-                0x9d012350                DRV_TMR1_Start
+                0x9d012348       0x3c build/milestone1/production/_ext/1864120335/drv_tmr_static.o
+                0x9d012348                DRV_TMR1_Start
 
 .text.DRV_TMR2_Start
-                0x9d01238c       0x3c
+                0x9d012384       0x3c
  .text.DRV_TMR2_Start
-                0x9d01238c       0x3c build/milestone1/production/_ext/1864120335/drv_tmr_static.o
-                0x9d01238c                DRV_TMR2_Start
+                0x9d012384       0x3c build/milestone1/production/_ext/1864120335/drv_tmr_static.o
+                0x9d012384                DRV_TMR2_Start
 
 .text.DRV_TMR3_Start
-                0x9d0123c8       0x3c
+                0x9d0123c0       0x3c
  .text.DRV_TMR3_Start
-                0x9d0123c8       0x3c build/milestone1/production/_ext/1864120335/drv_tmr_static.o
-                0x9d0123c8                DRV_TMR3_Start
+                0x9d0123c0       0x3c build/milestone1/production/_ext/1864120335/drv_tmr_static.o
+                0x9d0123c0                DRV_TMR3_Start
 
 .text.APP_Initialize
-                0x9d012404       0x3c
+                0x9d0123fc       0x3c
  .text.APP_Initialize
-                0x9d012404       0x3c build/milestone1/production/_ext/1360937237/app.o
-                0x9d012404                APP_Initialize
+                0x9d0123fc       0x3c build/milestone1/production/_ext/1360937237/app.o
+                0x9d0123fc                APP_Initialize
 
 .text.DRV_TCS_SendByte
-                0x9d012440       0x3c
+                0x9d012438       0x3c
  .text.DRV_TCS_SendByte
-                0x9d012440       0x3c build/milestone1/production/_ext/1360937237/myi2c.o
-                0x9d012440                DRV_TCS_SendByte
+                0x9d012438       0x3c build/milestone1/production/_ext/1360937237/myi2c.o
+                0x9d012438                DRV_TCS_SendByte
 
 .text.OSAL_MUTEX_Create
-                0x9d01247c       0x3c
+                0x9d012474       0x3c
  .text.OSAL_MUTEX_Create
-                0x9d01247c       0x3c build/milestone1/production/_ext/1423261102/osal_freertos.o
-                0x9d01247c                OSAL_MUTEX_Create
+                0x9d012474       0x3c build/milestone1/production/_ext/1423261102/osal_freertos.o
+                0x9d012474                OSAL_MUTEX_Create
 
 .text.uxPortSetInterruptMaskFromISR
-                0x9d0124b8       0x3c
+                0x9d0124b0       0x3c
  .text.uxPortSetInterruptMaskFromISR
-                0x9d0124b8       0x3c build/milestone1/production/_ext/1475386849/port.o
-                0x9d0124b8                uxPortSetInterruptMaskFromISR
+                0x9d0124b0       0x3c build/milestone1/production/_ext/1475386849/port.o
+                0x9d0124b0                uxPortSetInterruptMaskFromISR
 
 .text.Motor1SetDirection
-                0x9d0124f4       0x3c
+                0x9d0124ec       0x3c
  .text.Motor1SetDirection
-                0x9d0124f4       0x3c build/milestone1/production/_ext/1360937237/motor.o
-                0x9d0124f4                Motor1SetDirection
+                0x9d0124ec       0x3c build/milestone1/production/_ext/1360937237/motor.o
+                0x9d0124ec                Motor1SetDirection
 
 .text.Motor2SetDirection
-                0x9d012530       0x3c
+                0x9d012528       0x3c
  .text.Motor2SetDirection
-                0x9d012530       0x3c build/milestone1/production/_ext/1360937237/motor.o
-                0x9d012530                Motor2SetDirection
+                0x9d012528       0x3c build/milestone1/production/_ext/1360937237/motor.o
+                0x9d012528                Motor2SetDirection
 
 .text.GetPWMFromValue
-                0x9d01256c       0x3c
+                0x9d012564       0x3c
  .text.GetPWMFromValue
-                0x9d01256c       0x3c build/milestone1/production/_ext/1360937237/motor.o
-                0x9d01256c                GetPWMFromValue
+                0x9d012564       0x3c build/milestone1/production/_ext/1360937237/motor.o
+                0x9d012564                GetPWMFromValue
 
 .text.NAVIGATION_Initialize
-                0x9d0125a8       0x38
+                0x9d0125a0       0x38
  .text.NAVIGATION_Initialize
-                0x9d0125a8       0x38 build/milestone1/production/_ext/1360937237/navigation.o
-                0x9d0125a8                NAVIGATION_Initialize
+                0x9d0125a0       0x38 build/milestone1/production/_ext/1360937237/navigation.o
+                0x9d0125a0                NAVIGATION_Initialize
 
 .text.PATHFINDING_Initialize
-                0x9d0125e0       0x38
+                0x9d0125d8       0x38
  .text.PATHFINDING_Initialize
-                0x9d0125e0       0x38 build/milestone1/production/_ext/1360937237/pathfinding.o
-                0x9d0125e0                PATHFINDING_Initialize
+                0x9d0125d8       0x38 build/milestone1/production/_ext/1360937237/pathfinding.o
+                0x9d0125d8                PATHFINDING_Initialize
 
 .text.FLAGCAPTURE_Initialize
-                0x9d012618       0x38
+                0x9d012610       0x38
  .text.FLAGCAPTURE_Initialize
-                0x9d012618       0x38 build/milestone1/production/_ext/1360937237/flagcapture.o
-                0x9d012618                FLAGCAPTURE_Initialize
+                0x9d012610       0x38 build/milestone1/production/_ext/1360937237/flagcapture.o
+                0x9d012610                FLAGCAPTURE_Initialize
 
 .text.DRV_TCS_SendAddress
-                0x9d012650       0x38
+                0x9d012648       0x38
  .text.DRV_TCS_SendAddress
-                0x9d012650       0x38 build/milestone1/production/_ext/1360937237/myi2c.o
-                0x9d012650                DRV_TCS_SendAddress
+                0x9d012648       0x38 build/milestone1/production/_ext/1360937237/myi2c.o
+                0x9d012648                DRV_TCS_SendAddress
 
 .text.prvResetNextTaskUnblockTime
-                0x9d012688       0x38
+                0x9d012680       0x38
  .text.prvResetNextTaskUnblockTime
-                0x9d012688       0x38 build/milestone1/production/_ext/1241959881/tasks.o
+                0x9d012680       0x38 build/milestone1/production/_ext/1241959881/tasks.o
 
 .text.vTaskPlaceOnEventList
-                0x9d0126c0       0x38
+                0x9d0126b8       0x38
  .text.vTaskPlaceOnEventList
-                0x9d0126c0       0x38 build/milestone1/production/_ext/1241959881/tasks.o
-                0x9d0126c0                vTaskPlaceOnEventList
+                0x9d0126b8       0x38 build/milestone1/production/_ext/1241959881/tasks.o
+                0x9d0126b8                vTaskPlaceOnEventList
 
-.rodata         0x9d0126f8       0x38
- .rodata        0x9d0126f8       0x38 build/milestone1/production/_ext/1360937237/electromagnet.o
+.rodata         0x9d0126f0       0x38
+ .rodata        0x9d0126f0       0x38 build/milestone1/production/_ext/1360937237/electromagnet.o
 
 .text.DRV_USART_Initialize
-                0x9d012730       0x34
+                0x9d012728       0x34
  .text.DRV_USART_Initialize
-                0x9d012730       0x34 build/milestone1/production/_ext/192191419/drv_usart_mapping.o
-                0x9d012730                DRV_USART_Initialize
+                0x9d012728       0x34 build/milestone1/production/_ext/192191419/drv_usart_mapping.o
+                0x9d012728                DRV_USART_Initialize
 
 .text.IntHandlerDrvTmrInstance1
-                0x9d012764       0x34
+                0x9d01275c       0x34
  .text.IntHandlerDrvTmrInstance1
-                0x9d012764       0x34 build/milestone1/production/_ext/1555642536/system_interrupt.o
-                0x9d012764                IntHandlerDrvTmrInstance1
+                0x9d01275c       0x34 build/milestone1/production/_ext/1555642536/system_interrupt.o
+                0x9d01275c                IntHandlerDrvTmrInstance1
 
 .text.IntHandlerDrvTmrInstance2
-                0x9d012798       0x34
+                0x9d012790       0x34
  .text.IntHandlerDrvTmrInstance2
-                0x9d012798       0x34 build/milestone1/production/_ext/1555642536/system_interrupt.o
-                0x9d012798                IntHandlerDrvTmrInstance2
+                0x9d012790       0x34 build/milestone1/production/_ext/1555642536/system_interrupt.o
+                0x9d012790                IntHandlerDrvTmrInstance2
 
 .text.AddMovement
-                0x9d0127cc       0x34
+                0x9d0127c4       0x34
  .text.AddMovement
-                0x9d0127cc       0x34 build/milestone1/production/_ext/1360937237/navigation.o
-                0x9d0127cc                AddMovement
+                0x9d0127c4       0x34 build/milestone1/production/_ext/1360937237/navigation.o
+                0x9d0127c4                AddMovement
 
 .text.Motor2SetPWM
-                0x9d012800       0x34
+                0x9d0127f8       0x34
  .text.Motor2SetPWM
-                0x9d012800       0x34 build/milestone1/production/_ext/1360937237/motor.o
-                0x9d012800                Motor2SetPWM
+                0x9d0127f8       0x34 build/milestone1/production/_ext/1360937237/motor.o
+                0x9d0127f8                Motor2SetPWM
 
 .text.constructFieldItem
-                0x9d012834       0x30
+                0x9d01282c       0x30
  .text.constructFieldItem
-                0x9d012834       0x30 build/milestone1/production/_ext/1360937237/communication.o
-                0x9d012834                constructFieldItem
+                0x9d01282c       0x30 build/milestone1/production/_ext/1360937237/communication.o
+                0x9d01282c                constructFieldItem
 
 .text._DRV_I2C_Advance_Queue
-                0x9d012864       0x30
+                0x9d01285c       0x30
  .text._DRV_I2C_Advance_Queue
-                0x9d012864       0x30 build/milestone1/production/_ext/393803906/drv_i2c.o
-                0x9d012864                _DRV_I2C_Advance_Queue
+                0x9d01285c       0x30 build/milestone1/production/_ext/393803906/drv_i2c.o
+                0x9d01285c                _DRV_I2C_Advance_Queue
 
 .text.OSAL_MUTEX_Unlock
-                0x9d012894       0x30
+                0x9d01288c       0x30
  .text.OSAL_MUTEX_Unlock
-                0x9d012894       0x30 build/milestone1/production/_ext/1423261102/osal_freertos.o
-                0x9d012894                OSAL_MUTEX_Unlock
+                0x9d01288c       0x30 build/milestone1/production/_ext/1423261102/osal_freertos.o
+                0x9d01288c                OSAL_MUTEX_Unlock
 
 .text.vListInsertEnd
-                0x9d0128c4       0x30
+                0x9d0128bc       0x30
  .text.vListInsertEnd
-                0x9d0128c4       0x30 build/milestone1/production/_ext/1241959881/list.o
-                0x9d0128c4                vListInsertEnd
+                0x9d0128bc       0x30 build/milestone1/production/_ext/1241959881/list.o
+                0x9d0128bc                vListInsertEnd
 
 .text.dbgOutputLoc
-                0x9d0128f4       0x30
+                0x9d0128ec       0x30
  .text.dbgOutputLoc
-                0x9d0128f4       0x30 build/milestone1/production/_ext/1360937237/debug.o
-                0x9d0128f4                dbgOutputLoc
+                0x9d0128ec       0x30 build/milestone1/production/_ext/1360937237/debug.o
+                0x9d0128ec                dbgOutputLoc
 
 .text.Motor1SetPWM
-                0x9d012924       0x30
+                0x9d01291c       0x30
  .text.Motor1SetPWM
-                0x9d012924       0x30 build/milestone1/production/_ext/1360937237/motor.o
-                0x9d012924                Motor1SetPWM
+                0x9d01291c       0x30 build/milestone1/production/_ext/1360937237/motor.o
+                0x9d01291c                Motor1SetPWM
 
-.text.deg2tick  0x9d012954       0x30
+.text.deg2tick  0x9d01294c       0x30
  .text.deg2tick
-                0x9d012954       0x30 build/milestone1/production/_ext/1360937237/motor.o
-                0x9d012954                deg2tick
+                0x9d01294c       0x30 build/milestone1/production/_ext/1360937237/motor.o
+                0x9d01294c                deg2tick
 
-.text.in2tick   0x9d012984       0x30
- .text.in2tick  0x9d012984       0x30 build/milestone1/production/_ext/1360937237/motor.o
-                0x9d012984                in2tick
+.text.in2tick   0x9d01297c       0x30
+ .text.in2tick  0x9d01297c       0x30 build/milestone1/production/_ext/1360937237/motor.o
+                0x9d01297c                in2tick
 
-.text.cm2tick   0x9d0129b4       0x30
- .text.cm2tick  0x9d0129b4       0x30 build/milestone1/production/_ext/1360937237/motor.o
-                0x9d0129b4                cm2tick
+.text.cm2tick   0x9d0129ac       0x30
+ .text.cm2tick  0x9d0129ac       0x30 build/milestone1/production/_ext/1360937237/motor.o
+                0x9d0129ac                cm2tick
 
 .text.vApplicationStackOverflowHook
-                0x9d0129e4       0x2c
+                0x9d0129dc       0x2c
  .text.vApplicationStackOverflowHook
-                0x9d0129e4       0x2c build/milestone1/production/_ext/1555642536/rtos_hooks.o
-                0x9d0129e4                vApplicationStackOverflowHook
+                0x9d0129dc       0x2c build/milestone1/production/_ext/1555642536/rtos_hooks.o
+                0x9d0129dc                vApplicationStackOverflowHook
 
 .text.vApplicationMallocFailedHook
-                0x9d012a10       0x2c
+                0x9d012a08       0x2c
  .text.vApplicationMallocFailedHook
-                0x9d012a10       0x2c build/milestone1/production/_ext/1555642536/rtos_hooks.o
-                0x9d012a10                vApplicationMallocFailedHook
+                0x9d012a08       0x2c build/milestone1/production/_ext/1555642536/rtos_hooks.o
+                0x9d012a08                vApplicationMallocFailedHook
 
 .text.navCalculateChecksum
-                0x9d012a3c       0x2c
+                0x9d012a34       0x2c
  .text.navCalculateChecksum
-                0x9d012a3c       0x2c build/milestone1/production/_ext/1360937237/navigation.o
-                0x9d012a3c                navCalculateChecksum
+                0x9d012a34       0x2c build/milestone1/production/_ext/1360937237/navigation.o
+                0x9d012a34                navCalculateChecksum
 
 .text.commCalculateChecksum
-                0x9d012a68       0x2c
+                0x9d012a60       0x2c
  .text.commCalculateChecksum
-                0x9d012a68       0x2c build/milestone1/production/_ext/1360937237/communication.o
-                0x9d012a68                commCalculateChecksum
+                0x9d012a60       0x2c build/milestone1/production/_ext/1360937237/communication.o
+                0x9d012a60                commCalculateChecksum
 
 .text.pathCalculateChecksum
-                0x9d012a94       0x2c
+                0x9d012a8c       0x2c
  .text.pathCalculateChecksum
-                0x9d012a94       0x2c build/milestone1/production/_ext/1360937237/pathfinding.o
-                0x9d012a94                pathCalculateChecksum
+                0x9d012a8c       0x2c build/milestone1/production/_ext/1360937237/pathfinding.o
+                0x9d012a8c                pathCalculateChecksum
 
 .text.calculateAdjacencyList
-                0x9d012ac0       0x2c
+                0x9d012ab8       0x2c
  .text.calculateAdjacencyList
-                0x9d012ac0       0x2c build/milestone1/production/_ext/1360937237/pathfinding.o
-                0x9d012ac0                calculateAdjacencyList
+                0x9d012ab8       0x2c build/milestone1/production/_ext/1360937237/pathfinding.o
+                0x9d012ab8                calculateAdjacencyList
 
 .text.prvTaskExitError
-                0x9d012aec       0x2c
+                0x9d012ae4       0x2c
  .text.prvTaskExitError
-                0x9d012aec       0x2c build/milestone1/production/_ext/1475386849/port.o
+                0x9d012ae4       0x2c build/milestone1/production/_ext/1475386849/port.o
 
 .text.SetDirectionClockwise
-                0x9d012b18       0x2c
+                0x9d012b10       0x2c
  .text.SetDirectionClockwise
-                0x9d012b18       0x2c build/milestone1/production/_ext/1360937237/motor.o
-                0x9d012b18                SetDirectionClockwise
+                0x9d012b10       0x2c build/milestone1/production/_ext/1360937237/motor.o
+                0x9d012b10                SetDirectionClockwise
 
 .text.SetDirectionCounterclockwise
-                0x9d012b44       0x2c
+                0x9d012b3c       0x2c
  .text.SetDirectionCounterclockwise
-                0x9d012b44       0x2c build/milestone1/production/_ext/1360937237/motor.o
-                0x9d012b44                SetDirectionCounterclockwise
+                0x9d012b3c       0x2c build/milestone1/production/_ext/1360937237/motor.o
+                0x9d012b3c                SetDirectionCounterclockwise
 
 .text.SetDirectionForwards
-                0x9d012b70       0x2c
+                0x9d012b68       0x2c
  .text.SetDirectionForwards
-                0x9d012b70       0x2c build/milestone1/production/_ext/1360937237/motor.o
-                0x9d012b70                SetDirectionForwards
+                0x9d012b68       0x2c build/milestone1/production/_ext/1360937237/motor.o
+                0x9d012b68                SetDirectionForwards
 
 .text.SetDirectionBackwards
-                0x9d012b9c       0x2c
+                0x9d012b94       0x2c
  .text.SetDirectionBackwards
-                0x9d012b9c       0x2c build/milestone1/production/_ext/1360937237/motor.o
-                0x9d012b9c                SetDirectionBackwards
+                0x9d012b94       0x2c build/milestone1/production/_ext/1360937237/motor.o
+                0x9d012b94                SetDirectionBackwards
 
 .text.navSendMsgFromISR
-                0x9d012bc8       0x28
+                0x9d012bc0       0x28
  .text.navSendMsgFromISR
-                0x9d012bc8       0x28 build/milestone1/production/_ext/1360937237/navigation.o
-                0x9d012bc8                navSendMsgFromISR
+                0x9d012bc0       0x28 build/milestone1/production/_ext/1360937237/navigation.o
+                0x9d012bc0                navSendMsgFromISR
 
 .text.navSendMsg
-                0x9d012bf0       0x28
+                0x9d012be8       0x28
  .text.navSendMsg
-                0x9d012bf0       0x28 build/milestone1/production/_ext/1360937237/navigation.o
-                0x9d012bf0                navSendMsg
+                0x9d012be8       0x28 build/milestone1/production/_ext/1360937237/navigation.o
+                0x9d012be8                navSendMsg
 
 .text.commSendMsgFromISR
-                0x9d012c18       0x28
+                0x9d012c10       0x28
  .text.commSendMsgFromISR
-                0x9d012c18       0x28 build/milestone1/production/_ext/1360937237/communication.o
-                0x9d012c18                commSendMsgFromISR
+                0x9d012c10       0x28 build/milestone1/production/_ext/1360937237/communication.o
+                0x9d012c10                commSendMsgFromISR
 
 .text.commSendMsg
-                0x9d012c40       0x28
+                0x9d012c38       0x28
  .text.commSendMsg
-                0x9d012c40       0x28 build/milestone1/production/_ext/1360937237/communication.o
-                0x9d012c40                commSendMsg
+                0x9d012c38       0x28 build/milestone1/production/_ext/1360937237/communication.o
+                0x9d012c38                commSendMsg
 
 .text.pathSendMsg
-                0x9d012c68       0x28
+                0x9d012c60       0x28
  .text.pathSendMsg
-                0x9d012c68       0x28 build/milestone1/production/_ext/1360937237/pathfinding.o
-                0x9d012c68                pathSendMsg
+                0x9d012c60       0x28 build/milestone1/production/_ext/1360937237/pathfinding.o
+                0x9d012c60                pathSendMsg
 
 .text.pvTaskIncrementMutexHeldCount
-                0x9d012c90       0x28
+                0x9d012c88       0x28
  .text.pvTaskIncrementMutexHeldCount
-                0x9d012c90       0x28 build/milestone1/production/_ext/1241959881/tasks.o
-                0x9d012c90                pvTaskIncrementMutexHeldCount
+                0x9d012c88       0x28 build/milestone1/production/_ext/1241959881/tasks.o
+                0x9d012c88                pvTaskIncrementMutexHeldCount
 
-.rodata         0x9d012cb8       0x28
- .rodata        0x9d012cb8       0x28 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(w_atan2f.o)
+.rodata         0x9d012cb0       0x28
+ .rodata        0x9d012cb0       0x28 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(w_atan2f.o)
 
 .text.uartReceiveFromSendQueueInISR
-                0x9d012ce0       0x24
+                0x9d012cd8       0x24
  .text.uartReceiveFromSendQueueInISR
-                0x9d012ce0       0x24 build/milestone1/production/_ext/1360937237/communication.o
-                0x9d012ce0                uartReceiveFromSendQueueInISR
+                0x9d012cd8       0x24 build/milestone1/production/_ext/1360937237/communication.o
+                0x9d012cd8                uartReceiveFromSendQueueInISR
 
-.text.LedSetOn  0x9d012d04       0x24
+.text.LedSetOn  0x9d012cfc       0x24
  .text.LedSetOn
-                0x9d012d04       0x24 build/milestone1/production/_ext/1360937237/LED.o
-                0x9d012d04                LedSetOn
+                0x9d012cfc       0x24 build/milestone1/production/_ext/1360937237/LED.o
+                0x9d012cfc                LedSetOn
 
 .text.LedSetOff
-                0x9d012d28       0x24
+                0x9d012d20       0x24
  .text.LedSetOff
-                0x9d012d28       0x24 build/milestone1/production/_ext/1360937237/LED.o
-                0x9d012d28                LedSetOff
+                0x9d012d20       0x24 build/milestone1/production/_ext/1360937237/LED.o
+                0x9d012d20                LedSetOff
 
 .text.deg2tickF
-                0x9d012d4c       0x24
+                0x9d012d44       0x24
  .text.deg2tickF
-                0x9d012d4c       0x24 build/milestone1/production/_ext/1360937237/motor.o
-                0x9d012d4c                deg2tickF
+                0x9d012d44       0x24 build/milestone1/production/_ext/1360937237/motor.o
+                0x9d012d44                deg2tickF
 
 .text.ElectromagnetSetOn
-                0x9d012d70       0x24
+                0x9d012d68       0x24
  .text.ElectromagnetSetOn
-                0x9d012d70       0x24 build/milestone1/production/_ext/1360937237/electromagnet.o
-                0x9d012d70                ElectromagnetSetOn
+                0x9d012d68       0x24 build/milestone1/production/_ext/1360937237/electromagnet.o
+                0x9d012d68                ElectromagnetSetOn
 
 .text.ElectromagnetSetOff
-                0x9d012d94       0x24
+                0x9d012d8c       0x24
  .text.ElectromagnetSetOff
-                0x9d012d94       0x24 build/milestone1/production/_ext/1360937237/electromagnet.o
-                0x9d012d94                ElectromagnetSetOff
+                0x9d012d8c       0x24 build/milestone1/production/_ext/1360937237/electromagnet.o
+                0x9d012d8c                ElectromagnetSetOff
 
 .text.IntHandlerDrvI2CInstance0
-                0x9d012db8       0x20
+                0x9d012db0       0x20
  .text.IntHandlerDrvI2CInstance0
-                0x9d012db8       0x20 build/milestone1/production/_ext/1555642536/system_interrupt.o
-                0x9d012db8                IntHandlerDrvI2CInstance0
+                0x9d012db0       0x20 build/milestone1/production/_ext/1555642536/system_interrupt.o
+                0x9d012db0                IntHandlerDrvI2CInstance0
 
 .text.IntHandlerDrvI2CInstance1
-                0x9d012dd8       0x20
+                0x9d012dd0       0x20
  .text.IntHandlerDrvI2CInstance1
-                0x9d012dd8       0x20 build/milestone1/production/_ext/1555642536/system_interrupt.o
-                0x9d012dd8                IntHandlerDrvI2CInstance1
+                0x9d012dd0       0x20 build/milestone1/production/_ext/1555642536/system_interrupt.o
+                0x9d012dd0                IntHandlerDrvI2CInstance1
 
 .text._SYS_Tasks
-                0x9d012df8       0x20
+                0x9d012df0       0x20
  .text._SYS_Tasks
-                0x9d012df8       0x20 build/milestone1/production/_ext/1555642536/system_tasks.o
+                0x9d012df0       0x20 build/milestone1/production/_ext/1555642536/system_tasks.o
 
-.text.main      0x9d012e18       0x20
- .text.main     0x9d012e18       0x20 build/milestone1/production/_ext/1360937237/main.o
-                0x9d012e18                main
+.text.main      0x9d012e10       0x20
+ .text.main     0x9d012e10       0x20 build/milestone1/production/_ext/1360937237/main.o
+                0x9d012e10                main
 
 .text.checkIfSendQueueIsEmpty
-                0x9d012e38       0x20
+                0x9d012e30       0x20
  .text.checkIfSendQueueIsEmpty
-                0x9d012e38       0x20 build/milestone1/production/_ext/1360937237/communication.o
-                0x9d012e38                checkIfSendQueueIsEmpty
+                0x9d012e30       0x20 build/milestone1/production/_ext/1360937237/communication.o
+                0x9d012e30                checkIfSendQueueIsEmpty
 
 .text.addToOpenSet
-                0x9d012e58       0x20
+                0x9d012e50       0x20
  .text.addToOpenSet
-                0x9d012e58       0x20 build/milestone1/production/_ext/1360937237/pathfinding.o
-                0x9d012e58                addToOpenSet
+                0x9d012e50       0x20 build/milestone1/production/_ext/1360937237/pathfinding.o
+                0x9d012e50                addToOpenSet
 
 .text.vListInitialise
-                0x9d012e78       0x20
+                0x9d012e70       0x20
  .text.vListInitialise
-                0x9d012e78       0x20 build/milestone1/production/_ext/1241959881/list.o
-                0x9d012e78                vListInitialise
+                0x9d012e70       0x20 build/milestone1/production/_ext/1241959881/list.o
+                0x9d012e70                vListInitialise
 
 .text.DRV_I2C_Status
-                0x9d012e98       0x1c
+                0x9d012e90       0x1c
  .text.DRV_I2C_Status
-                0x9d012e98       0x1c build/milestone1/production/_ext/393803906/drv_i2c.o
-                0x9d012e98                DRV_I2C_Status
+                0x9d012e90       0x1c build/milestone1/production/_ext/393803906/drv_i2c.o
+                0x9d012e90                DRV_I2C_Status
 
 .text.SYS_DEVCON_JTAGDisable
-                0x9d012eb4       0x1c
+                0x9d012eac       0x1c
  .text.SYS_DEVCON_JTAGDisable
-                0x9d012eb4       0x1c build/milestone1/production/_ext/2019779704/sys_devcon.o
-                0x9d012eb4                SYS_DEVCON_JTAGDisable
+                0x9d012eac       0x1c build/milestone1/production/_ext/2019779704/sys_devcon.o
+                0x9d012eac                SYS_DEVCON_JTAGDisable
 
 .text.vPortClearInterruptMaskFromISR
-                0x9d012ed0       0x1c
+                0x9d012ec8       0x1c
  .text.vPortClearInterruptMaskFromISR
-                0x9d012ed0       0x1c build/milestone1/production/_ext/1475386849/port.o
-                0x9d012ed0                vPortClearInterruptMaskFromISR
+                0x9d012ec8       0x1c build/milestone1/production/_ext/1475386849/port.o
+                0x9d012ec8                vPortClearInterruptMaskFromISR
 
-.text.finitel   0x9d012eec       0x1c
- .text.finitel  0x9d012eec       0x1c c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(support.o)
-                0x9d012eec                finitel
+.text.finitel   0x9d012ee4       0x1c
+ .text.finitel  0x9d012ee4       0x1c c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(support.o)
+                0x9d012ee4                finitel
 
 .text._FLAGCAPTURE_Tasks
-                0x9d012f08       0x18
+                0x9d012f00       0x18
  .text._FLAGCAPTURE_Tasks
-                0x9d012f08       0x18 build/milestone1/production/_ext/1555642536/system_tasks.o
+                0x9d012f00       0x18 build/milestone1/production/_ext/1555642536/system_tasks.o
 
 .text._COMMUNICATION_Tasks
-                0x9d012f20       0x18
+                0x9d012f18       0x18
  .text._COMMUNICATION_Tasks
-                0x9d012f20       0x18 build/milestone1/production/_ext/1555642536/system_tasks.o
+                0x9d012f18       0x18 build/milestone1/production/_ext/1555642536/system_tasks.o
 
 .text._PATHFINDING_Tasks
-                0x9d012f38       0x18
+                0x9d012f30       0x18
  .text._PATHFINDING_Tasks
-                0x9d012f38       0x18 build/milestone1/production/_ext/1555642536/system_tasks.o
+                0x9d012f30       0x18 build/milestone1/production/_ext/1555642536/system_tasks.o
 
 .text._NAVIGATION_Tasks
-                0x9d012f50       0x18
+                0x9d012f48       0x18
  .text._NAVIGATION_Tasks
-                0x9d012f50       0x18 build/milestone1/production/_ext/1555642536/system_tasks.o
+                0x9d012f48       0x18 build/milestone1/production/_ext/1555642536/system_tasks.o
 
 .text._APP_Tasks
-                0x9d012f68       0x18
+                0x9d012f60       0x18
  .text._APP_Tasks
-                0x9d012f68       0x18 build/milestone1/production/_ext/1555642536/system_tasks.o
+                0x9d012f60       0x18 build/milestone1/production/_ext/1555642536/system_tasks.o
 
 .text.SYS_INT_Initialize
-                0x9d012f80       0x18
+                0x9d012f78       0x18
  .text.SYS_INT_Initialize
-                0x9d012f80       0x18 build/milestone1/production/_ext/1620769490/sys_int_pic32.o
-                0x9d012f80                SYS_INT_Initialize
+                0x9d012f78       0x18 build/milestone1/production/_ext/1620769490/sys_int_pic32.o
+                0x9d012f78                SYS_INT_Initialize
 
 .text.dbgPauseAll
-                0x9d012f98       0x18
+                0x9d012f90       0x18
  .text.dbgPauseAll
-                0x9d012f98       0x18 build/milestone1/production/_ext/1360937237/debug.o
-                0x9d012f98                dbgPauseAll
+                0x9d012f90       0x18 build/milestone1/production/_ext/1360937237/debug.o
+                0x9d012f90                dbgPauseAll
 
-.text           0x9d012fb0       0x18
- .text          0x9d012fb0       0x18 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-nmi-handler.o)
-                0x9d012fb0                _nmi_handler
+.text           0x9d012fa8       0x18
+ .text          0x9d012fa8       0x18 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-nmi-handler.o)
+                0x9d012fa8                _nmi_handler
 
 .text.ResetMovementQueue
-                0x9d012fc8       0x14
+                0x9d012fc0       0x14
  .text.ResetMovementQueue
-                0x9d012fc8       0x14 build/milestone1/production/_ext/1360937237/navigation.o
-                0x9d012fc8                ResetMovementQueue
+                0x9d012fc0       0x14 build/milestone1/production/_ext/1360937237/navigation.o
+                0x9d012fc0                ResetMovementQueue
 
 .text.SYS_DEVCON_Initialize
-                0x9d012fdc       0x14
+                0x9d012fd4       0x14
  .text.SYS_DEVCON_Initialize
-                0x9d012fdc       0x14 build/milestone1/production/_ext/2019779704/sys_devcon.o
-                0x9d012fdc                SYS_DEVCON_Initialize
+                0x9d012fd4       0x14 build/milestone1/production/_ext/2019779704/sys_devcon.o
+                0x9d012fd4                SYS_DEVCON_Initialize
 
 .text.vTaskSuspendAll
-                0x9d012ff0       0x14
+                0x9d012fe8       0x14
  .text.vTaskSuspendAll
-                0x9d012ff0       0x14 build/milestone1/production/_ext/1241959881/tasks.o
-                0x9d012ff0                vTaskSuspendAll
+                0x9d012fe8       0x14 build/milestone1/production/_ext/1241959881/tasks.o
+                0x9d012fe8                vTaskSuspendAll
 
 .text.vTaskSetTimeOutState
-                0x9d013004       0x14
+                0x9d012ffc       0x14
  .text.vTaskSetTimeOutState
-                0x9d013004       0x14 build/milestone1/production/_ext/1241959881/tasks.o
-                0x9d013004                vTaskSetTimeOutState
+                0x9d012ffc       0x14 build/milestone1/production/_ext/1241959881/tasks.o
+                0x9d012ffc                vTaskSetTimeOutState
 
-.rodata         0x9d013018       0x10
- .rodata        0x9d013018       0x10 build/milestone1/production/_ext/1360937237/pathfinding.o
+.rodata         0x9d013010       0x10
+ .rodata        0x9d013010       0x10 build/milestone1/production/_ext/1360937237/pathfinding.o
 
 .text.vTaskMissedYield
-                0x9d013028       0x10
+                0x9d013020       0x10
  .text.vTaskMissedYield
-                0x9d013028       0x10 build/milestone1/production/_ext/1241959881/tasks.o
-                0x9d013028                vTaskMissedYield
+                0x9d013020       0x10 build/milestone1/production/_ext/1241959881/tasks.o
+                0x9d013020                vTaskMissedYield
 
 .text.SYS_CLK_SystemFrequencyGet
-                0x9d013038        0xc
+                0x9d013030        0xc
  .text.SYS_CLK_SystemFrequencyGet
-                0x9d013038        0xc build/milestone1/production/_ext/383799649/sys_clk_static.o
-                0x9d013038                SYS_CLK_SystemFrequencyGet
+                0x9d013030        0xc build/milestone1/production/_ext/383799649/sys_clk_static.o
+                0x9d013030                SYS_CLK_SystemFrequencyGet
 
 .text.SYS_CLK_PeripheralFrequencyGet
-                0x9d013044        0xc
+                0x9d01303c        0xc
  .text.SYS_CLK_PeripheralFrequencyGet
-                0x9d013044        0xc build/milestone1/production/_ext/383799649/sys_clk_static.o
-                0x9d013044                SYS_CLK_PeripheralFrequencyGet
+                0x9d01303c        0xc build/milestone1/production/_ext/383799649/sys_clk_static.o
+                0x9d01303c                SYS_CLK_PeripheralFrequencyGet
 
 .text.StopMovement
-                0x9d013050        0xc
+                0x9d013048        0xc
  .text.StopMovement
-                0x9d013050        0xc build/milestone1/production/_ext/1360937237/navigation.o
-                0x9d013050                StopMovement
+                0x9d013048        0xc build/milestone1/production/_ext/1360937237/navigation.o
+                0x9d013048                StopMovement
 
 .text.SetMovementGoal
-                0x9d01305c        0xc
+                0x9d013054        0xc
  .text.SetMovementGoal
-                0x9d01305c        0xc build/milestone1/production/_ext/1360937237/navigation.o
-                0x9d01305c                SetMovementGoal
+                0x9d013054        0xc build/milestone1/production/_ext/1360937237/navigation.o
+                0x9d013054                SetMovementGoal
 
 .text.xQueueIsQueueEmptyFromISR
-                0x9d013068        0xc
+                0x9d013060        0xc
  .text.xQueueIsQueueEmptyFromISR
-                0x9d013068        0xc build/milestone1/production/_ext/1241959881/queue.o
-                0x9d013068                xQueueIsQueueEmptyFromISR
+                0x9d013060        0xc build/milestone1/production/_ext/1241959881/queue.o
+                0x9d013060                xQueueIsQueueEmptyFromISR
 
 .text.GetMotorDirection
-                0x9d013074        0xc
+                0x9d01306c        0xc
  .text.GetMotorDirection
-                0x9d013074        0xc build/milestone1/production/_ext/1360937237/motor.o
-                0x9d013074                GetMotorDirection
+                0x9d01306c        0xc build/milestone1/production/_ext/1360937237/motor.o
+                0x9d01306c                GetMotorDirection
 
 .text.DRV_I2C_TransferStatusGet
-                0x9d013080        0x8
+                0x9d013078        0x8
  .text.DRV_I2C_TransferStatusGet
-                0x9d013080        0x8 build/milestone1/production/_ext/393803906/drv_i2c.o
-                0x9d013080                DRV_I2C_TransferStatusGet
+                0x9d013078        0x8 build/milestone1/production/_ext/393803906/drv_i2c.o
+                0x9d013078                DRV_I2C_TransferStatusGet
 
 .text.SYS_DEVCON_Tasks
-                0x9d013088        0x8
+                0x9d013080        0x8
  .text.SYS_DEVCON_Tasks
-                0x9d013088        0x8 build/milestone1/production/_ext/2019779704/sys_devcon.o
-                0x9d013088                SYS_DEVCON_Tasks
+                0x9d013080        0x8 build/milestone1/production/_ext/2019779704/sys_devcon.o
+                0x9d013080                SYS_DEVCON_Tasks
 
 .text.vPortFree
-                0x9d013090        0x8
+                0x9d013088        0x8
  .text.vPortFree
-                0x9d013090        0x8 build/milestone1/production/_ext/1366647692/heap_1.o
-                0x9d013090                vPortFree
+                0x9d013088        0x8 build/milestone1/production/_ext/1366647692/heap_1.o
+                0x9d013088                vPortFree
 
 .text.vListInitialiseItem
-                0x9d013098        0x8
+                0x9d013090        0x8
  .text.vListInitialiseItem
-                0x9d013098        0x8 build/milestone1/production/_ext/1241959881/list.o
-                0x9d013098                vListInitialiseItem
+                0x9d013090        0x8 build/milestone1/production/_ext/1241959881/list.o
+                0x9d013090                vListInitialiseItem
 
-.rodata         0x9d0130a0        0x8
- .rodata        0x9d0130a0        0x8 build/milestone1/production/_ext/1241959881/tasks.o
+.rodata         0x9d013098        0x8
+ .rodata        0x9d013098        0x8 build/milestone1/production/_ext/1241959881/tasks.o
 
 .text.SetOrientation
-                0x9d0130a8        0x8
+                0x9d0130a0        0x8
  .text.SetOrientation
-                0x9d0130a8        0x8 build/milestone1/production/_ext/1360937237/motor.o
-                0x9d0130a8                SetOrientation
+                0x9d0130a0        0x8 build/milestone1/production/_ext/1360937237/motor.o
+                0x9d0130a0                SetOrientation
 
 .text.GetOrientation
-                0x9d0130b0        0x8
+                0x9d0130a8        0x8
  .text.GetOrientation
-                0x9d0130b0        0x8 build/milestone1/production/_ext/1360937237/motor.o
-                0x9d0130b0                GetOrientation
+                0x9d0130a8        0x8 build/milestone1/production/_ext/1360937237/motor.o
+                0x9d0130a8                GetOrientation
 
 .text.SetLocationX
-                0x9d0130b8        0x8
+                0x9d0130b0        0x8
  .text.SetLocationX
-                0x9d0130b8        0x8 build/milestone1/production/_ext/1360937237/motor.o
-                0x9d0130b8                SetLocationX
+                0x9d0130b0        0x8 build/milestone1/production/_ext/1360937237/motor.o
+                0x9d0130b0                SetLocationX
 
 .text.GetLocationX
-                0x9d0130c0        0x8
+                0x9d0130b8        0x8
  .text.GetLocationX
-                0x9d0130c0        0x8 build/milestone1/production/_ext/1360937237/motor.o
-                0x9d0130c0                GetLocationX
+                0x9d0130b8        0x8 build/milestone1/production/_ext/1360937237/motor.o
+                0x9d0130b8                GetLocationX
 
 .text.SetLocationY
-                0x9d0130c8        0x8
+                0x9d0130c0        0x8
  .text.SetLocationY
-                0x9d0130c8        0x8 build/milestone1/production/_ext/1360937237/motor.o
-                0x9d0130c8                SetLocationY
+                0x9d0130c0        0x8 build/milestone1/production/_ext/1360937237/motor.o
+                0x9d0130c0                SetLocationY
 
 .text.GetLocationY
-                0x9d0130d0        0x8
+                0x9d0130c8        0x8
  .text.GetLocationY
-                0x9d0130d0        0x8 build/milestone1/production/_ext/1360937237/motor.o
-                0x9d0130d0                GetLocationY
+                0x9d0130c8        0x8 build/milestone1/production/_ext/1360937237/motor.o
+                0x9d0130c8                GetLocationY
 
 .text._on_reset
-                0x9d0130d8        0x8
+                0x9d0130d0        0x8
  .text._on_reset
-                0x9d0130d8        0x8 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
-                0x9d0130d8                _on_reset
+                0x9d0130d0        0x8 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+                0x9d0130d0                _on_reset
 
 .text._on_bootstrap
-                0x9d0130e0        0x8
+                0x9d0130d8        0x8
  .text._on_bootstrap
-                0x9d0130e0        0x8 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
-                0x9d0130e0                _on_bootstrap
+                0x9d0130d8        0x8 c:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+                0x9d0130d8                _on_bootstrap
 
-.rodata         0x9d0130e8        0x4
- .rodata        0x9d0130e8        0x4 build/milestone1/production/_ext/1475386849/port.o
-                0x9d0130e8                xISRStackTop
+.rodata         0x9d00f214        0x4
+ .rodata        0x9d00f214        0x4 build/milestone1/production/_ext/1475386849/port.o
+                0x9d00f214                xISRStackTop

@@ -127,16 +127,17 @@ void storeFieldRegionInStack(fieldItem tempFieldItem) {
     //-1 means it was not in the stack
     if (updateLoc == -1) {
         fieldItemStack[fieldItemStackTop] = tempFieldItem;
-        fieldItemStackTop++;
+//        fieldItemStackTop++;
         if (tempFieldItem.objectType == uniqueIDMapper(IDENTITY_OF_FRIENDLY_FLAG)) {
             //do nothing so nothing is added to crossSquare stack
         } else if (tempFieldItem.objectType == uniqueIDMapper(IDENTITY_OF_FRIENDLY_FLAG_ROVER)) {
             Nop();
             sendLocToNavigationThread(tempFieldItem.centerX, tempFieldItem.centerY, (tempFieldItem.orientation >> 1));
         } else {
-            crossSquareStack[crossSquareStackTop] = convertFieldRegionToCrossSquare(tempFieldItem);
-            crossSquareStackTop++;
+            crossSquareStack[fieldItemStackTop] = convertFieldRegionToCrossSquare(tempFieldItem);
+//            crossSquareStackTop++;
         }
+        fieldItemStackTop++;
     } else {
         fieldItemStack[updateLoc] = tempFieldItem;
         if (tempFieldItem.objectType == uniqueIDMapper(IDENTITY_OF_FRIENDLY_FLAG)) {
@@ -483,16 +484,17 @@ void storeInFieldItemStack(fieldItem tempFieldItem) {
     //-1 means it was not in the stack
     if (updateLoc == -1) {
         fieldItemStack[fieldItemStackTop] = tempFieldItem;
-        fieldItemStackTop++;
+//        fieldItemStackTop++;
         if (tempFieldItem.objectType == uniqueIDMapper(IDENTITY_OF_FRIENDLY_FLAG)) {
             //do nothing so nothing is added to crossSquare stack
         } else if (tempFieldItem.objectType == uniqueIDMapper(IDENTITY_OF_FRIENDLY_FLAG_ROVER)) {
             Nop();
             sendLocToNavigationThread(tempFieldItem.centerX, tempFieldItem.centerY, (tempFieldItem.orientation >> 1));
         } else {
-            crossSquareStack[crossSquareStackTop] = convertFieldItemToCrossSquare(tempFieldItem);
-            crossSquareStackTop++;
+            crossSquareStack[fieldItemStackTop] = convertFieldItemToCrossSquare(tempFieldItem);
+//            crossSquareStackTop++;
         }
+        fieldItemStackTop++;
     } else {
         fieldItemStack[updateLoc] = tempFieldItem;
         if (tempFieldItem.objectType == uniqueIDMapper(IDENTITY_OF_FRIENDLY_FLAG)) {
@@ -792,7 +794,7 @@ bool checkIfTwoNodesInSightOfEachOther(point point1, point point2) {
         return false;
     }
     
-    for (i = 0; i < crossSquareStackTop; i++) { //subtract 2
+    for (i = 0; i < fieldItemStackTop; i++) { //subtract 2
         if (checkIntersectionOfLineAndCrossSquare(point1, point2, crossSquareStack[i].topLeft, crossSquareStack[i].bottomRight)) {
             return false;
         }
@@ -864,13 +866,13 @@ bool checkIfTwoNodesInSightOfEachOther(point point1, point point2) {
         roverOffsetPoint2.y = point1.y-offset*sin(theta);
     }
     
-    for (i = 0; i < crossSquareStackTop; i++) { //subtract 2
+    for (i = 0; i < fieldItemStackTop; i++) { //subtract 2
         if (checkIntersectionOfLineAndCrossSquare(roverOffsetPoint1, offsetPoint1, crossSquareStack[i].topLeft, crossSquareStack[i].bottomRight)) {
             return false;
         }
     }
     
-    for (i = 0; i < crossSquareStackTop; i++) { //subtract 2
+    for (i = 0; i < fieldItemStackTop; i++) { //subtract 2
         if (checkIntersectionOfLineAndCrossSquare(roverOffsetPoint2, offsetPoint2, crossSquareStack[i].topLeft, crossSquareStack[i].bottomRight)) {
             return false;
         }
