@@ -439,7 +439,7 @@ void HandleColorSensorData(unsigned char ColorSensorID){
                 }
             }else if (csMeOnTape && !ignoringTape){
                 //Back up
-                AddMovement(cm2tick(4), ROVER_DIRECTION_BACKWARDS);
+                AddMovement(cm2tickF(4.5), ROVER_DIRECTION_BACKWARDS);
                 SetMovementGoal();
                 ignoringTape = 1;
                 ignoreTapeCount = 20;

@@ -1268,7 +1268,12 @@ void PATHFINDING_Tasks(void) {
                                 tempRegion.width = receivemsg[4];
                                 tempRegion.length = receivemsg[5];
                                 regionList[receivemsg[1]] = tempRegion;
-                                updateRegion(tempRegion, receivemsg[1]);
+//                                updateRegion(tempRegion, receivemsg[1]);
+                                
+                                if (receivemsg[1] == FAR_DEFENSE_ZONE) {
+                                    MAX_WIDTH_OF_FIELD = tempRegion.width;
+                                    MAX_LENGTH_OF_FIELD = tempRegion.y + tempRegion.length/2;
+                                }
                                 
 //                                if (receivemsg[1] == CLOSE_DEFENSE_ZONE || receivemsg[1] == CENTRAL_ZONE) {
 //                                    fieldItem tempFieldItem;
