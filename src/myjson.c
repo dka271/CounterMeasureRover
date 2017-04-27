@@ -110,6 +110,19 @@ int jsonGetPassedInUInt8(unsigned char *buffer, unsigned char *destination, unsi
 	return 0;
 }
 
+int jsonGetPassedInInt(unsigned char *buffer, unsigned int *destination, unsigned char jsonIdentity){
+	int index = jsonFindElementFromKey(buffer, jsonIdentity);
+	if (index == -1){
+		//The key was not found
+		return -1;
+	}
+	if (parseInt(buffer, index, destination)){
+		//There was a parse error
+		return 1;
+	}
+	return 0;
+}
+
 int jsonGetMessageType(unsigned char *buffer, unsigned char *messageType){
 	int index = jsonFindElementFromKey(buffer, KEY_MESSAGE_TYPE);
 	if (index == -1){

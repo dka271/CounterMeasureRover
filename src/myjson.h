@@ -82,6 +82,9 @@ int jsonGetPassedInCharacter(unsigned char *buffer, unsigned char *destination, 
 //Finds an integer from 0 to 255
 int jsonGetPassedInUInt8(unsigned char *buffer, unsigned char *destination, unsigned char jsonIdentity);
 
+//Finds an integer
+int jsonGetPassedInInt(unsigned char *buffer, unsigned int *destination, unsigned char jsonIdentity);
+
 //Return 0 upon success, 1 upon failure
 int parseCharacter(char* bufferToReadFrom, int index, unsigned char *info);
 int parseString(char* bufferToReadFrom, int index, unsigned char *info);

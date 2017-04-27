@@ -417,6 +417,18 @@ void COMMUNICATION_Tasks(void) {
                         if (jsonGetMessageType(receivemsg, MessageType)) {
                         //error
                         dbgOutputLoc(DBG_LOC_BAD_ERROR - 3);
+                        }else if (MessageType[0] == 'i'){
+                            int orientation;
+                            Nop();
+                            if (jsonGetPassedInInt(receivemsg, &orientation, 'O')){
+                                
+                            }else{
+                                Nop();
+                                while (orientation >= 180){
+                                    orientation -= 360;
+                                }
+                                SetOrientation(orientation);
+                            }
                         } else if (MessageType[0] == 'g') {
                             Nop();
                             msgDefNotGlobal[0] = 'g';

@@ -675,7 +675,9 @@ void NAVIGATION_Tasks ( void )
             //Handle a specific message
             if (msgId == NAV_TIMER_COUNTER_3_ID){
                 //Motor 2 Encoder Message Handler
-                speed2 = (receivemsgint & 0x0000ffff) - previousValue2;
+                if ((receivemsgint & 0x0000ffff) >= previousValue2){
+                    speed2 = (receivemsgint & 0x0000ffff) - previousValue2;
+                }
                 previousValue2 = receivemsgint & 0x0000ffff;
                 
                 //Handle path controls
@@ -727,7 +729,9 @@ void NAVIGATION_Tasks ( void )
                 m2PID = PID2(desiredSpeed, speed2);
             }else if (msgId == NAV_TIMER_COUNTER_5_ID){
                 //Motor 2 Encoder Message Handler
-                speed1 = (receivemsgint & 0x0000ffff) - previousValue1;
+                if ((receivemsgint & 0x0000ffff) >= previousValue1){
+                    speed1 = (receivemsgint & 0x0000ffff) - previousValue1;
+                }
                 previousValue1 = receivemsgint & 0x0000ffff;
                 
                 //Handle remaining distance
@@ -768,7 +772,7 @@ void NAVIGATION_Tasks ( void )
                     pathfindingCount = 0;
                     
                     //Update position
-                    sprintf(commMsg,"*{\"S\":\"c\",\"T\":\"a\",\"M\":\"p\",\"N\":1,\"F\":[4,12,6,6,%d,%d,0],\"C\":1}~", (int) (GetLocationX() / 2), (int) (GetLocationY() / 2));
+                    sprintf(commMsg,"*{\"S\":\"c\",\"T\":\"a\",\"M\":\"p\",\"N\":1,\"F\":[4,12,6,6,%d,%d,%d],\"C\":1}~", (int) (GetLocationX() / 2), (int) (GetLocationY() / 2), (int) GetOrientation());
                     commSendMsgToWifiQueue(commMsg);
                 }
                 

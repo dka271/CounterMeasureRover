@@ -651,6 +651,42 @@ void fillAdjacencyNodes() {
     for (i = 0; i < fieldItemStackTop; i++) {
         calculateOffsetNodes(fieldItemStack[i]);
     }
+    
+    //generates 10 random nodes within bounds that are not inside obstacles
+    generateRandomNodesOnField();
+    
+}
+
+void generateRandomNodesOnField() {
+    unsigned char j;
+    for (j=0; j < 10; j++) {
+        addARandomNodeToList();
+    }
+}
+
+point generateRandomNode() {
+    int rWidth = (rand() % (MAX_WIDTH_OF_FIELD-1))+1;
+    int rLength = (rand() % (MAX_LENGTH_OF_FIELD-1))+1;
+    
+    point randomNode;
+    randomNode.x = rWidth;
+    randomNode.y = rLength;
+    
+    return randomNode;    
+}
+
+void addARandomNodeToList() {
+    point randomNode = generateRandomNode();
+    
+    while(1) {
+        if (checkIfNodeValid(randomNode)) {
+            halfHeartedAdjacencyList.nodes[currentNumberOfNodes] = randomNode;
+            currentNumberOfNodes++;
+            break;
+        } else {
+            randomNode = generateRandomNode();
+        }
+    }
 }
 
 //Returns false if a node is in an illegal location (within an object) or true otherwise
