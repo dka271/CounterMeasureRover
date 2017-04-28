@@ -399,7 +399,7 @@ int CalculateAngleFromPoints(int x1, int y1, int x2, int y2){
     if (ticksToReturn > 0){
         ticksToReturn -= angleOffsetLeft;
     }else if (ticksToReturn < 0){
-        ticksToReturn -= angleOffsetRight;
+        ticksToReturn += angleOffsetRight;
     }
     return ticksToReturn;
 }
